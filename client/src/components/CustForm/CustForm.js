@@ -1,80 +1,74 @@
 import React, { Component } from "react";
 import "./CustForm.css";
 
-class Form extends Component {
-  // Setting the component's initial state
-  state = {
-    buyerName: "",
-    address: "",
-    status: "",
-    purchased: ""
-  };
 
-  handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
-    let value = event.target.value;
-    const name = event.target.name;
-
-    if (name === "status") {
-      value = value.substring(0, 15);
+export default class Form extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      contact: '',
+      company: '',
+      email: ''
     }
-    // Updating the input's state
+
+    this.handleEmailChange = this.handleEmailChange.bind(this)
+    this.handleCompanyChange = this.handleCompanyChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleEmailChange(event) {
     this.setState({
-      [name]: value
-    });
-  };
+      email: event.target.value
+    })
+  }
 
-  handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
-
+  handleCompanyChange(event) {
     this.setState({
-      buyerName: "",
-      address: "",
-      status: "",
-      purchased: ""
-    });
-  };
+      company: event.target.value
+    })
+  }
 
-  render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
+  handleSubmit () {
+    // we would do something like this
+    // fetch(`/api/user`, { method: 'post', body: {
+    //   email: this.state.email,
+    //   password: this.state.password
+    // }}).then(res => {
+    //   console.log('sucess!')
+    // })
+
+    
+    // Validation part
+    if (this.state.email === '') {
+      alert('please enter an email')
+    }
+    
+    // this would be replaced with an ajax post
+    console.log({
+      email: this.state.email,
+      company: this.state.company
+    })
+  }
+
+  render () {
     return (
-
       <div>
-        <form className="form">
-          <input
-            value={this.state.buyerName}
-            name="buyerName"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="Buyer Name"
-          />
-          <input
-            value={this.state.address}
-            name="address"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="Address"
-          />
-          <input
-            value={this.state.status}
-            name="status"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="Status"
-          />
-          <input
-            value={this.state.purchased}
-            name="purchased"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="purchased yes or no"
-          />
-          <button onClick={this.handleFormSubmit}>Submit</button>
-        </form>
+        <div>
+          Email: 
+          <input type='text' value={this.state.email} onChange={this.handleEmailChange} />
+          <p>
+            email: {this.state.email}
+          </p>
+        </div>
+        <div>
+          Company:
+          <input type='text' value={this.state.company} onChange={this.handleCompanyChange} />
+          <p>
+            company: {this.state.company}
+          </p>
+        </div>
+        <button onClick={this.handleSubmit}>Submit!</button>
       </div>
-    );
+    )
   }
 }
-
-export default Form;
