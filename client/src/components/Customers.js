@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Input, FormBtn } from "./Form";
+import CustForm from "../components/CustForm";
 import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
 import VerticalMenu from "./VerticalMenu";
@@ -28,7 +28,7 @@ const Customers = () =>
 
     {/* Dashboard Content */}
     <Col size="md-8">
-      <p>Customers Placeholder Section</p>
+      <CustForm />
     </Col>
   </Row>
 </Container>
