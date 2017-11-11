@@ -62,9 +62,9 @@ export default class Form extends Component {
         </div>
         <div>
           Company:
-          <input type='text' value={this.state.company} onChange={this.handleCompanyChange} />
+          <input type='text' value={this.state.companygit} onChange={this.handleCompanyChange} />
           <p>
-            company: {this.state.company}
+            companygit: {this.state.companygit}
           </p>
         </div>
         <button onClick={this.handleSubmit}>Submit!</button>

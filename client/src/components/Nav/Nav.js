@@ -13,6 +13,7 @@ const Nav = () =>
           <a class="navbar-brand" href="/">
           {/* <img id="logo" src="http://www.iconninja.com/files/785/556/35/settings-optimization-tools-earth-globe-configuration-icon.svg" width="50px" alt="logo"></img>  */}
           Sales Toolbox</a>
+
       </div>
       <div class="collapse navbar-collapse pull-sm-right" id="collapse-right">
         <ul class="nav navbar-nav navbar-right ml-auto">
@@ -21,6 +22,24 @@ const Nav = () =>
           <li><a href="/login"><span class="glyphicon glyphicon-user"></span> Login/Register</a></li>
         </ul>
       </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home </a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/login">Login/Register</a></li>
+          <li><a href="/Products">Products </a></li>
+          {/* Dropdown Menu */}
+          {/* <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">AfterLogin - Dvlpmt Only
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="divider"><a href="/customers">Customers</a></li>
+              <li class="divider"><a href="/dashboard">Dashboard</a></li>
+              <li class="divider"><a href="/schedule">Driving Routes/Schedule</a></li>
+            </ul>
+          </li> */}
+        {/* End of Dropdown Menu */}
+
+      </ul>
     </div>
   </nav>
 
