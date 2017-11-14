@@ -13,7 +13,6 @@ const Nav = () =>
           <a class="navbar-brand" href="/">
           {/* <img id="logo" src="http://www.iconninja.com/files/785/556/35/settings-optimization-tools-earth-globe-configuration-icon.svg" width="50px" alt="logo"></img>  */}
           Sales Toolbox</a>
-
       </div>
       <div class="collapse navbar-collapse pull-sm-right" id="collapse-right">
         <ul class="nav navbar-nav navbar-right ml-auto">
