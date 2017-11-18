@@ -1,25 +1,35 @@
 import axios from "axios";
 
 export default {
+
+  // Saves a Account to the database
+  registerAccount: function (Data) {
+    return axios.post("account/register", Data);
+  },
+  // Logs in a rep
+  loginAccount: function (Data) {
+    console.log("logging in to account..API.js");
+    return axios.post("account/login", Data);
+    console.log("data from API.js: " + Data);
+  },
   // Gets all Accounts
   getAccounts: function() {
-    return axios.get("/api/accounts");
+    console.log("getAccounts function..API.js");
+    return axios.get("/dashboard");
   },
   // Gets the Account with the given id
   getAccount: function(id) {
-    return axios.get("/api/accounts/" + id);
+    return axios.get("/index/customer/" + id);
   },
-  // Deletes the Account with the given id
-  deleteAccount: function(id) {
+  // Archive the Account with the given id
+  archiveAccount: function(id) {
     return axios.delete("/api/accounts/" + id);
   },
   // Saves a Account to the database
-  saveAccount: function(AccountData) {
-    return axios.post("/api/accounts", AccountData);
-  }
-    // // Saves a Account to the database from a different PORT
-    // saveAccount: function(AccountData) {
-    // return axios.post(":3001/api/accounts", AccountData);
-    // }
-
+  postProducts: function (Data) {
+    console.log("___________________________");
+    console.log("posting product..API.js");
+    console.log("___________________________");
+    return axios.post("/postProducts", Data);
+  },
 };

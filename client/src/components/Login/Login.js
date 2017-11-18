@@ -17,7 +17,8 @@ class Login extends Component {
   state = {
     username: "",
     password: "",
-    // email: ""
+    passwordConfirm: "",
+    email: ""
   };
 
   handleInputChange = event => {
@@ -27,17 +28,30 @@ class Login extends Component {
     });
   };
 
-  handleFormSubmit = event => {
+  handleRegister = event => {
     event.preventDefault();
-    if (this.state.username && this.state.password) {
-      API.saveAccount({
+    console.log("Handling register..Login.js");
+      API.registerAccount({
+        username: this.state.username,
+        password: this.state.password,
+        email: this.state.email
+      })
+        // .then(res => console.log("you have registered!"))
+        .then(res => window.location = '/Login')
+        .catch(err => console.log(err));
+    }
+
+  handleLogin = event => {
+    event.preventDefault();
+    console.log("Handling login..Login.js");
+      API.loginAccount({
         username: this.state.username,
         password: this.state.password
       })
-      // .then(res => console.log(`Username Submitted from Form: ${this.state.username} | Password Submitted from Form: ${this.state.password}')
-        .then(res => this.getAccounts())
+        .then(res => console.log("res..Login.js: " + res))
+        .then(res => window.location = '/Dashboard')
+        // .then(res => API.getAccounts())
         .catch(err => console.log(err));
-    }
   };
 
   render(){
@@ -45,15 +59,15 @@ class Login extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6 md-offset-3">
-            <div class="panel panel-login">
+            <div className="panel panel-login">
               {/* Panel Heading */}
-              <div class="panel-heading">
+              <div className="panel-heading">
                 <Row>
                   <Col size="xs-6">
-                    <a href="#" class="active" id="login-form-link">Login</a>
+                    <a href="/login" className="active" id="login-form-link">Login</a>
                   </Col>
                   <Col size="xs-6">
-                    <a href="#" id="register-form-link">Register</a>
+                    <a href="/register" id="register-form-link">Register</a>
                   </Col>
                 </Row>
                 <hr />
@@ -61,52 +75,56 @@ class Login extends Component {
               {/* End of Panel Heading */}
 
               {/* Panel Body */}
-              <div class="panel-body">
+              <div className="panel-body">
                 <Row>
                   <Col size="lg-12">
 
                     {/* Login Form */}
 
-                    <form id="login-form" role="form" style={{ display: 'block'}} >
-                        <Input type="text" name="username" id="username" tabindex="1" placeholder="Username" value={this.state.author} onChange={this.handleInputChange} required></Input>
-                        <Input type="password" name="password" id="password" tabindex="2" placeholder="Password" required></Input>
+                    <form id="login-form" style={{ display: 'block'}} >
+                        <Input type="text" name="username" id="username" tabIndex="1" placeholder="Username" value={this.state.username} onChange={this.handleInputChange} required></Input>
+                        <Input type="password" name="password" id="password" tabIndex="2" placeholder="Password" value={this.state.password} onChange={this.handleInputChange} required></Input>
          
-                        <Input type="checkbox" tabindex="3" class="" name="remember" id="remember"></Input>
+                        <Input type="checkbox" tabIndex="3" className="" name="remember" id="remember"></Input>
                         <label for="remember">Remember Me</label>
                         <Row>
                           <Col size="sm-6 sm-offset-3">
                             <FormBtn 
-                              type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" 
-                              value="Log In" onClick={this.handleFormSubmit}>Log In
+                            type="submit" name="login-submit" id="login-submit" tabIndex="4" className="form-control btn btn-login" 
+                              value="Log In" onClick={this.handleLogin}>Log In
                             </FormBtn>
                           </Col>
                         </Row>
                   
                         <Row>
-                          <Col size="lg-12" class="text-center">
-                              <a href="" tabindex="5" class="forgot-password">Forgot Password?</a>
+                          <Col size="lg-12" className="text-center">
+                          <a href="" tabIndex="5" className="forgot-password">Forgot Password?</a>
                           </Col>
                         </Row>
                     </form>
 
                     {/* Register Form */}
 
-                    <form id="register-form" role="form" style={{display:'none'}}>
+                    <form id="register-form" style={{display:'none'}}>
                         <Input 
-                          type="text" name="username" id="username" tabindex="1" placeholder="Username" 
-                          value={this.state.author} onChange={this.handleInputChange} required>
+                        type="text" name="username" id="username" tabIndex="1" placeholder="Username" 
+                          value={this.state.username} onChange={this.handleInputChange} required>
                         </Input>
                         <Input 
-                          type="email" name="email" id="email" tabindex="1" placeholder="Email Address" 
-                          value={this.state.author} onChange={this.handleInputChange} required>
+                        type="email" name="email" id="email" tabIndex="1" placeholder="Email Address" 
+                          value={this.state.email} onChange={this.handleInputChange} required>
                         </Input>
-                        <Input type="password" name="password" id="password" tabindex="2" placeholder="Password" required></Input>
-                        <Input type="password" name="confirm-password" id="confirm-password" tabindex="2" placeholder="Confirm Password" required></Input>
+                        <Input type="password" name="password" id="password" tabIndex="2" placeholder="Password" 
+                           value={this.state.password} onChange={this.handleInputChange} required>
+                        </Input>
+                        <Input type="password" name="passwordConfirm" id="confirm-password" tabIndex="2" placeholder="Confirm Password" 
+                          value={this.state.passwordConfirm} onChange={this.handleInputChange} required>
+                        </Input>
                         <Row>
                           <Col size="sm-6 sm-offset-3">
                             <FormBtn 
-                              type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" 
-                              value="Register Now" onClick={this.handleFormSubmit}>Register
+                            type="submit" name="register-submit" id="register-submit" tabIndex="4" className="form-control btn btn-register" 
+                              value="Register Now" onClick={this.handleRegister}>Register
                             </FormBtn>
                           </Col>
                         </Row>
