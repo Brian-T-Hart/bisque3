@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import CustForm from "../components/CustForm";
 import DeleteBtn from "../components/DeleteBtn";
-import API from "../utils/API";
+import API from "../utils/custAPI";
 import { Input, TextArea, FormBtn } from "../components/Form";
-
+import CustTable from "../components/CustTable";
 import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
 import VerticalMenu from "./VerticalMenu";
@@ -42,7 +42,7 @@ const Customers = () =>
     </Col>
     {/* Table */}
     <Col size="md-8">
-      Table populates here
+      {/* <CustTable /> */}
     </Col>
   </Row>    
 

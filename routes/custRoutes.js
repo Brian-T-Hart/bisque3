@@ -13,7 +13,7 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all of the customers
-  app.get("/api/customers", function(req, res) {
+  app.get("/api/custs", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.customers.findAll({}).then(function(dbcustomers) {
       // We have access to the cals as an argument inside of the callback function
@@ -22,7 +22,8 @@ module.exports = function(app) {
   });
 
   // POST route for saving a new customer
-  app.post("/api/customers", function(req, res) {
+  app.post("/api/custs", function(req, res) {
+    console.log(req.body);
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property (req.body)
@@ -51,7 +52,7 @@ module.exports = function(app) {
 
   // DELETE route for deleting cals. We can get the id of the cals to be deleted from
   // req.params.id
-  app.delete("/api/customers/:id", function(req, res) {
+  app.delete("/api/custs/:id", function(req, res) {
     // We just have to specify which cals we want to destroy with "where"
     db.customers.destroy({
       where: {
@@ -64,7 +65,7 @@ module.exports = function(app) {
   });
 
   // PUT route for updating cals. We can get the updated cals data from req.body
-  app.put("/api/customers", function(req, res) {
+  app.put("/api/custs", function(req, res) {
 
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
