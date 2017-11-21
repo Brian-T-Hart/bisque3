@@ -29,15 +29,15 @@ module.exports = function(app) {
     // and complete property (req.body)
     db.customers.create({
       customer_id: req.body.customer_id,
-      customer_contact: req.body.customer_contact,
-      customer_company: req.body.customer_company,
-      customer_address: req.body.customer_address,
-      customer_phone: req.body.customer_phone,
-      customer_email: req.body.customer_email,
-      customer_rating: req.body.customer_rating,
-      customer_notes: req.body.customer_notes,
-      customer_visted: req.body.customer_visted,
-      customer_active: req.body.customer_active,
+      contactName: req.body.contactName,
+      company: req.body.company,
+      address: req.body.address,
+      phone: req.body.phone,
+      email: req.body.email,
+      rating: req.body.rating,
+      notes: req.body.notes,
+      dateVisted: req.body.dateVisted,
+      active: req.body.active,
       
     }).then(function(dbcustomers) {
       // We have access to the new cals as an argument inside of the callback function
@@ -71,7 +71,7 @@ module.exports = function(app) {
     // we use where to describe which objects we want to update
     db.customers.update({
         customer_id: req.body.customer_id,
-        customer_contact: req.body.customer_contact,
+        contactName: req.body.contactName,
         customer_company: req.body.customer_company,
         customer_address: req.body.customer_address,
         customer_phone: req.body.customer_phone,

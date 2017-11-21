@@ -3,7 +3,7 @@ export default {
    
       // Gets all custs
       getCusts: function() {
-        return axios.get("/api/custs");
+        return axios.get("customers/api/custs");
       },
       // Gets the custs with the given id
       getCust: function(id) {
@@ -18,3 +18,4 @@ export default {
         return axios.post("/api/custs", custData);
       }
     };      
+    

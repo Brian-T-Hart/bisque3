@@ -9,30 +9,30 @@ module.exports = function(sequelize, DataTypes) {
               len: [1,10]
             }
       },
-      customer_contact: {
+      contactName: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      customer_company: {
+      company: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      customer_address: {
+      address: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      customer_phone: {
+      phone: {
         type: DataTypes.STRING,
         allowNull: true,
       },
-      customer_email: {
+      email: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           isEmail: true,
         }
       },
-      customer_rating: {
+      rating: {
         type: DataTypes.INTEGER,
         allowNull: true,
         defaultValue: 0,
@@ -40,15 +40,15 @@ module.exports = function(sequelize, DataTypes) {
           len: [1,2]
         }
       },
-      customer_notes: {
+      notes: {
         type: DataTypes.STRING,
         allowNull: true,
       },
-      customer_visited: {
+      dateVisited: {
         type: DataTypes.STRING,
         allowNull: true,
       },
-      customer_active: {
+      active: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: true
