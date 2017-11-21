@@ -1,23 +1,221 @@
 html { 
   height: 100%; 
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 body {
-    min-height: 100%; 
+    height: 100%; 
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+    line-height: 1.2;
     position: relative; 
-    padding-bottom: 50px; /*Footer Height */
     background-attachment: fixed !important;
-    background: linear-gradient(to bottom right, #56B2BA 0%, #1fc8db 51%, #0BDD9C 100%);
+    background: linear-gradient(to bottom right, #0060DF 0%, #18ABFB 50%, #0BDD9C 100%);
+    /* background: linear-gradient(to bottom right, #56B2BA 0%, #1fc8db 51%, #0BDD9C 100%); */
     /* background-image: url("./img/FreeGreatPicture.com-685-background-color.jpg"); */
     color: rgb(56, 58, 66);
 }
 
 h1, h2 {
   color: #292A31;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.banner {
+/* Icons for Features Section */
+i.fa {
+  font-size: 36pt;
+  margin-top: 10px;
+  color: #0060DF;
+}
+
+a.fa {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  border: 2pt solid white;
+  transition: .5s;
+}
+
+a:hover {
+  transform: rotateY(360deg);
+  background-color: #0060DF;
+}
+
+a:hover .fa {
+  color: white;
+}
+
+/* .container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+} */
+
+/* Video */
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* .bg-filter {
+  z-index: -99;
+  opacity: 0.3;
+  background: -webkit-linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF  100%);
+  background: -moz-linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF  100%);
+  background: -o-linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF  100%);
+  background: linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF 100%);
+} */
+/* .intro-text {
+  font-family: "Open Sans";
+  width: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: white;
+} */
+
+
+.glyphicon-feature {
+  color: #0060DF;
+  font-size: 60px;
+}
+
+.demo-gif {
+  vertical-align: middle;
+  height:auto;
+  width:100%;
+  padding: 10px;
+  /* border: 1px solid #292A31; */
+}
+
+
+/* Parallax Effect */
+section.parallax {
+  position: relative;
+  width: 99vw;
+  left:-1%;
+  height: auto;
+  padding: 8% 0px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* /Parallax Overlay */
+section.parallax:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  /* background-color: rgba(0, 0, 0, 0.30); */
+  background: #0060DF;
+  opacity: 0.2;
+  z-index: 100;
+  content:'';
+}
+
+section.parallax h1, h2, h3 {
+  color: #fff;
+  position: relative;
+  z-index: 101;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+section.parallax h1 {
+  font-size: 48px;
+}
+
+section.parallax h2 {
+  font-size: 36px;
+}
+
+section.parallax h3 {
+  font-size: 24px;
+}
+
+section.parallax-1 {
+  background-image: url("img/tools.png");
+  /* background-position: 60% 100%; */
+}
+
+section.parallax-2 {
+  background-image: url("img/thumb-up.jpg");
+  /* background-position: 60% 100%; */
+}
+
+section.parallax-3 {
+  background-image: url("img/team.jpg");
+  /* background-position: 60% 100%; */
+}
+
+/* Team */
+.team {
+  line-height: 0.7;
+}
+
+.aboutImg {
+  width: 100px;
+  padding: 10px;
+}
+
+/* Private Pages After Logging In */
+
+.private {
+  background: white;
+  min-height: 400px;
+  color:black;
+  border-radius: 5px;
+  border: 1px solid #0060DF;
+  padding: 20px;
+  margin-bottom: 20px; 
+  opacity: .9;
+  z-index: -1;
+}
+
+#product-form {
+  /* border-radius: 5px; */
+  border: 1.5px solid #0060DF;
+  padding: 20px; 
+  margin: auto; 
   width: 100%;
   height: auto;
 }
 
+.product-table {
+  /* border-radius: 10px; */
+  border: 2px solid #0060DF;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.product-table, th, td {
+  padding: 10px;
+}

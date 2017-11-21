@@ -2,20 +2,32 @@ var passport = require('passport');
 var bcrypt = require('bcrypt-nodejs');
 const LocalStrategy = require('passport-local').Strategy
 var db = require('./models');
+const config = require('./config');
+const jwt = require('jsonwebtoken');
 
 const authenticate = (username, password, done) =>{
     db.reps.find({
         where:{
-          rep_userName: username,
+          rep_userName: username
         }
       }).then(rep => {
         if (!rep || !bcrypt.compareSync(password, rep.rep_password)) {
           console.log("failed to login, but sucess in getting this far.")
             return done(null, false, {message: 'invalid username/or and password combination'});
         }
-        done(null, rep);
+        const payload = {
+            sub: rep.rep_id
+        };
+
+        // create a token string
+        const token = jwt.sign(payload, config.jwtSecret);
+        const data = {
+            username: rep.rep_userName,
+            token: token
+        };
+        return done(null, data);
       })
-      .catch(done) // pass the error back
+      .catch((err)=> done(null,err)) // pass the error back
 }
 
 const register = (req, email, password, done) => {
@@ -46,18 +58,18 @@ const register = (req, email, password, done) => {
 passport.use(new LocalStrategy(authenticate));
 passport.use('local-register', new LocalStrategy({passReqToCallback: true}, register));
 
-passport.serializeUser((reps, done) => {
-    done(null, reps.rep_id)
-});
+// passport.serializeUser((reps, done) => {
+//     done(null, reps.rep_id)
+// });
 
-passport.deserializeUser((id, done) => {
-    db.reps.find({
-        where:{
-            rep_id: id,
-        }
-      })
-      .then(rep => {
-          done(null, rep)
-      })
-      .catch(done)
-})
+// passport.deserializeUser((id, done) => {
+//     db.reps.find({
+//         where:{
+//             rep_id: id,
+//         }
+//       })
+//       .then(rep => {
+//           done(null, rep)
+//       })
+//       .catch(done)
+// })
