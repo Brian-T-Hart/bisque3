@@ -7,10 +7,13 @@ import Nav from "./Nav";
 import VerticalMenu from "./VerticalMenu";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
+import Chart from './Chart';
 
 const Dashboard = () =>
 
 <Container fluid>
+
+
   {/* Row #1 */}
   <Row fluid>
     <Col size="md-12">
@@ -28,10 +31,12 @@ const Dashboard = () =>
         <VerticalMenu />
       </Col>
 
+      
+
       {/* Dashboard Content */}
       <Col size="md-10">
         <div className='private text-center'>
-          <h4>Dashboard Placeholder Section</h4>
+          <Chart/>
         </div>
       </Col>
     </Row>

@@ -13,7 +13,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import General from "./styles/General.css";
-
+import ReactDOM from 'react-dom';
+import Chart from './components/Chart';
 const App = () =>
   <Router>
     <div>

@@ -29,6 +29,7 @@ const Customers = () =>
       <Col size="md-10">
         <div className='private text-center'>
           <h4>Customers Placeholder Section</h4>
+          
         </div>
       </Col>
   </Row>
