@@ -32,6 +32,7 @@ const Customers = () =>
     {/* Dashboard Content */}
       <Col size="md-10">
         <div className='private text-center'>
+          <CustForm />
           <h4>Customers Placeholder Section</h4>
         </div>
       </Col>

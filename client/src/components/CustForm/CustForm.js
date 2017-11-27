@@ -50,7 +50,7 @@ class Form extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (this.state.contactName && this.state.company) {
+    //if (this.state.contactName && this.state.company) {
       API.saveCust({
         contactName: this.state.contactName,
         company: this.state.company,
@@ -64,7 +64,7 @@ class Form extends Component {
       })
       .then(res => this.loadCusts())
       .catch(err => console.log(err));
-    }
+    //}
   };
   
   render () {
