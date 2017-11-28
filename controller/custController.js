@@ -4,16 +4,18 @@
 
 // Dependencies
 // =============================================================
+var express = require("express");
 
 // Requiring our models
 const db = require("../models");
+var router = express.Router();
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+// module.exports = function(router) {
 
   // GET route for getting all of the customers
-  app.get("/customers", function(req, res) {
+  router.get("/", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.customers.findAll({}).then(function(dbcustomers) {
       // We have access to the cals as an argument inside of the callback function
@@ -22,7 +24,7 @@ module.exports = function(app) {
   });
 
   // POST route for saving a new customer
-  app.post("/customers", function(req, res) {
+  router.post("/", function(req, res) {
     console.log(req.body);
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text
@@ -46,14 +48,14 @@ module.exports = function(app) {
     })
     .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown
-      // We can "catch" the error to prCal it from being "thrown", which could crash our node app
+      // We can "catch" the error to prCal it from being "thrown", which could crash our node router
       res.json(err);
     });
   });
 
   // DELETE route for deleting cals. We can get the id of the cals to be deleted from
   // req.params.id
-  app.delete("/customers/:id", function(req, res) {
+  router.delete("/:id", function(req, res) {
     // We just have to specify which cals we want to destroy with "where"
     db.customers.destroy({
       where: {
@@ -66,7 +68,7 @@ module.exports = function(app) {
   });
 
   // PUT route for updating cals. We can get the updated cals data from req.body
-  app.put("/customers", function(req, res) {
+  router.put("/", function(req, res) {
 
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
@@ -90,8 +92,9 @@ module.exports = function(app) {
     })
     .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown
-      // We can "catch" the error to prevent it from being "thrown", which could crash our node app
+      // We can "catch" the error to prevent it from being "thrown", which could crash our node router
       res.json(err);
     });
   });
-};
+// };
+module.exports = router
