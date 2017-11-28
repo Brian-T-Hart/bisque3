@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import CustForm from "../components/CustForm";
 import DeleteBtn from "../components/DeleteBtn";
-import API from "../utils/custAPI";
+import CustAPI from "../utils/custAPI";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
 import { List, ListItem } from "./List";
-import DeleteBtn from "./DeleteBtn";
 import VerticalMenu from "./VerticalMenu";
 import API from "../utils/API";
 
@@ -28,19 +27,6 @@ class Customers extends Component {
       .catch(err => console.log(err));
   };
 
-<<<<<<< HEAD
-    {/* Dashboard Content */}
-      <Col size="md-10">
-        <div className='private text-center'>
-          <CustForm />
-          <h4>Customers Placeholder Section</h4>
-        </div>
-      </Col>
-  </Row>
- 
-
-</Container>
-=======
   render() {
     return (
       <Container fluid>
@@ -89,9 +75,14 @@ class Customers extends Component {
               </div>
             </Col>
         </Row>
+        {/* Row #3 */}
+        <Row fluid>
+          <Col size="md-12 sm-12">
+                <CustForm />
+          </Col>
+        </Row>
       </Container>
     )
   }};
->>>>>>> master
 
 export default Customers;

@@ -10,15 +10,15 @@ import API from "../../utils/custAPI.js";
 class Form extends Component {
   state = {
     customers: [],
-    contactName: '',
-    company: '',
-    email: '', 
-    address: '',
-    phone: '',
-    rating:'',
-    notes: '',
-    dateVisited:'',
-    active: ''
+    customer_contact: '',
+    customer_company: '',
+    customer_email: '', 
+    customer_address: '',
+    customer_phone: '',
+    customer_rating:'',
+    customer_notes: '',
+    customer_visited:'',
+    customer_active: ''
   };
 
   componentsDidMount() {
@@ -28,9 +28,9 @@ class Form extends Component {
   loadCusts = () => {
     API.getCusts()
     .then(res =>
-    this.setState({ customers: res.data, contactName: "", 
-    company: "", email: "", address: "", phone: "", rating: "",
-    notes: "", dateVisited: "", active: ""})
+    this.setState({ customers: res.data, customer_contact: "", 
+    customer_company: "", customer_email: "", customer_address: "", customer_phone: "", customer_rating: "",
+    customer_notes: "", customer_visited: "", customer_active: ""})
   )
   .catch(err => console.log(err));
   };
@@ -50,17 +50,18 @@ class Form extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    //if (this.state.contactName && this.state.company) {
+    //if (this.state.customer_contact && this.state.customer_company) {
       API.saveCust({
-        contactName: this.state.contactName,
-        company: this.state.company,
-        email: this.state.email, 
-        address: this.state.address,
-        phone: this.state.phone,
-        rating: this.state.rating,
-        notes: this.state.notes,
-        dateVisited: this.state.dateVisited,
-        active: this.state.active
+        customer_contact: this.state.customer_contact,
+        customer_company: this.state.customer_company,
+        customer_email: this.state.customer_email, 
+        customer_address: this.state.customer_address,
+        customer_phone: this.state.customer_phone,
+        customer_rating: this.state.customer_rating,
+        customer_notes: this.state.customer_notes,
+        customer_visited: this.state.customer_visited,
+        customer_active: this.state.customer_active,
+        repRepId: localStorage.getItem('rep_id')
       })
       .then(res => this.loadCusts())
       .catch(err => console.log(err));
@@ -74,25 +75,25 @@ class Form extends Component {
         <Col size="md-6">
           <form>
             <Input
-              value={this.state.contactName}
+              value={this.state.customer_contact}
               onChange={this.handleInputChange}
-              name="contactName"
+              name="customer_contact"
               placeholder="Contact Name (required)"
             />
             <Input
-              value={this.state.company}
+              value={this.state.customer_company}
               onChange={this.handleInputChange}
-              name="company"
+              name="customer_company"
               placeholder="Company Name (required)"
             />
             <TextArea
-              value={this.state.email}
+              value={this.state.customer_email}
               onChange={this.handleInputChange}
-              name="email"
-              placeholder="Email (required)"
+              name="customer_email"
+              placeholder="customer_email (required)"
             />
             <FormBtn
-              disabled={!(this.state.contactName && this.state.company)}
+              disabled={!(this.state.customer_contact && this.state.customer_company)}
               onClick={this.handleFormSubmit}
             >
               Submit Customer
@@ -107,7 +108,7 @@ class Form extends Component {
                   <ListItem key={customer._id}>
                     <a href={"/customers/" + customer._id}>
                       <strong>
-                        {customer.contactName} by {customer.company}
+                        {customer.customer_contact} by {customer.customer_company}
                       </strong>
                     </a>
                     <DeleteBtn onClick={() => this.deleteCust(customer._id)} />
