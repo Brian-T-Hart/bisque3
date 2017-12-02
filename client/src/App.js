@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Main from "./components/Main.js";
 import Customers from "./components/Customers";
+import Sales from "./components/Sales";
 import Products from "./components/Products";
 import Dashboard from "./components/Dashboard";
 import Schedule from "./components/Schedule";
@@ -13,7 +14,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import General from "./styles/General.css";
-
+import Salesform from "./components/Salesform";
 const App = () =>
   <Router>
     <div id="container">
@@ -23,11 +24,13 @@ const App = () =>
             <Route exact path="/" component={Main} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/customers" component={Customers} />
+            <Route exact path="/sales" component={Sales} />
             <Route exact path="/products" component={Products} />
             <Route exact path="/schedule" component={Schedule} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/salesform" component={Salesform} />
             <Route component={NoMatch} />
           </Switch>
         <Footer />

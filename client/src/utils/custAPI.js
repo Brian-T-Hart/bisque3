@@ -3,7 +3,7 @@ export default {
    
       // Gets all custs
       getCusts: function() {
-        return axios.get("/customers");
+        return axios.post("/customers");
       },
       // Gets the custs with the given id
       getCustById: function(id) {
@@ -14,7 +14,7 @@ export default {
         return axios.delete("/customers/" + id);
       },
       // Saves a cust to the database
-      saveCust: function(custData) {
+      saveCusts: function(custData) {
         return axios.post("/customers", custData);
       }
     };      
