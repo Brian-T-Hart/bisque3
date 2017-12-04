@@ -1,44 +1,41 @@
 import React, { Component } from "react";
-import { Input, FormBtn } from "./Form";
+import { Input, FormBtn } from "./Form";		
 import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
-import { List, ListItem } from "./List";
-import DeleteBtn from "./DeleteBtn";
+import { List, ListItem } from "./List";		
+import DeleteBtn from "./DeleteBtn";		
 import VerticalMenu from "./VerticalMenu";
 import CustTable from "./CustTable";
 import CustForm from "./CustForm";
 
-  const Customers = () =>
-      <Container fluid>
-        {/* Row #1 */}
-        <Row fluid>
-          <Col size="md-12 sm-12">
-            <Jumbotron>
-              <h1><strong>Customers</strong></h1>
-              <p>Quickly see all the customers you need to visit. </p>
-            </Jumbotron>
-          </Col>
-        </Row>
+const Customers = () =>
+  <div>
+      {/* Row #1 */}
+    <Row>
+      <Col size="md-12 sm-12">
+        <Jumbotron>
+          <h1><strong>Customers</strong></h1>
+          <p>Quickly see all the customers in the database. </p>
+        </Jumbotron>
+      </Col>
+    </Row>
 
-          {/* Row #2 */}
-          <Row fluid>
-            {/* Vertical Menu */}
-            <Col size="md-2 sm-2">
-              <VerticalMenu />
-            </Col>
+    {/* Row #2 */}
+    <Row>
+    <div className='private text-center'>
+      <Col size="md-12 sm-12">
+        <CustForm />
+      </Col>
+    </div>       
+    </Row> 
 
-          {/* Dashboard Content */}
-          <Col size="md-12 sm-12">
-            <CustTable />
-          </Col>
-        </Row>
-          {/* Row #3 */}
-        <Row fluid>
-          <Col size="md-12 sm-12">
-            <CustForm />
-          </Col>
-        </Row>      
-      </Container>
+    <Row>
+      {/* Customers Content */}
+        <Col size="md-12 sm-12">
+          <CustTable />
+        </Col>
+    </Row>
 
+  </div>
 
 export default Customers;
