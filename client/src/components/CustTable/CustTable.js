@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import API from "../../utils/API";
+import CustAPI from "../../utils/custAPI";
 import PubSub from 'pubsub-js';
+import DeleteBtn from "../../components/DeleteBtn";
 class Customers extends Component {
     state = {
         customers: []
@@ -32,6 +34,13 @@ class Customers extends Component {
         )
         .catch(err => console.log(err));
     };
+
+    deleteCust = id => {
+        CustAPI.deleteCust(id)
+          .then(res => this.loadCustomers())
+          .catch(err => console.log(err));
+      };
+    
     render() {
         return (
             <Container fluid>
@@ -54,6 +63,7 @@ class Customers extends Component {
                                 {customer.customer_email}
                                 </strong>
                             </a>
+                            <DeleteBtn onClick={() => this.deleteCust(customer.customer_id)} />
                                 {/* <DeleteBtn /> */}
                                 </ListItem>
                             ))}

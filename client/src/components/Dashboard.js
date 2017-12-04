@@ -1,19 +1,23 @@
 import React, { Component } from "react";
-import DeleteBtn from "./DeleteBtn";
-import { Input, FormBtn } from "./Form";
+import DeleteBtn from "./DeleteBtn";		
+import { Input, FormBtn } from "./Form";		
 import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
-import Nav from "./Nav";
+import Nav from "./Nav";		
 import VerticalMenu from "./VerticalMenu";
-import API from "../utils/API";
+import API from "../utils/API";		
 import { Link } from "react-router-dom";
 import Chart from './Chart';
 
 const Dashboard = () =>
 
+<<<<<<< HEAD
 <Container fluid>
 
 
+=======
+<div>
+>>>>>>> master
   {/* Row #1 */}
   <Row fluid>
     <Col size="md-12">
@@ -24,6 +28,7 @@ const Dashboard = () =>
     </Col>
   </Row>
 
+<<<<<<< HEAD
     {/* Row #2 */}
     <Row fluid>
       {/* Vertical Menu */}
@@ -35,11 +40,16 @@ const Dashboard = () =>
 
       {/* Dashboard Content */}
       <Col size="md-10">
+=======
+      {/* Dashboard Content */}
+  <Row>
+      <Col size="md-12 sm-12">
+>>>>>>> master
         <div className='private text-center'>
           <Chart/>
         </div>
       </Col>
     </Row>
-  </Container>
+</div>
 
 export default Dashboard;
