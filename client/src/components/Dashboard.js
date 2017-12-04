@@ -11,13 +11,7 @@ import Chart from './Chart';
 
 const Dashboard = () =>
 
-<<<<<<< HEAD
-<Container fluid>
-
-
-=======
 <div>
->>>>>>> master
   {/* Row #1 */}
   <Row fluid>
     <Col size="md-12">
@@ -28,23 +22,9 @@ const Dashboard = () =>
     </Col>
   </Row>
 
-<<<<<<< HEAD
-    {/* Row #2 */}
-    <Row fluid>
-      {/* Vertical Menu */}
-      <Col size="md-2">
-        <VerticalMenu />
-      </Col>
-
-      
-
-      {/* Dashboard Content */}
-      <Col size="md-10">
-=======
       {/* Dashboard Content */}
   <Row>
       <Col size="md-12 sm-12">
->>>>>>> master
         <div className='private text-center'>
           <Chart/>
         </div>
