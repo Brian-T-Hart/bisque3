@@ -2,8 +2,8 @@ import axios from "axios";
 export default {
    
       // Gets all custs
-      getCusts: function() {
-        return axios.post("/customers");
+      getCusts: function(id) {
+        return axios.post("/customers/" + id);
       },
       // Gets the custs with the given id
       getCustById: function(id) {
@@ -16,6 +16,10 @@ export default {
       // Saves a cust to the database
       saveCusts: function(custData) {
         return axios.post("/customers", custData);
-      }
+      },
+
+      // getCustomers: function(custData) {
+      //   return axios.post("/Sales", custData);
+      // }
     };      
     
