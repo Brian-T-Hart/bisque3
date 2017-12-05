@@ -6,14 +6,6 @@ import API from "../../utils/API";
 import decode from 'jwt-decode';
 
 
-// Code Reference from https://bootsnipp.com/snippets/qrmK0
-
-// const Login = () =>
-
-//   <p>Login/Register Placeholder. Will use this code example reference from https://bootsnipp.com/snippets/qrmK0
-//   </p>
-
-// ============ Modified Login Component with Class ==============
 class Login extends Component {
   state = {
     username: "",
@@ -53,6 +45,7 @@ class Login extends Component {
           console.log("res..Login.js: ", res.data.token, this.props);
           // set token to local storage
           localStorage.setItem('token', res.data.token);
+          localStorage.setItem('username', res.data.username);
           // get dashboard component
           this.props.history.replace('/private');
           // decode token
