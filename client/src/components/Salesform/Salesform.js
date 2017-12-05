@@ -14,7 +14,7 @@ class Salesform extends Component {
    }
 
    loadCustomers = () => {
-     console.log('loadcustomers.. sales form js');
+     console.log('loadcustomers.. salesform js');
 
      API.getCusts({
        id: localStorage.getItem('rep_id'),

@@ -2,18 +2,29 @@ import React, { Component } from "react";
 import { Input, FormBtn } from "../Form";
 import { Col, Row, Container } from "../Grid";
 import API from "../../utils/API";
+import DeleteBtn from "../DeleteBtn";
+import Jumbotron from "../Jumbotron";
+import Nav from "../Nav";
+import VerticalMenu from "../VerticalMenu";
+// import { Link } from "react-router-dom";
 
 
 class Sales extends Component {
-  //  componentDidMount() {
-  //   $('.mask-money').mask('00.00', {
-  //     reverse: false
-  //   });
-  //  }
+  
   
     render(){
       return (
         <Container fluid>
+        {/* Row #1 */}
+  <Row fluid>
+    <Col size="md-12 sm-12">
+      <Jumbotron>
+        <h1><strong>Sales Form</strong></h1>
+        <p>Quickly see the sales and inventory levels. </p>
+      </Jumbotron>
+    </Col>
+  </Row>
+
           <Row fluid>
             <Col size="md-6 md-offset-3 sm-6 sm-offset-3">
             <form>  
