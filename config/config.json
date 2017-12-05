@@ -1,8 +1,12 @@
 {
   "development": {
+<<<<<<< HEAD
 
    
     "username": "muddavugga",
+=======
+    "username": "Muddavugga",
+>>>>>>> master
     "password": "Posies23",
     "database": "project3",
     "host": "127.0.0.1",
