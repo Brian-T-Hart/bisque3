@@ -6,8 +6,10 @@ import Jumbotron from "./Jumbotron";
 import Nav from "./Nav";		
 import VerticalMenu from "./VerticalMenu";
 import CustSchedule from "./CustSchedule";
-import CustMap from "./CustMap";
+// import CustMap from "./CustMap";
 import CalForm from "./CalForm";
+import Calendar from "./Calendar";
+
 
 
 const Schedule = () =>
@@ -42,7 +44,8 @@ const Schedule = () =>
       <Row fluid>
           <Col size="md-10 sm-10">
               <div className='private text-center'>
-              <CustMap />
+              {/* <CustMap /> */}
+              <Calendar />
               </div>
           </Col>
       </Row>

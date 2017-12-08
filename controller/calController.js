@@ -9,7 +9,7 @@ var router = express.Router();
 // route to get all the events on the calendar
 router.get('/:id', (req, res, next) =>{
   // find all events in the calendar table
-    db.calendar.findAll({
+    db.calendars.findAll({
         include:[{
             model: db.reps,
             where:{
@@ -27,12 +27,13 @@ router.get('/:id', (req, res, next) =>{
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property 
     console.log("req body..calController ", req.body);
-    db.calendar.create({
+    db.calendars.create({
       // customer_id: req.body.customer_id
       event_title: req.body.event_title,
       start_time: req.body.start_time,
       end_time: req.body.end_time,
-      note: req.body.note
+      note: req.body.note,
+      repRepId: req.body.repRepId,
       
     }).then(function(response) {
       console.log("it posted", response);
@@ -50,12 +51,12 @@ router.get('/:id', (req, res, next) =>{
   // req.params.id
   router.delete("/:id", function(req, res) {
     // We just have to specify which cals we want to destroy with "where"
-    db.calendar.destroy({
+    db.calendars.destroy({
       where: {
         calendar_id: req.params.calendar_id
       }
-    }).then(function(dbcalendar) {
-      res.json(dbcalendar);
+    }).then(function(dbcalendars) {
+      res.json(dbcalendars);
     });
 
   });
@@ -65,19 +66,18 @@ router.get('/:id', (req, res, next) =>{
 
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
-    db.calendar.update({
-        calendar_id: req.body.calendar_id,
-        event_title: req.body.event_title,
-        start_time: req.body.start_time,
-        end_time: req.body.end_time,
-        note: req.body.note
+    db.calendars.update({
+      event_title: req.body.event_title,
+      start_time: req.body.start_time,
+      end_time: req.body.end_time,
+      note: req.body.note
        
     }, {
       where: {
         calendar_id: req.body.calendar_id
       }
-    }).then(function(dbcalendar) {
-      res.json(dbcalendar);
+    }).then(function(dbcalendars) {
+      res.json(dbcalendars);
     })
     .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown
