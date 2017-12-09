@@ -81,7 +81,7 @@ class CustMap extends Component {
         <InfoWindow
           lat={customer_address.lat}
           lng={customer_address.lng}
-          content={'Hello, React :)'}
+          content={'Customers Will Load Here'}
           onCloseClick={this.onCloseClick} />
         <Circle
           lat={customer_address.lat}
