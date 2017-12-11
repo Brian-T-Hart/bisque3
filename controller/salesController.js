@@ -1,5 +1,7 @@
 // Dependencies
 var express = require("express");
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 
 // Requiring our models
 const db = require("../models");
@@ -22,12 +24,67 @@ router.post('/', (req, res, next) => {
 });
 
 // route to get customers from a particular rep
-router.post('/chart', (req, res, next) => {
+router.post('/chart/week1', (req, res, next) => {
     // if(req.isAuthenticated()){
     console.log("req body..getChartData ", req.body);
-    db.sales.sum('sale_purchasePrice',{
+    db.sales.sum('sale_purchasePrice', {
         where: {
-            repRepId: req.body.repRepId
+            repRepId: req.body.repRepId,
+            createdAt: {
+                [Op.lt]: new Date(),
+                [Op.gte]: new Date(new Date() - 7 * 24 * 60 * 60 * 1000)
+            }
+            }
+    }).then(function (results) {
+        // console.log(results);
+        res.json(results);
+    }).catch(err => { res.json(err) });
+});
+
+router.post('/chart/week2', (req, res, next) => {
+    // if(req.isAuthenticated()){
+    console.log("req body..getChartData2 ", req.body);
+    db.sales.sum('sale_purchasePrice', {
+        where: {
+            repRepId: req.body.repRepId,
+            createdAt: {
+                [Op.lt]: new Date(new Date() - 7 * 24 * 60 * 60 * 1000),
+                [Op.gte]: new Date(new Date() - 14 * 24 * 60 * 60 * 1000)
+            }
+        }
+    }).then(function (results) {
+        // console.log(results);
+        res.json(results);
+    }).catch(err => { res.json(err) });
+});
+
+router.post('/chart/week3', (req, res, next) => {
+    // if(req.isAuthenticated()){
+    console.log("req body..getChartData3 ", req.body);
+    db.sales.sum('sale_purchasePrice', {
+        where: {
+            repRepId: req.body.repRepId,
+            createdAt: {
+                [Op.lt]: new Date(new Date() - 14 * 24 * 60 * 60 * 1000),
+                [Op.gt]: new Date(new Date() - 21 * 24 * 60 * 60 * 1000)
+            }
+        }
+    }).then(function (results) {
+        // console.log(results);
+        res.json(results);
+    }).catch(err => { res.json(err) });
+});
+
+router.post('/chart/week4', (req, res, next) => {
+    // if(req.isAuthenticated()){
+    console.log("req body..getChartData4 ", req.body);
+    db.sales.sum('sale_purchasePrice', {
+        where: {
+            repRepId: req.body.repRepId,
+            createdAt: {
+                [Op.lt]: new Date(new Date() - 21 * 24 * 60 * 60 * 1000),
+                [Op.gt]: new Date(new Date() - 28 * 24 * 60 * 60 * 1000)
+            }
         }
     }).then(function (results) {
         // console.log(results);
