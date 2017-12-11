@@ -34,7 +34,6 @@ class Chart extends Component {
                 chartData1 = localStorage.getItem('chartData1');
                 console.log('chartData1..Chart.js ', chartData1);
             })
-            // .catch(err => console.log(err));
         API.getChartData2({
             repRepId: localStorage.getItem('rep_id')
         })
@@ -62,7 +61,8 @@ class Chart extends Component {
                 chartData4 = localStorage.getItem('chartData4');
                 console.log('chartData4..Chart.js ', chartData4);
                 this.getChartData()
-            })    
+            })
+            .catch(err => console.log(err));
         }
 
     //  constructor is a function that will run when initialized
