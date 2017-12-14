@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import {Bar, Line, Pie} from 'react-chartjs-2';
 import API from '../../utils/salesAPI';
+import './Chart.css';
 var chartData1 = 0;
 var chartData2 = 0;
 var chartData3 = 0;
