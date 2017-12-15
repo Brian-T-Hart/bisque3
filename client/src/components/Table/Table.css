@@ -56,16 +56,6 @@ table>tbody>tr>td, table>tbody>tr>th, table>tfoot>tr>td, table>tfoot>tr>th, tabl
 	line-height: 32px;
 }
 
-/* .odd {
-	background: #ffffff;
-	color: #000;
-}
-
-.even {
-	background: #efefef;
-	color: #000;
-} */
-
 .table_scrollbar{
 	height: 612px;
 	overflow-y: scroll;
