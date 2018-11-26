@@ -16,7 +16,7 @@ import Login from "./Login";
     render() {
         return (
         <div>
-            {/* Video Section */}
+            {/* Hero Video Section */}
 
             <section className="parallax">  
                 <div className="hero">
@@ -33,13 +33,13 @@ import Login from "./Login";
                 </div>                
             </section>
 
-            {/* Features Section */}
+            {/* Why Section */}
             <section className="parallax parallax-1" id="why">
                 <div className="container section-heading wow fadeInUp" id="why-header">
                     <Row>
                         <Col size="xs-12">
                             <h1>Why Us?</h1>
-                            <h3>Our Competitive Advantages</h3>
+                            <h2>Our Competitive Advantages</h2>
                         </Col>
                     </Row>
                 </div>
@@ -50,27 +50,33 @@ import Login from "./Login";
                 <div className="container content wow fadeInUp">
                     <center>
                         <Row>
-                            <Col size="xs-12 sm-4 sm-offset-2">
-                                <a className="fa"><i className="fa fa-mobile" aria-hidden="true"></i></a>
-                                <h3>Responsive <br />Design</h3>
-                                <p>Use it on your computer, mobile phone, or tablet.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-mobile" aria-hidden="true"></i></a>
+                                    <h3>Responsive <br />Design</h3>
+                                    <p>Use it on your computers, tablets, and on phones.</p>
+                                </div>
                             </Col>
-                            <Col size="xs-12 sm-4">
-                                <a className="fa"><i className="fa fa-users" aria-hidden="true"></i></a>
-                                <h3>Team Info <br />Sharing</h3>
-                                <p>Users from the same team or company can share universal information such as product inventory.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-users" aria-hidden="true"></i></a>
+                                    <h3>Information <br />Sharing</h3>
+                                    <p>Share information such as product inventory within the team.</p>
+                                </div>
                             </Col>
-                        </Row>
-                        <Row>
-                            <Col size="xs-12 sm-4 sm-offset-2">
-                                <a className="fa"><i className="fa fa-cloud" aria-hidden="true"></i></a>
-                                <h3>Cloud</h3>
-                                <p>No need to install software. <br />Easily access all your data anywhere with Internet connection.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-cloud" aria-hidden="true"></i></a>
+                                    <h3>No Software <br /> Needed</h3>
+                                    <p>Easily access all your data anywhere with Internet connection.</p>
+                                </div>
                             </Col>
-                            <Col size="xs-12 sm-4">
-                                <a className="fa"><i className="fa fa-lock" aria-hidden="true"></i></a>
-                                <h3>Secure</h3>
-                                <p>Your data is secure with our technology.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-lock" aria-hidden="true"></i></a>
+                                    <h3>Secure<br />User Data</h3>
+                                    <p>Your data is secure with our technology.</p>
+                                </div>
                             </Col>
                         </Row>
                     </center>
@@ -83,7 +89,7 @@ import Login from "./Login";
                     <Row>
                         <Col size="xs-12">
                             <h1>Features</h1>
-                            <h3>4 Ways We Can Make Your Life Easier. </h3>
+                            <h2>4 Ways We Can Make Your Life Easier</h2>
                         </Col>
                     </Row>
                 </div>  
@@ -125,7 +131,7 @@ import Login from "./Login";
                     <Row>
                         <Col size="xs-12">
                             <h1>Testimonials</h1>
-                            <h3>what our clients are saying</h3>
+                            <h2>What Our Clients Are Saying</h2>
                         </Col>
                     </Row>                    
                 </div>
