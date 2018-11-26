@@ -18,32 +18,36 @@ import Login from "./Login";
         <div>
             {/* Video Section */}
 
-            <section className="parallax" style={{ 'min-height': '100vh' }}>
-                <section className="container">
-                    <div className="video-background">
-                        <div className="video-foreground">
-                        <iframe src="https://www.youtube.com/embed/_2un4VAfVow?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=_2un4VAfVow" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
+            <section className="parallax">  
+                <div className="hero">
+                    <div className="hero-overlay animated bounceInUp">
+                        <h1 style= {{'font-size':'120px', color:'#0060DF'}}>Goal Post</h1>
+                        <h1>CRM System <br />for Busy Salespeople </h1>
                     </div>
-                </section>
-                
-                <section className="content">
-                    <div className="intro animated bounceInUp">
-                        <h1 style= {{'font-size':'80px', color:'#0060DF'}}>Goal Post</h1>
-                        <h2>On-the-go sales toolbox <br />for busy salespeople </h2>
-                    </div>
-                </section>
+                    <video width="100%" height="auto" autoPlay loop muted
+                        poster={require('../styles/img/business_meeting.jpg')}>
+                        <source src={require('../styles/img/business-meeting-720HD.mp4')} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+            
+                </div>                
             </section>
 
             {/* Features Section */}
-            <section className="parallax parallax-1" id="why" style={{'min-height':'40vh'}}>
-                <div className="container" id="why-header">
-                    <h1>Why Us?</h1>
-                    <h3>Our Competitive Advantages</h3>
+            <section className="parallax parallax-1" id="why">
+                <div className="container section-heading" id="why-header">
+                    <Row>
+                        <Col size="xs-12">
+                            <h1>Why Us?</h1>
+                            <h3>Our Competitive Advantages</h3>
+                        </Col>
+                    </Row>
                 </div>
             </section>
-            <section className="content" id="why-content">
-                <div className="container animated slideInUp" style={{ 'min-height': '50vh', 'paddingTop': '55px' }}>
+
+            {/* Why Section */}
+            <section id="why-content">
+                <div className="container content animated slideInUp">
                     <center>
                         <Row>
                             <Col size="md-3 sm-3">
@@ -72,15 +76,19 @@ import Login from "./Login";
             </section>
 
             {/* Features Section */}
-            <section className="parallax parallax-2" id="features" style={{ 'min-height': '40vh' }}>
-                <div className="container">
-                    <h1>Features</h1>
-                    <h3>4 Ways We Can Make Your Life Easier. </h3>
-                    <h5 style={{ 'color':'#ED4C37','text-decoration': 'underline', 'text-underline-position': 'under'}}>Click on icons below for live demo.</h5>
-                </div>
+            <section className="parallax parallax-2" id="features">
+                <div className="container section-heading">
+                    <Row>
+                        <Col size="xs-12">
+                            <h1>Features</h1>
+                            <h3>4 Ways We Can Make Your Life Easier. </h3>
+                            <h5 style={{ 'color':'#ED4C37','text-decoration': 'underline', 'text-underline-position': 'under'}}>Click on icons below for live demo.</h5>
+                        </Col>
+                    </Row>
+                </div>  
             </section>
-            <section className="content" id="features-content">
-                <div className="container" style={{ 'min-height': '50vh', 'paddingTop': '55px' }}>
+            <section id="features-content">
+                <div className="container content">
                     <center>
                         <Row>
                             <Col size="md-3 sm-3">
@@ -108,17 +116,20 @@ import Login from "./Login";
                 </div>
             </section>
 
-
             {/* Testimonials Section */}
-            <section className="parallax parallax-4" id="testimonials" style={{'min-height':'40vh'}}>
-                <div className="container">
-                    <h1>Testimonials</h1>
-                    <h3>what our clients are saying</h3>
+            <section className="parallax parallax-4" id="testimonials">
+                <div className="container section-heading">
+                    <Row>
+                        <Col size="xs-12">
+                            <h1>Testimonials</h1>
+                            <h3>what our clients are saying</h3>
+                        </Col>
+                    </Row>                    
                 </div>
             </section>
-            <section className="content" style={{ 'min-height': '50vh', 'padding': '5vh' }}>
-                <Container fluid>
-                    <Row fluid>
+            <section>
+                <Container className="content">
+                    <Row>
                         <div id="testimonial" className="carousel fade-carousel slide testimonial_indicators testimonial_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3500" data-duration="2000">
                             {/* <div className="testimonial_header">
                                 <h4>what our clients are saying</h4>
@@ -171,17 +182,21 @@ import Login from "./Login";
             </section>
             
             {/* Team Section */}
-            <section className="parallax parallax-5" id="team" style={{'min-height':'40vh'}}>
-                <div className="container">
-                    <h1>Meet Our Team</h1>
-                    <h3><a href="/about">Learn More</a></h3>
+            <section className="parallax parallax-5" id="team">
+                <div className="container section-heading">
+                    <Row>
+                        <Col size="xs-12">
+                        <h1>Meet Our Team</h1>
+                        <h3><a href="/about">Learn More</a></h3>
+                        </Col>
+                    </Row>                    
                 </div>
             </section>
-            <section className="content team" style={{ 'min-height': '50vh', 'padding': '5vh' }}>
+            <section>
             <center>
-                <Container fluid>
+                <Container className="content team">
                     {/* Row #1 */}
-                    <Row fluid>
+                    <Row>
                         <Col size="md-4 sm-4">
                             <img className="aboutImg img-circle" src={require(`../styles/img/jeannine.jpg`)} />
                             <h4>Jeanine Smith</h4>
@@ -202,7 +217,7 @@ import Login from "./Login";
                     </Row>
 
                     {/* Row #2 */}
-                    <Row fluid>
+                    <Row>
                         <Col size="md-6 sm-6">
                             <img className="aboutImg img-circle" src={require(`../styles/img/Brian.jpg`)} />
                             <h4>Brian Hart  </h4>

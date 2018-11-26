@@ -18,25 +18,23 @@ import General from "./styles/General.css";
 
 const App = () =>
   <Router>
-    <div id="container">
-      <Container fluid>
-        <Nav />
-          <Switch>
-            <Route exact path="/" component={Main} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/private" component={PrivateContainer} />
-            <Route exact path="/dashboard" component={Dashboard} />
-            <Route exact path="/customers" component={Customers} />
-            <Route exact path="/products" component={Products} />
-            <Route exact path="/sales" component={Sales} />
-            <Route exact path="/schedule" component={Schedule} />
-            <Route component={NoMatch} />
-          </Switch>
-        <Footer />
-      </Container>
-      </div>
+    <div>
+      <Nav />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/private" component={PrivateContainer} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/customers" component={Customers} />
+          <Route exact path="/products" component={Products} />
+          <Route exact path="/sales" component={Sales} />
+          <Route exact path="/schedule" component={Schedule} />
+          <Route component={NoMatch} />
+        </Switch>
+      <Footer />
+    </div>
   </Router>;
 
 export default App;

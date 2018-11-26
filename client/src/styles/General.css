@@ -4,9 +4,9 @@
 }  
   
 html, body {
-  margin:0;
-  padding:0;
-  height:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  width: 100% !important;
 }
 
 /* remove outer padding */
@@ -17,186 +17,46 @@ html, body {
 
 
 html {
-  overflow-y: auto;
+  /* border: 2px solid red; */
   overflow-x: hidden;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin-top: 50px;
   margin-left: 0 !important;
   margin-right: 0 !important;
   padding-bottom: 50px; /* Height of the footer */
-  width: 100%;
   line-height: 1.2;
   position: relative; 
   background-attachment: fixed !important;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background: linear-gradient(to bottom right, #0060DF 0%, #18ABFB 50%, #0BDD9C 100%);
   /* background: linear-gradient(to bottom right, #56B2BA 0%, #1fc8db 51%, #0BDD9C 100%); */
   /* background-image: url("./img/FreeGreatPicture.com-685-background-color.jpg"); */
   color: rgb(56, 58, 66);
+  height:100%;
+  /* border: 2px solid yellow; */
 }
 
-#container {
-  min-height: 100%;
-  position: relative;
+.container {
+  margin: 0 !important;
+  width: 100% !important;
+  /* border: 2px solid purple; */
 }
-
-.video-background {
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground {
-  position: relative;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  pointer-events: none;
-}
-
-.video-background iframe {
-  position: relative;
-  top: -100px;
-  left: 0;
-  width: 110%;
-  height: 110%;
-  pointer-events: none;
-}
-
-#private-container {
-  position: absolute;
-  left: -20px;
-  right: 0px;
-
-}
-
-
-#about {
-  margin-bottom: 60px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif !important;
-  text-shadow: 2px 2px 4px #000000 !important;
-}
-
-h1, h2 {
-  color: #292A31;
-}
-
-.panel-login, .contact-form {
-  margin-bottom: calc(90% - 50px) !important;
-}
-
-.intro {
-  border: 5px solid #fff;
-  padding: 40px;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-/* Icons for Why and Features Section */
-#why-content i.fa,
-#features-content i.fa {
-  font-size: 36pt;
-  margin-top: 10px;
-  color: #0060DF;
-}
-
-#why-content a.fa,
-#features-content a.fa {
-  width: 70px;
-  height: 70px;
-  background-color: white;
-  border-radius: 50%;
-  position: relative;
-  border: 2pt solid white;
-  transition: .5s;
-  text-shadow: 2px 2px 4px #000000 !important;
-}
-
-#features-content a:hover {
-  transform: rotateY(360deg);
-  background-color: #0060DF;
-}
-
-#features-content a:hover .fa {
-  color: white;
-}
-
-/* .container {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-} */
-
-/* Video */
-.video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-/* .bg-filter {
-  z-index: -99;
-  opacity: 0.3;
-  background: -webkit-linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF  100%);
-  background: -moz-linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF  100%);
-  background: -o-linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF  100%);
-  background: linear-gradient(rgba(49, 224, 247, 1) 0%, #0060DF 100%);
-} */
-/* .intro-text {
-  font-family: "Open Sans";
-  width: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  font-size: 56px;
-  text-transform: uppercase;
-  color: white;
-} */
-
-
-.glyphicon-feature {
-  color: #0060DF;
-  font-size: 60px;
-}
-
-/* Demo Section */
-#demo-container {
-  padding-top: 20px;
-}
-
-.demo-gif {
-  vertical-align: middle;
-  height: auto;
-  width: 90%;
-  padding: 10px;
-  /* border: 1px solid #292A31; */
-}
-
-.demo-content {
-  padding: 60px 10px 10px 20px;
-}
-
 
 /* Parallax Effect */
 section.parallax {
   position: relative;
-  width: 100vw;
-  left:-2%;
+  width: 100%;
   height: auto;
-  padding: 8% 0px;
+  padding: 0px;
+  margin: 0px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -285,6 +145,120 @@ section.parallax-5 a {
 
 section.parallax-5 a:hover {
   color: #0060DF
+}
+
+.section-heading {
+  /* border: 2px solid yellow; */
+  padding: 30px;
+  height: auto;
+}
+
+.hero {
+  width: auto;
+}
+
+.hero-overlay {
+  /* border: 2px solid greenyellow; */
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+  position: absolute;
+  top: calc(50% - 300px);
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#private-container {
+  position: absolute;
+  left: -20px;
+  right: 0px;
+
+}
+
+#about {
+  margin-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif !important;
+  text-shadow: 2px 2px 4px #000000 !important;
+}
+
+h1, h2 {
+  color: #292A31;
+}
+
+.panel-login, .contact-form {
+  margin-bottom: calc(90% - 50px) !important;
+}
+
+/* Icons for Why and Features Section */
+#why-content i.fa,
+#features-content i.fa {
+  font-size: 36pt;
+  margin-top: 10px;
+  color: #0060DF;
+}
+
+#why-content a.fa,
+#features-content a.fa {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  border: 2pt solid white;
+  transition: .5s;
+  text-shadow: 2px 2px 4px #000000 !important;
+}
+
+#features-content a:hover {
+  transform: rotateY(360deg);
+  background-color: #0060DF;
+}
+
+#features-content a:hover .fa {
+  color: white;
+}
+
+/* Video */
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.glyphicon-feature {
+  color: #0060DF;
+  font-size: 60px;
+}
+
+/* Demo Section */
+#demo-container {
+  padding-top: 20px;
+}
+
+.demo-gif {
+  vertical-align: middle;
+  height: auto;
+  width: 90%;
+  padding: 10px;
+  /* border: 1px solid #292A31; */
+}
+
+.demo-content {
+  padding: 60px 10px 10px 20px;
 }
 
 /* Team */
