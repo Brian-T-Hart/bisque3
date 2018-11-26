@@ -50,22 +50,24 @@ import Login from "./Login";
                 <div className="container content wow fadeInUp">
                     <center>
                         <Row>
-                            <Col size="md-3 sm-3">
+                            <Col size="xs-12 sm-4 sm-offset-2">
                                 <a className="fa"><i className="fa fa-mobile" aria-hidden="true"></i></a>
                                 <h3>Responsive <br />Design</h3>
                                 <p>Use it on your computer, mobile phone, or tablet.</p>
                             </Col>
-                            <Col size="md-3 sm-3">
+                            <Col size="xs-12 sm-4">
                                 <a className="fa"><i className="fa fa-users" aria-hidden="true"></i></a>
                                 <h3>Team Info <br />Sharing</h3>
                                 <p>Users from the same team or company can share universal information such as product inventory.</p>
                             </Col>
-                            <Col size="md-3 sm-3">
+                        </Row>
+                        <Row>
+                            <Col size="xs-12 sm-4 sm-offset-2">
                                 <a className="fa"><i className="fa fa-cloud" aria-hidden="true"></i></a>
                                 <h3>Cloud</h3>
                                 <p>No need to install software. <br />Easily access all your data anywhere with Internet connection.</p>
                             </Col>
-                            <Col size="md-3 sm-3">
+                            <Col size="xs-12 sm-4">
                                 <a className="fa"><i className="fa fa-lock" aria-hidden="true"></i></a>
                                 <h3>Secure</h3>
                                 <p>Your data is secure with our technology.</p>
@@ -82,7 +84,6 @@ import Login from "./Login";
                         <Col size="xs-12">
                             <h1>Features</h1>
                             <h3>4 Ways We Can Make Your Life Easier. </h3>
-                            <h5 style={{ 'color':'#ED4C37','text-decoration': 'underline', 'text-underline-position': 'under'}}>Click on icons below for live demo.</h5>
                         </Col>
                     </Row>
                 </div>  
@@ -91,23 +92,25 @@ import Login from "./Login";
                 <div className="container content wow fadeInUp">
                     <center>
                         <Row>
-                            <Col size="md-3 sm-3">
-                                <a className="fa" href="/#dashboard"><i className="fa fa-line-chart" aria-hidden="true"></i></a>
+                            <Col size="xs-12 sm-4 sm-offset-2">
+                                <a className="fa"><i className="fa fa-line-chart" aria-hidden="true"></i></a>
                                 <h3>Dashboard</h3>
                                 <p>Quickly find out how much progress you made towards monthly or weekly sales goals.</p>
                             </Col>
-                            <Col size="md-3 sm-3">
-                                <a className="fa" href="/#database"><i className="fa fa-database" aria-hidden="true"></i></a>
-                                <h3>Database Management</h3>
+                            <Col size="xs-12 sm-4">
+                                <a className="fa"><i className="fa fa-database" aria-hidden="true"></i></a>
+                                <h3>Database <br /> Management</h3>
                                 <p>Easily add and update your customers' information and product details.</p>
                             </Col>
-                            <Col size="md-3 sm-3">
-                                <a className="fa" href="/#schedule"><i className="fa fa-calendar" aria-hidden="true"></i></a>
+                        </Row>
+                        <Row>
+                            <Col size="xs-12 sm-4 sm-offset-2">
+                                <a className="fa"><i className="fa fa-calendar" aria-hidden="true"></i></a>
                                 <h3>Schedule</h3>
                                 <p>Use our calendar to plan your sales meeting and delivery schedule.</p>
                             </Col>
-                            <Col size="md-3 sm-3">
-                                <a className="fa" href="/#route"><i className="fa fa-car" aria-hidden="true"></i></a>
+                            <Col size="xs-12 sm-4">
+                                <a className="fa"><i className="fa fa-car" aria-hidden="true"></i></a>
                                 <h3>Optimized <br />Driving Route</h3>
                                 <p>Plan your sales trip to multiple customers with our optimized driving routes.</p>
                             </Col>
@@ -117,7 +120,7 @@ import Login from "./Login";
             </section>
 
             {/* Testimonials Section */}
-            <section className="parallax parallax-4" id="testimonials">
+            <section className="parallax parallax-3" id="testimonials">
                 <div className="container section-heading wow fadeInUp">
                     <Row>
                         <Col size="xs-12">
@@ -182,12 +185,12 @@ import Login from "./Login";
             </section>
             
             {/* Team Section */}
-            <section className="parallax parallax-5" id="team">
+            <section className="parallax parallax-4" id="team">
                 <div className="container section-heading wow fadeInUp">
                     <Row>
                         <Col size="xs-12">
                         <h1>Meet Our Team</h1>
-                        <h3><a href="/about">Learn More</a></h3>
+                        <h5><a href="/about">Learn More</a></h5>
                         </Col>
                     </Row>                    
                 </div>

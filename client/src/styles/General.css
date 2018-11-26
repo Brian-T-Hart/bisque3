@@ -124,27 +124,22 @@ section.parallax-2 {
 }
 
 section.parallax-3 {
-background: linear-gradient(to right, #0060DF 0% ,#0047a6 100%);
-}
-
-section.parallax-4 {
   background-image: url("img/thumb-up.jpg");
   /* background-position: 60% 100%; */
 }
 
-section.parallax-5 {
+section.parallax-4 {
   background-image: url("img/team.jpg");
   /* background-position: 60% 100%; */
 }
 
-section.parallax-5 a {
+section.parallax-4 a {
   color: #ED4C37;
-  text-decoration: underline;
-  text-underline-position: under;
 }
 
-section.parallax-5 a:hover {
-  color: #0060DF
+section.parallax-4 a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .section-heading {
@@ -185,15 +180,19 @@ section.parallax-5 a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif !important;
-  text-shadow: 5px 5px 5px #000000 !important;
 }
 
 h1, h2 {
   color: white;
+  text-shadow: 4px 4px 2px #111 !important;
 }
 
 .panel-login, .contact-form {
   margin-bottom: calc(90% - 50px) !important;
+}
+
+section#why {
+  margin-top: -4px;
 }
 
 /* Icons for Why and Features Section */
@@ -213,17 +212,16 @@ h1, h2 {
   position: relative;
   border: 2pt solid white;
   transition: .5s;
-  text-shadow: 2px 2px 4px #000000 !important;
 }
 
-#features-content a:hover {
+/* #features-content a:hover {
   transform: rotateY(360deg);
   background-color: #0060DF;
-}
+} */
 
-#features-content a:hover .fa {
+/* #features-content a:hover .fa {
   color: white;
-}
+} */
 
 /* Video */
 .video {
