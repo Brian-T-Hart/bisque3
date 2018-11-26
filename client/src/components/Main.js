@@ -156,22 +156,22 @@ import Login from "./Login";
                                 <div className="item active">
                                     <div className="testimonial_slide">
                                         <img src={require(`../styles/img/t-1.jpg`)} className="img-circle img-responsive" />
-                                        <h5><i>"I love Goal Post! Great tool to keep track of my customer information, sales notes, and plan my clients visits."</i></h5>
-                                        <h5>- Alex</h5>
+                                        <h5>"I love Goal Post! Great tool to keep track of my customer information, sales notes, and plan my clients visits."</h5>
+                                        <h6>- Alex</h6>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="testimonial_slide">
                                         <img src={require(`../styles/img/t-2.jpg`)} className="img-circle img-responsive" />
-                                        <h5><i>"I wish I knew about Goal Post years earlier. Every salesperson should use GoalPost."</i></h5>
-                                        <h5>- Brandon</h5>
+                                        <h5>"I wish I knew about Goal Post years earlier. Every salesperson should use GoalPost."</h5>
+                                        <h6>- Brandon</h6>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="testimonial_slide">
                                         <img src={require(`../styles/img/t-3.jpg`)} className="img-circle img-responsive" />
-                                        <h5><i>"No more piles of sales notes. With Goal Post, now I can keep my customer records digitally in the cloud."</i></h5>
-                                        <h5>- Lisa</h5>
+                                        <h5>"No more piles of sales notes. With Goal Post, now I can keep my customer records digitally in the cloud."</h5>
+                                        <h6>- Lisa</h6>
                                     </div>
                                 </div>
                             </div>

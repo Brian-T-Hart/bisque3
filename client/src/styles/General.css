@@ -16,10 +16,10 @@ html, body {
 }
 
 
-html {
-  /* border: 2px solid red; */
+/* html {
+  border: 2px solid red;
   overflow-x: hidden;
-}
+} */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -72,22 +72,9 @@ h1 {
   font-size: 55px;
 }
 
-/* 
-h2 {
-  font-size: 32px;
+p {
+  font-size: 16px;
 }
-
-h3 {
-  font-size: 28px;
-}
-
-h4 {
-  font-size: 26px;
-}
-
-h5 {
-  font-size: 22px;
-} */
 
 a {
   color: #ED4C37;
@@ -303,7 +290,7 @@ i.fa-mobile {
 /* Testimonial Section */
 
 #testimonial{
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 375px;
   position: relative;
   background: #004eb8;
@@ -312,17 +299,10 @@ i.fa-mobile {
   width: 75%;
   margin: auto;
 }
-#testimonial .carousel-inner:hover{
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-}
-#testimonial .carousel-inner:active{
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-}
-#testimonial .carousel-inner .item{
+
+/* #testimonial .carousel-inner .item{
   overflow: hidden;
-}
+} */
 
 .testimonial_indicators .carousel-indicators{
   left: 0;
@@ -332,9 +312,6 @@ i.fa-mobile {
   height: 20px;
   bottom: 15px;
   padding: 0 5px;
-  cursor: e-resize;
-  overflow-x: auto;
-  overflow-y: hidden;
   position: absolute;
   text-align: center;
   white-space: nowrap;
@@ -410,25 +387,6 @@ i.fa-mobile {
   border: 2px solid #fff;
 }
 
-.testimonial_header{
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 550px;
-  display: block;
-  margin: 30px auto;
-  text-align: center;
-  position: relative;
-}
-.testimonial_header h4{
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 .testimonial_slide{
   top: 0;
   left: 0;
@@ -455,29 +413,24 @@ i.fa-mobile {
   text-align: center;
 }
 
-.testimonial_slide p {
+.testimonial_slide h6 {
   color: #ffffff;
   font-size: 16px;
   margin: 60px 0 20px 0;
+  font-weight: normal;
 }
 
 .testimonial_slide h5 {
   color: #ffffff;
   font-size: 24px;
-  font-weight: bold;
   padding-top: 20px;
+  font-weight: normal;
 }
 
 
 @media only screen and (max-width: 480px){
   .testimonial_control_button .carousel-control{
     display: none;
-  }
-  .testimonial_header{
-    width: 95%;
-  }
-  .testimonial_header h4{
-    font-size: 20px;
   }
   .testimonial_slide{
     width: 98%;
@@ -491,9 +444,6 @@ i.fa-mobile {
   }
   .testimonial_control_button .carousel-control.right{
     right: 2%;
-  }
-  .testimonial_header{
-    width: 95%;
   }
   .testimonial_slide{
     width: 98%;
