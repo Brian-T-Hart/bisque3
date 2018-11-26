@@ -20,7 +20,7 @@ import Login from "./Login";
 
             <section className="parallax">  
                 <div className="hero">
-                    <div className="hero-overlay animated bounceInUp">
+                    <div className="hero-overlay wow fadeInUp">
                         <h1 style= {{'font-size':'120px', color:'#0060DF'}}>Goal Post</h1>
                         <h1>CRM System <br />for Busy Salespeople </h1>
                     </div>
@@ -35,7 +35,7 @@ import Login from "./Login";
 
             {/* Features Section */}
             <section className="parallax parallax-1" id="why">
-                <div className="container section-heading" id="why-header">
+                <div className="container section-heading wow fadeInUp" id="why-header">
                     <Row>
                         <Col size="xs-12">
                             <h1>Why Us?</h1>
@@ -47,7 +47,7 @@ import Login from "./Login";
 
             {/* Why Section */}
             <section id="why-content">
-                <div className="container content animated slideInUp">
+                <div className="container content wow fadeInUp">
                     <center>
                         <Row>
                             <Col size="md-3 sm-3">
@@ -77,7 +77,7 @@ import Login from "./Login";
 
             {/* Features Section */}
             <section className="parallax parallax-2" id="features">
-                <div className="container section-heading">
+                <div className="container section-heading wow fadeInUp">
                     <Row>
                         <Col size="xs-12">
                             <h1>Features</h1>
@@ -88,7 +88,7 @@ import Login from "./Login";
                 </div>  
             </section>
             <section id="features-content">
-                <div className="container content">
+                <div className="container content wow fadeInUp">
                     <center>
                         <Row>
                             <Col size="md-3 sm-3">
@@ -118,7 +118,7 @@ import Login from "./Login";
 
             {/* Testimonials Section */}
             <section className="parallax parallax-4" id="testimonials">
-                <div className="container section-heading">
+                <div className="container section-heading wow fadeInUp">
                     <Row>
                         <Col size="xs-12">
                             <h1>Testimonials</h1>
@@ -128,7 +128,7 @@ import Login from "./Login";
                 </div>
             </section>
             <section>
-                <Container className="content">
+                <Container className="content wow fadeInUp">
                     <Row>
                         <div id="testimonial" className="carousel fade-carousel slide testimonial_indicators testimonial_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3500" data-duration="2000">
                             {/* <div className="testimonial_header">
@@ -183,7 +183,7 @@ import Login from "./Login";
             
             {/* Team Section */}
             <section className="parallax parallax-5" id="team">
-                <div className="container section-heading">
+                <div className="container section-heading wow fadeInUp">
                     <Row>
                         <Col size="xs-12">
                         <h1>Meet Our Team</h1>
@@ -194,7 +194,7 @@ import Login from "./Login";
             </section>
             <section>
             <center>
-                <Container className="content team">
+                <Container className="content team wow fadeInUp">
                     {/* Row #1 */}
                     <Row>
                         <Col size="md-4 sm-4">

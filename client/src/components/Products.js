@@ -91,7 +91,7 @@ render() {
 return (
 <div>
   {/* Row #1 */}
-  <Row fluid>
+  <Row>
     <Col size="md-12 sm-12">
       <Jumbotron>
         <h1><strong>Products</strong></h1>
@@ -100,7 +100,7 @@ return (
     </Col>
   </Row>
 
-  <Row fluid>
+  <Row>
     {/* Product Form */}
     <Col size="md-12 sm-12">
       <center>
@@ -123,7 +123,7 @@ return (
     </Row>
 
     {/* Product Table */}
-      <Row fluid>
+      <Row>
         <Col size="md-12 sm-12">
           <div className='private text-center sales-table'>
             {this.state.products.length ? (

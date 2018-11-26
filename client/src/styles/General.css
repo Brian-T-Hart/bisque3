@@ -185,11 +185,11 @@ section.parallax-5 a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif !important;
-  text-shadow: 2px 2px 4px #000000 !important;
+  text-shadow: 5px 5px 5px #000000 !important;
 }
 
 h1, h2 {
-  color: #292A31;
+  color: white;
 }
 
 .panel-login, .contact-form {

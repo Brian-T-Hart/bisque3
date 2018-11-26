@@ -10,7 +10,7 @@ const Contact = () =>
 
 <div>
   {/* Row #1 */}
-  <Row fluid>
+  <Row>
     <Col size="md-12 sm-12">   
       <Jumbotron>
         <h1>Contact Us</h1>
@@ -20,7 +20,7 @@ const Contact = () =>
 
   {/* Row #2 */}
   {/* Zotabox Contact Form Embed */}
-  <Row fluid>
+  <Row>
     <Col size="md-12 sm-12">
       <div className='contact-form'>
         <center><div style={{padding: "20px 0 20px 0", 'min-height': '600px'}} id="zbwid-e422a183"></div></center>  

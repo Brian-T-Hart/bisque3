@@ -13,7 +13,7 @@ const Dashboard = () =>
 
 <div>
   {/* Row #1 */}
-  <Row fluid>
+  <Row>
     <Col size="md-12 sm-12">
       <Jumbotron>
         <h1><strong>Dashboard</strong></h1>
@@ -23,7 +23,7 @@ const Dashboard = () =>
   </Row>
 
       {/* Dashboard Content */}
-  <Row fluid>
+    <Row>
       <Col size="md-12 sm-12">
         <div className='private text-center'>
          <Chart />
