@@ -21,7 +21,7 @@
 .panel-login>.panel-heading a{
     text-decoration: underline;
     text-underline-position: under;
-    color: rgba(255, 255, 255, 0.6);
+    color: #999;
     background-color: transparent;
     font-weight: bold;
     font-size: 16px;
@@ -70,9 +70,10 @@ box-shadow: none;
 border-color: white;
 }
 
-.panel-body h2 {
+.panel-body .panel-heading {
     margin-top: 0px;
     margin-bottom: 20px;
+    color: white;
 }
 
 /* .btn-login {

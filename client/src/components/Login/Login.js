@@ -81,13 +81,13 @@ class Login extends Component {
 
   render(){
     return (
-      <Container fluid>
-        <Row fluid>
+      <Container>
+        <Row>
           <Col size="md-6 md-offset-3 sm-6 sm-offset-3">
             <div className="panel panel-login">
               {/* Panel Heading */}
               <div className="panel-heading">
-                <Row fluid>
+                <Row>
                   <Col size="md-6 sm-6">
                     <a href="/login" className="active" id="login-form-link">LOGIN</a>
                   </Col>
@@ -101,19 +101,19 @@ class Login extends Component {
 
               {/* Panel Body */}
               <div className="panel-body">
-                <Row fluid>
+                <Row>
                   <Col size="md-12 sm-12">
 
                     {/* Login Form */}
 
                     <form id="login-form" style={{ display: 'block'}} >
-                        <h2> Welcome Back! </h2>
+                        <h2 className="panel-heading"> Welcome Back! </h2>
                         <Input type="text" name="username" id="username" tabIndex="1" placeholder="Username *" value={this.state.username} onChange={this.handleInputChange} required></Input>
                         <Input type="password" name="password" id="password" tabIndex="2" placeholder="Password *" value={this.state.password} onChange={this.handleInputChange} required></Input>
          
                         {/* <Input type="checkbox" tabIndex="3" className="" name="remember" id="remember"></Input>
                         <label for="remember">Remember Me</label> */}
-                        <Row fluid>
+                        <Row>
                           <Col size="md-6 md-offset-3 sm-6 sm-offset-3">
                             <FormBtn 
                             type="submit" name="login-submit" id="login-submit" tabIndex="4" className="form-control btn btn-login" 
@@ -122,7 +122,7 @@ class Login extends Component {
                           </Col>
                         </Row>
                   
-                        {/* <Row fluid>
+                        {/* <Row>
                           <Col size="md-12 sm-12" className="text-center">
                           <a href="" tabIndex="5" className="forgot-password">Forgot Password?</a>
                           </Col>
@@ -132,7 +132,7 @@ class Login extends Component {
                     {/* Register Form */}
 
                     <form id="register-form" style={{display:'none'}}>
-                      <h2> Sign Up For Free! </h2>
+                      <h2 className="panel-heading"> Sign Up For Free! </h2>
                         <Input 
                         type="text" name="username" id="username" tabIndex="1" placeholder="Username *" 
                           value={this.state.username} onChange={this.handleInputChange} required>
@@ -147,7 +147,7 @@ class Login extends Component {
                         <Input type="password" name="passwordConfirm" id="confirm-password" tabIndex="2" placeholder="Confirm Password *" 
                           value={this.state.passwordConfirm} onChange={this.handleInputChange} required>
                         </Input>
-                        <Row fluid>
+                        <Row>
                           <Col size="md-6 md-offset-3 sm-6 sm-offset-3">
                             <FormBtn 
                             type="submit" name="register-submit" id="register-submit" tabIndex="4" className="form-control btn btn-register" 
@@ -166,7 +166,7 @@ class Login extends Component {
 
       {/* Placeholder Links After Logging In */}
 
-        {/* <Row fluid>
+        {/* <Row>
           <Col size="md-12 sm-12">
             <div className="button groups" style={{position: 'relative', 'paddingBottom': '300px' }}>
             <h3>Links after users logging in, will remove later!!!</h3>
