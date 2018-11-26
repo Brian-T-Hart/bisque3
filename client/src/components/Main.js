@@ -75,7 +75,7 @@ import Login from "./Login";
                                 <div className="item">
                                     <a className="fa"><i className="fa fa-lock" aria-hidden="true"></i></a>
                                     <h3>Secure<br />User Data</h3>
-                                    <p>Your data is secure with our technology.</p>
+                                    <p>Your company and user data is secure with our technology.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -114,7 +114,7 @@ import Login from "./Login";
                                 <div className="item">
                                     <a className="fa"><i className="fa fa-calendar" aria-hidden="true"></i></a>
                                     <h3>Meeting<br />Schedule</h3>
-                                    <p>Use our calendar to plan your sales meeting and delivery schedule.</p>
+                                    <p>Use our calendar to plan your sales meeting and/or product delivery schedule.</p>
                                 </div>
                             </Col>
                             <Col size="xs-12 sm-6 lg-3">
