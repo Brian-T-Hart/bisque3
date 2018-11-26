@@ -93,32 +93,36 @@ import Login from "./Login";
                         </Col>
                     </Row>
                 </div>  
-            </section>
-            <section id="features-content">
-                <div className="container content wow fadeInUp">
+                <div className="container content wow fadeInUp" id="features-content">
                     <center>
                         <Row>
-                            <Col size="xs-12 sm-4 sm-offset-2">
-                                <a className="fa"><i className="fa fa-line-chart" aria-hidden="true"></i></a>
-                                <h3>Dashboard</h3>
-                                <p>Quickly find out how much progress you made towards monthly or weekly sales goals.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-line-chart" aria-hidden="true"></i></a>
+                                    <h3>Sales <br />Dashboard</h3>
+                                    <p>Quickly find out how much progress you made towards monthly or weekly sales goals.</p>
+                                </div>
                             </Col>
-                            <Col size="xs-12 sm-4">
-                                <a className="fa"><i className="fa fa-database" aria-hidden="true"></i></a>
-                                <h3>Database <br /> Management</h3>
-                                <p>Easily add and update your customers' information and product details.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-database" aria-hidden="true"></i></a>
+                                    <h3>Database <br /> Management</h3>
+                                    <p>Easily add and update your customers' information and product details.</p>
+                                </div>
                             </Col>
-                        </Row>
-                        <Row>
-                            <Col size="xs-12 sm-4 sm-offset-2">
-                                <a className="fa"><i className="fa fa-calendar" aria-hidden="true"></i></a>
-                                <h3>Schedule</h3>
-                                <p>Use our calendar to plan your sales meeting and delivery schedule.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-calendar" aria-hidden="true"></i></a>
+                                    <h3>Meeting<br />Schedule</h3>
+                                    <p>Use our calendar to plan your sales meeting and delivery schedule.</p>
+                                </div>
                             </Col>
-                            <Col size="xs-12 sm-4">
-                                <a className="fa"><i className="fa fa-car" aria-hidden="true"></i></a>
-                                <h3>Optimized <br />Driving Route</h3>
-                                <p>Plan your sales trip to multiple customers with our optimized driving routes.</p>
+                            <Col size="xs-12 sm-6 lg-3">
+                                <div className="item">
+                                    <a className="fa"><i className="fa fa-car" aria-hidden="true"></i></a>
+                                    <h3>Optimized <br />Driving Route</h3>
+                                    <p>Plan your sales trip to multiple customers with our optimized driving routes.</p>
+                                </div>
                             </Col>
                         </Row>
                     </center>
@@ -140,10 +144,6 @@ import Login from "./Login";
                 <Container className="content wow fadeInUp">
                     <Row>
                         <div id="testimonial" className="carousel fade-carousel slide testimonial_indicators testimonial_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3500" data-duration="2000">
-                            {/* <div className="testimonial_header">
-                                <h4>what our clients are saying</h4>
-                            </div> */}
-
                             {/* <!-- Indicators --> */}
                             <ol className="carousel-indicators">
                                 <li data-target="#testimonial" data-slide-to="0" className="active"></li>
@@ -196,7 +196,7 @@ import Login from "./Login";
                     <Row>
                         <Col size="xs-12">
                         <h1>Meet Our Team</h1>
-                        <h5><a href="/about">Learn More</a></h5>
+                        <h3><a href="/about">Learn More</a></h3>
                         </Col>
                     </Row>                    
                 </div>
