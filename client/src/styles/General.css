@@ -77,11 +77,11 @@ p {
 }
 
 a {
-  color: #ED4C37;
+  color: #00a1e0;
 }
 
 a:hover {
-  color: #ED4C37;
+  color: #00a1e0;
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -276,9 +276,19 @@ i.fa-mobile {
 }
 
 /* Team */
-.team {
-  line-height: 1.5;
-  margin-bottom: 50px;
+.team .team-heading-1 {
+  font-size: 22px;
+  text-align: left !important;
+}
+
+.team .team-heading-2 {
+  font-size: 18px;
+  text-align: left !important;
+  margin-bottom: 15px;
+}
+
+.team .row {
+  margin-bottom: 20px;
 }
 
 .aboutImg {

@@ -196,52 +196,10 @@ import Login from "./Login";
                     <Row>
                         <Col size="xs-12">
                         <h1>Meet Our Team</h1>
-                        <h3><a href="/about">Learn More</a></h3>
+                        <h2><a href="/about">Learn More</a></h2>
                         </Col>
                     </Row>                    
                 </div>
-            </section>
-            <section>
-            <center>
-                <Container className="content team wow fadeInUp">
-                    {/* Row #1 */}
-                    <Row>
-                        <Col size="md-4 sm-4">
-                            <img className="aboutImg img-circle" src={require(`../styles/img/jeannine.jpg`)} />
-                            <h4>Jeanine Smith</h4>
-                            <p>Project Manager</p>
-                        </Col>
-
-                        <Col size="md-4 sm-4">
-                            <img className="aboutImg img-circle" src={require(`../styles/img/Guiyu.jpg`)} />
-                            <h4>Guiyu (Zoey) Zhao  </h4>
-                            <p>Front End Developer &amp; QA Manager</p>
-                        </Col>
-
-                        <Col size="md-4 sm-4">
-                            <img className="aboutImg img-circle" src={require(`../styles/img/Dennis.jpg`)} />
-                            <h4>Dennis Alvey</h4>
-                            <p>Front End Developer &amp; UI/UX Manager</p>
-                        </Col>
-                    </Row>
-
-                    {/* Row #2 */}
-                    <Row>
-                        <Col size="md-6 sm-6">
-                            <img className="aboutImg img-circle" src={require(`../styles/img/Brian.jpg`)} />
-                            <h4>Brian Hart  </h4>
-                            <p>Back End Developer &amp; Git Master</p>
-                        </Col>
-
-                        <Col size="md-6 sm-6">
-                            <img className="aboutImg img-circle" src={require(`../styles/img/Tatianna.jpg`)} />
-                            <h4>Tatianna Watwood</h4>
-                            <p>Back End Developer &amp; Code Review Manager</p>
-                        </Col>
-                    </Row>
-
-                </Container>
-                </center>
             </section>
         </div>
     );
