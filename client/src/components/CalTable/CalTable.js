@@ -5,7 +5,7 @@ import API from "../../utils/calAPI";
 import PubSub from 'pubsub-js';
 import DeleteBtn from "../../components/DeleteBtn";
 import { TableContainerCal, TableRow} from "../Table";
-import "../Table/Table.css";
+import "../../styles/Table.css";
 
 class CalTable extends Component {
     state = {

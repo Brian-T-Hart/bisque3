@@ -10,7 +10,7 @@ import API from "../utils/API";
 import "./Form/DataForm.css";
 import PubSub from 'pubsub-js';
 import { TableContainerProduct, TableRow} from "./Table";
-import "./Table/Table.css";
+import "../styles/Table.css";
 
 class Products extends Component {
   state = {
