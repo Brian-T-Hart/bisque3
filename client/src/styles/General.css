@@ -56,10 +56,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   text-shadow: 4px 4px 2px #111 !important;
   text-transform: uppercase;
+  color: white;
 }
 
-h1, h2 {
-  color: white;
+h2 {
+  text-shadow: 2px 2px 2px #111 !important;
+  color: #01ffff;
 }
 
 h3, h4, h5, h6, p {
@@ -116,21 +118,33 @@ section.parallax:after {
   content:'';
 }
 
+/* Why Section Heading */
 section.parallax-1 {  
   background: #0047a6;
 }
 
-section#why-content {
+/* Why and Testimonial Content */
+section#why-content,
+section#testimonial-content {
   /* Offset Hero Overlay Tint */
-  background-color:#004fb7;
+  /* background-color:#004fb7; */
+  background-image: linear-gradient(to top,#01d9ff 0%, #004fb7 100% );
 }
 
+/* Features (Heading and Content) */
 section.parallax-2 {
   background-image: url("img/tools.png");
 }
 
+section#feature-content {
+  background-color: transparent;
+}
+
+/* Testimonial Heading */
 section.parallax-3 {
-  background-color: #0047a6;
+  background: #0047a6;
+  /* background-color: #ff8259; */
+  /* background-color: #0047a6; */
   /* background-image: url("img/thumb-up.jpg"); */
 }
 
@@ -139,13 +153,17 @@ section.parallax-3 {
   z-index: 20;
 }
 
+/* Team */
 section#team {
   background-image: url("img/team.jpg");
   background-position-y: 5vh;
 }
 
-section#feature-content {
-  background-color: transparent;
+/* Contact */
+section#contact {
+  background-color: #004fb7;
+  height: auto;
+  margin: 0;
 }
 
 .section-heading {
@@ -161,13 +179,21 @@ section#feature-content {
 }
 
 .hero-overlay {
-  /* border: 2px solid greenyellow; */
   width: 80%;
   margin-left: 10%;
   height: auto;
   position: absolute;
   top: calc(50% - 300px);
-  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.hero-overlay h1, 
+.hero-overlay h2{
+  color: white;
+}
+
+.hero-overlay h3 {
+  text-shadow: 2px 2px 2px #111;
+  color: #01ffff;
 }
 
 .content {
@@ -212,11 +238,12 @@ i.fa-mobile {
 #features-content a.fa {
   width: 90px;
   height: 90px;
-  background-color: #004eb8; 
+  background-image: linear-gradient(to top,#01d9ff 0%, #004fb7 100% );
+  /* background-color: #004eb8; 
+  border: 2pt solid #01ffff;
+  transition: .5s; */
   border-radius: 50%;
   position: relative;
-  border: 2pt solid #01ffff;
-  transition: .5s;
 }
 
 /* #features-content a:hover {
@@ -240,11 +267,6 @@ i.fa-mobile {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
-
-.glyphicon-feature {
-  color: #004eb8;
-  font-size: 60px;
 }
 
 /* Demo Section */
@@ -339,7 +361,7 @@ i.fa-mobile {
   height: 10px;
   border: none;
   margin: 2px 3px;
-  background-color: #01ffff;
+  background-color: #004fb7;
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
@@ -491,12 +513,6 @@ i.fa-mobile {
     transform: scale(1.5);
     opacity: 0;
   }
-}
-
-#contact {
-  background-color: #004fb7;
-  height: auto;
-  margin: 0;
 }
 
 /* Private Pages After Logging In */

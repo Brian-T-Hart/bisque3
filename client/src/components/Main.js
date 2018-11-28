@@ -21,13 +21,13 @@ class Main extends Component {
         <section className="parallax">
           <div className="hero">
             <div className="hero-overlay wow fadeInUp">
-              <h1 style={{ "font-size": "120px", color: "#0060DF" }}>
+              <h1 style={{ "font-size": "80px" }}>
                 Goal Post
               </h1>
-              <h1>
-                CRM System <br />
-                for Busy Salespeople{" "}
-              </h1>
+              <h2>
+              Free CRM built for small business success
+              </h2>
+              <h3>100% free. No credit card needed.</h3>
             </div>
             <video
               width="100%"
@@ -215,6 +215,8 @@ class Main extends Component {
               </Col>
             </Row>
           </div>
+        </section>
+        <section id="testimonial-content">
           <div className="container content wow fadeInUp">
             <Row>
               <Col size="xs-12">

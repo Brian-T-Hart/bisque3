@@ -15,7 +15,7 @@
   width: 100%;
   margin-top: 45px;
   padding: 10px;
-  background: linear-gradient(to top,#18ABFB 0%, #0060DF 100% );
+  background-image: linear-gradient(to top,#18ABFB 0%, #0060DF 100% );
   color: white;
   border-radius: 0;
 }

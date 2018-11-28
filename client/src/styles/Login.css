@@ -1,7 +1,7 @@
 #login-register {
   min-height: calc(100vh - 55px);
   margin-bottom: 0;
-  background: linear-gradient(to top, #18abfb 0%, #0060df 100%);
+  background-image: linear-gradient(to top,#01d9ff 0%, #004fb7 100% );
 }
 
 .panel-login {

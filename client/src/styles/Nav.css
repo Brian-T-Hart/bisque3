@@ -1,9 +1,9 @@
 nav {
-  background-color: #0060df !important;
-  border-bottom: 1px solid #005bd1 !important;
+  background-color: #004fb7 !important;
+  border-bottom: 1px solid #01ffff !important;
   width: 100% !important;
-  overflow-x: hidden;
 }
+
 .navbar-default .navbar-brand {
   color: #f8f8f8;
   font-size: 25px;
@@ -13,7 +13,7 @@ nav {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #d1d5f6;
+  color: #01ffff;
 }
 .navbar-default .navbar-text {
   color: #f8f8f8;
@@ -24,7 +24,7 @@ nav {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #d1d5f6;
+  color:#01ffff;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
