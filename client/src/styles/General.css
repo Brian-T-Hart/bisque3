@@ -215,7 +215,7 @@ i.fa-mobile {
   background-color: #004eb8; 
   border-radius: 50%;
   position: relative;
-  border: 2pt solid #004eb8;
+  border: 2pt solid #01ffff;
   transition: .5s;
 }
 
@@ -339,7 +339,7 @@ i.fa-mobile {
   height: 10px;
   border: none;
   margin: 2px 3px;
-  background-color: #000;
+  background-color: #01ffff;
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
@@ -420,7 +420,7 @@ i.fa-mobile {
 .testimonial_slide h6 {
   color: #ffffff;
   font-size: 16px;
-  margin: 60px 0 20px 0;
+  margin: 40px 0 20px 0;
   font-weight: normal;
 }
 

@@ -2,12 +2,14 @@ nav {
   background-color: #0060df !important;
   border-bottom: 1px solid #005bd1 !important;
   width: 100% !important;
+  overflow-x: hidden;
 }
 .navbar-default .navbar-brand {
   color: #f8f8f8;
   font-size: 25px;
   height: 25px;
   margin-top: -5px;
+  margin-left: 10px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -70,5 +72,49 @@ nav {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #d1d5f6;
     background-color: #0047a6;
+  }
+}
+
+/* Change navbar collapse breakpoint */
+
+@media (max-width: 1000px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+    border: none;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding: 10px 30px;
+  }
+  .collapse.in {
+    display: block !important;
   }
 }
