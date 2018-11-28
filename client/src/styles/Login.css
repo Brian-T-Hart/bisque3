@@ -1,85 +1,89 @@
 #login-register {
-    min-height: calc(100vh - 65px);
-    height: auto;
+  min-height: calc(100vh - 55px);
+  margin-bottom: 0;
+  background: linear-gradient(to top, #18abfb 0%, #0060df 100%);
 }
 
 .panel-login {
-    border-color: lightblue;
-    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-    margin-top: 100px;
-    min-height: 300px;
-    background-color:#0047a6;
-
+  border-color: lightblue;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 30vh;
+  min-height: 300px;
+  background-color: #0047a6;
 }
-.panel-login>.panel-heading {
-    display:block;
-    color: white;
-    background-color: transparent;
-    border-color: lightblue;
-    text-align:center !important;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 50px;
+.panel-login > .panel-heading {
+  display: block;
+  color: white;
+  background-color: transparent;
+  border-color: lightblue;
+  text-align: center !important;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 50px;
 }
-.panel-login>.panel-heading a{
-    color: #c5c2c2;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 16px;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-    width: 50%;
-    text-decoration: none;
+.panel-login > .panel-heading a {
+  color: #c5c2c2;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  width: 50%;
+  text-decoration: none;
 }
-.panel-login>.panel-heading a.active{
-    color: white;
-    font-size: 20px;
-    }
+.panel-login > .panel-heading a.active {
+  color: white;
+  font-size: 20px;
+}
 
 .panel-login input {
-    background-color: transparent;
-    width: 80%;
+  background-color: transparent;
+  width: 80%;
 }
 
-.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
-height: 45px;
-border: 1px solid lightblue;
-color: white;
-font-size: 16px;
--webkit-transition: all 0.1s linear;
--moz-transition: all 0.1s linear;
-transition: all 0.1s linear;
+.panel-login input[type="text"],
+.panel-login input[type="email"],
+.panel-login input[type="password"] {
+  height: 45px;
+  border: 1px solid lightblue;
+  color: white;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 .panel-login input:hover,
 .panel-login input:focus {
-outline:none;
--webkit-box-shadow: none;
--moz-box-shadow: none;
-box-shadow: none;
-border-color: white;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: white;
 }
 
 /* Change Placeholder Color */
 
-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #c5c2c2 !important;
-    opacity: 1; /* Firefox */
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c5c2c2 !important;
+  opacity: 1; /* Firefox */
 }
 
-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #c5c2c2 !important;
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c5c2c2 !important;
 }
 
-input::-ms-input-placeholder { /* Microsoft Edge */
-    color: #c5c2c2 !important;
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c5c2c2 !important;
 }
 
 .panel-body .panel-heading {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    color: white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: white;
 }
-

@@ -6,6 +6,5 @@ footer {
   background-color: black;
   padding-top: 20px;
   color: white !important;
-  text-align: center;
-  z-index: 100;
+  text-align: center !important;
 }

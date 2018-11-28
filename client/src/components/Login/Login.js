@@ -84,22 +84,19 @@ class Login extends Component {
     return (
       <section id="login-register">
         <Nav />
-        <Jumbotron className="wow fadeInUp">
-          <h1>Our Team</h1>
-        </Jumbotron>
         <Container>
           <Row>
-            <Col size="md-6 md-offset-3 sm-6 sm-offset-3">
+            <Col size="xs-10 xs-offset-1 sm-8 sm-offset-2 lg-6 lg-offset-3">
               <div className="panel panel-login">
                 {/* Panel Heading */}
                 <div className="panel-heading">
                   <Row>
-                    <Col size="md-6 sm-6">
+                    <Col size="xs-6">
                       <a href="/login" className="active" id="login-form-link">
                         LOGIN
                       </a>
                     </Col>
-                    <Col size="md-6 sm-6">
+                    <Col size="xs-6">
                       <a href="/register" id="register-form-link">
                         REGISTER
                       </a>
