@@ -9,8 +9,10 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 
 const About = () => (
+  
   <div id="about" className="team">
 
+  <Nav />
     <Jumbotron className="wow fadeInUp">
       <h1>Our Team</h1>
     </Jumbotron>

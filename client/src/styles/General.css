@@ -23,7 +23,6 @@ html, body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin-top: 54px;
   margin-bottom: 55px;  /* Height of the footer */
   min-height: calc(100vh - 55px) !important;
   line-height: 1.5;
@@ -88,6 +87,7 @@ a:hover {
 
 .container {
   margin: 0 !important;
+  padding: 0 !important;
   width: 100% !important;
   border: 2px solid purple;
 }
@@ -497,10 +497,7 @@ i.fa-mobile {
 /* Private Pages After Logging In */
 
 #private-container {
-  position: absolute;
-  left: 0;
-  top: 100px !important;
-  right: 0;
+  margin-top: 50px;
   width: 100%;
   min-height: 100%;
   background-color: white !important;

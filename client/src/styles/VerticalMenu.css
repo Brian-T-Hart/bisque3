@@ -1,12 +1,23 @@
+#private-nav {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+
+#username {
+  padding-top: 10px;
+}
+
 /*Remove rounded coners*/
 
 .nav-tabs {
-  margin: 0;
   border: 2px solid green;
+  background-color: transparent;
+  margin: 0;
 }
 
 .nav-tabs a {
-  color: #2196F3 !important;
+  color: #013e8d !important;
 }
 
 nav.sidebar.navbar {
@@ -18,10 +29,7 @@ nav.sidebar.navbar {
   bottom: 0;
   margin-right: 0;
   margin-bottom: 0px;
-  width: 200px;
-  height: 100vh;
-  overflow-y: auto;
-  
+  width: 200px; 
 }
 
 nav.sidebar {
@@ -54,13 +62,6 @@ nav.sidebar {
     margin-left: 200px;
   } */
 
-  /*Center Brand*/
-  nav.sidebar .navbar-brand, nav.sidebar .navbar-header .nav-tabs{
-    /* text-align: center; */
-    width: 100%;
-    margin-left: -15px 0 0 -15px;
-  }
-
   /*Center Icons*/
   nav.sidebar a{
     padding-right: 13px;
@@ -88,16 +89,6 @@ nav.sidebar {
     -webkit-box-shadow: none;
     box-shadow: none;
   } */
-
-  /*allows nav box to use 100% width*/
-  nav.sidebar .navbar-collapse, nav.sidebar .container {
-    padding: 0 0px 0 0px;
-  }
-
-  /*colors dropdown box text */
-  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-    color: #777;
-  }
 
   /*gives sidebar width/height*/
   nav.sidebar{

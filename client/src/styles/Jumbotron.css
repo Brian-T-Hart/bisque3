@@ -1,19 +1,24 @@
 .jumbotron {
-  min-height: 200px;
   width: 100%;
-  margin-left: 0;
-
-  /* background: linear-gradient(to bottom right, #0060DF 0%, #18ABFB 50%, #0060DF 100% ); */
-  background-color: rgb(1, 62, 141);
-  /* background: black; */
-  color: white !important;
-  padding: 50px; 
-}
-
-.jumbotron .heading {
-  margin-top: 50px;
+  margin-bottom: 20px;
+  color: rgb(1, 62, 141);
+  background-color: white;
+  border-radius: 0;
 }
 
 .jumbotron .sub-heading {
   color: white;
+}
+
+.team .jumbotron {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  background: linear-gradient(to top,#18ABFB 0%, #0060DF 100% );
+  background-color: rgb(1, 62, 141);
+  color: white;
+}
+
+.team .jumbotron .sub-heading {
+  color: white !important;
 }
