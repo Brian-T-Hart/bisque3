@@ -135,9 +135,9 @@ section.parallax-3 {
   /* background-image: url("img/thumb-up.jpg"); */
 }
 
-section.parallax-4 {
+section#team {
   background-image: url("img/team.jpg");
-  background-position: 50% 70%;
+  background-position-y: 50vh;
 }
 
 section#feature-content {
