@@ -10,6 +10,10 @@
   padding: 50px; 
 }
 
-.jumbotron h1 {
+.jumbotron .heading {
   margin-top: 50px;
+}
+
+.jumbotron .sub-heading {
+  color: white;
 }

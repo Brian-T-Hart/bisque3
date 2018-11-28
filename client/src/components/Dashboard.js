@@ -12,24 +12,19 @@ import Chart from "./Chart";
 const Dashboard = () =>
 
 <div>
-  {/* Row #1 */}
-  <Row>
-    <Col size="md-12 sm-12">
-      <Jumbotron>
-        <h1><strong>Dashboard</strong></h1>
-        <p>Quickly see the sales and inventory levels. </p>
-      </Jumbotron>
-    </Col>
-  </Row>
+    <Jumbotron>
+      <h1 className="heading">Dashboard</h1>
+      <p className="sub-heading">Quickly See Weekly Sales Progress</p>
+    </Jumbotron>
 
       {/* Dashboard Content */}
-    <Row>
-      <Col size="md-12 sm-12">
-        <div className='private text-center'>
-         <Chart />
-        </div>
-      </Col>
-    </Row>
+    <Container className='private text-center'>
+       <Row>
+        <Col size="xs-12">
+          <Chart />
+        </Col>
+      </Row>
+    </Container>
 </div>
 
 export default Dashboard;

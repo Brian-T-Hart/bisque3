@@ -26,11 +26,11 @@ const App = () =>
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/private" component={PrivateContainer} />
-          <Route exact path="/dashboard" component={Dashboard} />
+          {/* <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/customers" component={Customers} />
           <Route exact path="/products" component={Products} />
           <Route exact path="/sales" component={Sales} />
-          <Route exact path="/schedule" component={Schedule} />
+          <Route exact path="/schedule" component={Schedule} /> */}
           <Route component={NoMatch} />
         </Switch>
       <Footer />

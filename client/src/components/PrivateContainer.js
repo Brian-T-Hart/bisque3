@@ -42,7 +42,7 @@ class PrivateContainer extends Component {
 
   render() {
     return (
-      <div id="private-container">
+      <Container id="private-container">
         <Row>
           <Col size="xs-2">
             <VerticalMenu
@@ -55,8 +55,7 @@ class PrivateContainer extends Component {
             {this.renderPage()}
           </Col>
         </Row>
-        <Footer />
-      </div>
+      </Container>
     );
   }
 }

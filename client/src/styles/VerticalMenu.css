@@ -1,21 +1,25 @@
 /*Remove rounded coners*/
 
+.nav-tabs {
+  margin: 0;
+  border: 2px solid green;
+}
+
 .nav-tabs a {
   color: #2196F3 !important;
 }
 
 nav.sidebar.navbar {
   border-radius: 0px;
-  position: relative;
+  position: fixed;
   left: 0px;
   display: block;
   top: 0;
   bottom: 0;
   margin-right: 0;
   margin-bottom: 0px;
-  width: 100%;
-  min-width: 200px;
-  min-height: 170vh;
+  width: 200px;
+  height: 100vh;
   overflow-y: auto;
   
 }
@@ -99,17 +103,16 @@ nav.sidebar {
   nav.sidebar{
     position: fixed;
     width: 100%;
-    /* margin-left: -160px; */
-    margin-left: 18px;
+    margin-left: 0;
     float: left;
     z-index: 2;
     margin-bottom: 0px;
   }
 
   /*give sidebar 100% width;*/
-  nav.sidebar li {
+  /* nav.sidebar li {
     width: 100%;
-  }
+  } */
 
   /* Move nav to full on mouse over*/
   /* nav.sidebar:hover{

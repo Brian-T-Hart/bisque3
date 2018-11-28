@@ -23,9 +23,9 @@ html, body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-bottom: 50px; /* Height of the footer */
+  margin-top: 54px;
+  margin-bottom: 55px;  /* Height of the footer */
+  min-height: calc(100vh - 55px) !important;
   line-height: 1.5;
   position: relative; 
   background-attachment: fixed !important;
@@ -42,7 +42,7 @@ body {
   /* background-image: url("./img/FreeGreatPicture.com-685-background-color.jpg"); */
   color: rgb(56, 58, 66);
   height:100%;
-  /* border: 2px solid yellow; */
+  border: 2px solid pink;
 }
 
 
@@ -89,7 +89,7 @@ a:hover {
 .container {
   margin: 0 !important;
   width: 100% !important;
-  /* border: 2px solid purple; */
+  border: 2px solid purple;
 }
 
 /* Parallax Effect */
@@ -173,12 +173,6 @@ section#feature-content {
 .content {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-#private-container {
-  position: absolute;
-  left: -20px;
-  right: 0px;
 }
 
 #about {
@@ -502,11 +496,23 @@ i.fa-mobile {
 
 /* Private Pages After Logging In */
 
+#private-container {
+  position: absolute;
+  left: 0;
+  top: 100px !important;
+  right: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: white !important;
+  border: 2px solid red;
+}
+
 .private {
   /* border: 1px dashed #004eb8; */
   height: auto;
   width: 95%;
   color:black;
+  background-color: white;
   margin-right: 0px;
   margin-left: 30px;
   margin-top: 15px;

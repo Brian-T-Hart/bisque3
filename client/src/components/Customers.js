@@ -10,16 +10,13 @@ import CustForm from "./CustForm";
 
 const Customers = () =>
   <div>
-      {/* Row #1 */}
-    <Row>
-      <Col size="md-12 sm-12">
-        <Jumbotron>
-          <h1><strong>Customers</strong></h1>
-          <p>Quickly see all the customers in the database. </p>
-        </Jumbotron>
-      </Col>
+    <Jumbotron>
+      <h1 className="heading">Customers</h1>
+      <p className="sub-heading">View Customer Database</p>
+    </Jumbotron>
 
-      <Col size="md-12 sm-12">
+    <Row>
+      <Col size="xs-12">
         <CustForm />
          <CustTable />
       </Col>

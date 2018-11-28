@@ -91,15 +91,10 @@ render() {
 return (
 <div>
   {/* Row #1 */}
-  <Row>
-    <Col size="md-12 sm-12">
-      <Jumbotron>
-        <h1><strong>Products</strong></h1>
-        <p>Find product photo and details here. </p>
-      </Jumbotron>
-    </Col>
-  </Row>
-
+  <Jumbotron>
+    <h1 className="heading">Products</h1>
+    <p className="sub-heading">Find Product and Inventory Details</p>
+  </Jumbotron>
   <Row>
     {/* Product Form */}
     <Col size="md-12 sm-12">

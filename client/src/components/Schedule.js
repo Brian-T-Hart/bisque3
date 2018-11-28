@@ -13,16 +13,10 @@ import CalForm from "./CalForm";
 const Schedule = () =>
 
 <div>
-
-  <Row>
-    <Col size="md-12 sm-12">
-      <Jumbotron>
-        <h1><strong>Schedule</strong></h1>
-        <p>Plan your sales meeting and delivery schedule. </p>
-      </Jumbotron>
-    </Col>
-  </Row>
-
+  <Jumbotron>
+    <h1 className="heading">Schedule</h1>
+    <p className="sub-heading">Plan Client Meetings and Product Deliveries</p>
+  </Jumbotron>
 
     {/* Dashboard Content */}
     <Row>
@@ -47,8 +41,7 @@ const Schedule = () =>
               </div>
           </Col>
       </Row>
-
-      </Container> 
+    </Container> 
 
 
 </div>

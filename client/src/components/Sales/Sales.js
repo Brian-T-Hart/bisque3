@@ -97,17 +97,13 @@ render(){
   return (
     <div>
       {/* Sales Form */}
-      <Row fluid>
-        <Col size="md-12 sm-12">
-          <Jumbotron>
-            <h1><strong>Sales Form</strong></h1>
-            <p>Quickly see the sales details.</p>
-          </Jumbotron>
-        </Col>
-      </Row>
+      <Jumbotron>
+        <h1 className="heading">Sales Records</h1>
+        <p className="sub-heading">Record and View Sales Details</p>
+      </Jumbotron>
 
-      <Row fluid>
-        <Col size="md-12 sm-12">
+      <Row>
+        <Col size="xs-12">
           <form className="form-form-horizontal DataForm">  
             <h2>Record Your Sales Below:</h2>
 
@@ -165,8 +161,8 @@ render(){
       </Row>
       
         {/* Sales Table */}
-        <Row fluid>
-          <Col size="md-12 sm-12">
+        <Row>
+          <Col size="xs-12">
             <div className='private text-center sales-table'>
               {this.state.sales.length ? (
                 <TableContainerSales>
