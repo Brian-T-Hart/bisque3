@@ -18,7 +18,7 @@ class Chart extends Component {
                     datasets: [{
                         label: 'Sales',
                         data: [0, chartData1, chartData2, chartData3, chartData4],
-                        backgroundColor: ['rgba(255, 255,255, .8)'],
+                        backgroundColor: ['rgba(0, 0, 0, 1)'],
                     }]
                 }
         })
@@ -78,7 +78,7 @@ class Chart extends Component {
                label: 'Sales',
             //    this is my "x" axis data
                data:[0, chartData1, 0, 0, 0],
-               backgroundColor:['rgba(0, 0, 0, 0)'], 
+               backgroundColor: ['rgba(0, 0, 0, 1)'],
             }]
              }
          }
@@ -90,7 +90,7 @@ class Chart extends Component {
               <Line
               data={this.state.chartData}
               width={100}
-              height={50}
+              height={75}
               options={{
                   title: {
                       display:true,
