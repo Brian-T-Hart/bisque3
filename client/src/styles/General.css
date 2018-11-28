@@ -85,9 +85,6 @@ a:hover {
 }
 
 .container {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
   border: 2px solid purple;
 }
 
@@ -114,15 +111,14 @@ section.parallax:after {
   right: 0;
   bottom: 0;
   top: 0;
-  background: #0060DF;
-  opacity: 0.3;
-  z-index: 100;
+  background: rgba(0, 97, 223, 0.3);
+  z-index: 10;
   content:'';
 }
 
 section.parallax-1 {  
   background: #0047a6;
-  z-index: 200;
+  z-index: 20;
 }
 
 section#why-content {
@@ -141,6 +137,7 @@ section.parallax-3 {
 
 section.parallax-4 {
   background-image: url("img/team.jpg");
+  background-position: 50% 70%;
 }
 
 section#feature-content {
@@ -174,10 +171,6 @@ section#feature-content {
   padding-bottom: 50px;
 }
 
-#about {
-  margin-bottom: 60px;
-}
-
 .panel-login, .contact-form {
   margin-bottom: calc(90% - 50px) !important;
 }
@@ -196,7 +189,6 @@ section#why {
   margin-left: 10%;
   height: auto;
   position: relative;
-  z-index: 200;
 }
 
 /* Icons for Why and Features Section */
@@ -268,29 +260,33 @@ i.fa-mobile {
   padding: 60px 10px 10px 20px;
 }
 
-/* Team */
-.team .team-heading-1 {
+/* About */
+#about .team-heading-1 {
   font-size: 22px;
   text-align: left !important;
 }
 
-.team .team-heading-2 {
+#about .team-heading-2 {
   font-size: 18px;
   text-align: left !important;
   margin-bottom: 15px;
 }
 
-.team .row {
+#about .row {
   margin-bottom: 20px;
 }
 
-.aboutImg {
+#about .aboutImg {
   width: 100px;
   padding: 10px;
 }
 
-
 /* Testimonial Section */
+
+.content {
+  position: relative;
+  z-index: 20;
+}
 
 #testimonial{
   /* overflow: hidden; */
@@ -298,6 +294,7 @@ i.fa-mobile {
   position: relative;
   background: #004eb8;
 }
+
 #testimonial .carousel-inner{
   width: 75%;
   margin: auto;
@@ -518,7 +515,6 @@ i.fa-mobile {
   padding: 20px;
   margin-bottom: 20px;  */
   opacity: .9;
-  z-index: -1;
 }
 
 @media (min-width: 736px) {

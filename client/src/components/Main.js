@@ -16,6 +16,7 @@ import Login from "./Login";
     render() {
         return (
         <div>
+            <Nav />
             {/* Hero Video Section */}
 
             <section className="parallax">  
@@ -139,55 +140,55 @@ import Login from "./Login";
                         </Col>
                     </Row>                    
                 </div>
-            </section>
-            <section>
-                <Container className="content wow fadeInUp">
+                <div className="container content wow fadeInUp content">
                     <Row>
-                        <div id="testimonial" className="carousel fade-carousel slide testimonial_indicators testimonial_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3500" data-duration="2000">
-                            {/* <!-- Indicators --> */}
-                            <ol className="carousel-indicators">
-                                <li data-target="#testimonial" data-slide-to="0" className="active"></li>
-                                <li data-target="#testimonial" data-slide-to="1"></li>
-                                <li data-target="#testimonial" data-slide-to="2"></li>
-                            </ol>
+                        <Col size="xs-12">
+                            <div id="testimonial" className="carousel fade-carousel slide testimonial_indicators testimonial_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="3500" data-duration="2000">
+                                {/* <!-- Indicators --> */}
+                                <ol className="carousel-indicators">
+                                    <li data-target="#testimonial" data-slide-to="0" className="active"></li>
+                                    <li data-target="#testimonial" data-slide-to="1"></li>
+                                    <li data-target="#testimonial" data-slide-to="2"></li>
+                                </ol>
 
-                            {/* <!-- Wrapper for slides --> */}
-                            <div className="carousel-inner" role="listbox">
-                                <div className="item active">
-                                    <div className="testimonial_slide">
-                                        <img src={require(`../styles/img/t-1.jpg`)} className="img-circle img-responsive" />
-                                        <h5>"I love Goal Post! Great tool to keep track of my customer information, sales notes, and plan my clients visits."</h5>
-                                        <h6>- Alex</h6>
+                                {/* <!-- Wrapper for slides --> */}
+                                <div className="carousel-inner" role="listbox">
+                                    <div className="item active">
+                                        <div className="testimonial_slide">
+                                            <img src={require(`../styles/img/t-1.jpg`)} className="img-circle img-responsive" />
+                                            <h5>"I love Goal Post! Great tool to keep track of my customer information, sales notes, and plan my clients visits."</h5>
+                                            <h6>- Alex</h6>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="testimonial_slide">
+                                            <img src={require(`../styles/img/t-2.jpg`)} className="img-circle img-responsive" />
+                                            <h5>"I wish I knew about Goal Post years earlier. Every salesperson should use GoalPost."</h5>
+                                            <h6>- Brandon</h6>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="testimonial_slide">
+                                            <img src={require(`../styles/img/t-3.jpg`)} className="img-circle img-responsive" />
+                                            <h5>"No more piles of sales notes. With Goal Post, now I can keep my customer records digitally in the cloud."</h5>
+                                            <h6>- Lisa</h6>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="item">
-                                    <div className="testimonial_slide">
-                                        <img src={require(`../styles/img/t-2.jpg`)} className="img-circle img-responsive" />
-                                        <h5>"I wish I knew about Goal Post years earlier. Every salesperson should use GoalPost."</h5>
-                                        <h6>- Brandon</h6>
-                                    </div>
-                                </div>
-                                <div className="item">
-                                    <div className="testimonial_slide">
-                                        <img src={require(`../styles/img/t-3.jpg`)} className="img-circle img-responsive" />
-                                        <h5>"No more piles of sales notes. With Goal Post, now I can keep my customer records digitally in the cloud."</h5>
-                                        <h6>- Lisa</h6>
-                                    </div>
-                                </div>
+
+                                {/* <!-- Left and right controls --> */}
+                                <a className="left carousel-control" href="#testimonial" role="button" data-slide="prev">
+                                    <span className="fa fa-chevron-left"></span>
+                                    <span className="sr-only">Previous</span>
+                                </a>
+                                <a className="right carousel-control" href="#testimonial" role="button" data-slide="next">
+                                    <span className="fa fa-chevron-right"></span>
+                                    <span className="sr-only">Next</span>
+                                </a>
                             </div>
-
-                            {/* <!-- Left and right controls --> */}
-                            <a className="left carousel-control" href="#testimonial" role="button" data-slide="prev">
-                                <span className="fa fa-chevron-left"></span>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="right carousel-control" href="#testimonial" role="button" data-slide="next">
-                                <span className="fa fa-chevron-right"></span>
-                                <span className="sr-only">Next</span>
-                            </a>
-                        </div>
+                        </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
             
             {/* Team Section */}

@@ -17,8 +17,7 @@ class Nav extends Component {
 
   render() {
     return ( 
-      <nav className="navbar-default navbar-fixed-top">
-        <Container>
+      <nav className="nav navbar-default navbar-fixed-top container-fluid">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-right">
               <span className="icon-bar"></span>
@@ -53,8 +52,7 @@ class Nav extends Component {
               </li>
             </ul>
           </div>
-        </Container>
-        </nav>
+      </nav>
     );
   }
 }

@@ -10,15 +10,16 @@
   color: white;
 }
 
-.team .jumbotron {
+#about .jumbotron {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 45px;
   padding: 10px;
   background: linear-gradient(to top,#18ABFB 0%, #0060DF 100% );
-  background-color: rgb(1, 62, 141);
+  background-color: #013e8d;
   color: white;
+  border-radius: 0;
 }
 
-.team .jumbotron .sub-heading {
+#about .jumbotron .sub-heading {
   color: white !important;
 }

@@ -19,7 +19,7 @@ import General from "./styles/General.css";
 const App = () =>
   <Router>
     <div>
-      <Nav />
+      {/* <Nav /> */}
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/about" component={About} />
