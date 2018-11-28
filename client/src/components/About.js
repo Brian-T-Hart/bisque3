@@ -12,7 +12,7 @@ const About = () => (
   
   <div id="about" className="team">
 
-  <Nav />
+  {/* <Nav /> */}
     <Jumbotron className="wow fadeInUp">
       <h1>Our Team</h1>
     </Jumbotron>
@@ -23,7 +23,7 @@ const About = () => (
         <Col size="xs-2 xs-offset-1">
           <center>
             <img
-              className="aboutImg img-circle"
+              className="col-xs-12 aboutImg img-circle img-responsive"
               src={require(`../styles/img/jeannine.jpg`)}
               alt="Jeanine"
               style={{ width: "150px" }}
@@ -48,7 +48,7 @@ const About = () => (
         <Col size="xs-2 xs-offset-1">
           <center>
             <img
-              className="aboutImg img-circle"
+              className="col-xs-12 aboutImg img-circle img-responsive"
               src={require(`../styles/img/Guiyu.jpg`)}
               alt="Guiyu"
               style={{ width: "150px" }}
@@ -74,7 +74,7 @@ const About = () => (
         <Col size="xs-2 xs-offset-1">
           <center>
             <img
-              className="aboutImg img-circle"
+              className="col-xs-12 aboutImg img-circle img-responsive"
               src={require(`../styles/img/Dennis.jpg`)}
               alt="Dennis"
               style={{ width: "150px" }}
@@ -102,7 +102,7 @@ const About = () => (
         <Col size="xs-2 xs-offset-1">
           <center>
             <img
-              className="aboutImg img-circle"
+              className="col-xs-12 aboutImg img-circle img-responsive"
               src={require(`../styles/img/Brian.jpg`)}
               alt="Brian"
               style={{ width: "150px" }}
@@ -127,7 +127,7 @@ const About = () => (
         <Col size="xs-2 xs-offset-1">
           <center>
             <img
-              className="aboutImg img-circle"
+              className="col-xs-12 aboutImg img-circle img-responsive"
               src={require(`../styles/img/Tatianna.jpg`)}
               alt="Tatianna"
               style={{ width: "150px" }}
