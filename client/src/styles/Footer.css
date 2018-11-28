@@ -2,18 +2,10 @@ footer {
   left: 0;
   bottom: 0 !important;
   width: 100%;
-  height: auto; /*Footer Height*/
+  height: 55px; /*Footer Height*/
   background-color: black;
-  padding: 15px;
+  padding-top: 20px;
   color: white !important;
   text-align: center;
   z-index: 100;
-  border: 2px solid yellow;
-  margin-bottom: 0px;
 }
-
-/* @media (max-width: 736px) {
-  .footer {
-    display: none;
-  }
-} */

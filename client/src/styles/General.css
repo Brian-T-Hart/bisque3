@@ -16,10 +16,10 @@ html, body {
 }
 
 
-html {
+/* html {
   border: 2px solid red;
-  /* overflow-x: hidden; */
-}
+  overflow-x: hidden;
+} */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@ body {
   /* background: linear-gradient(to bottom right, #56B2BA 0%, #1fc8db 51%, #0BDD9C 100%); */
   /* background-image: url("./img/FreeGreatPicture.com-685-background-color.jpg"); */
   color: rgb(56, 58, 66);
-  border: 2px solid gold;
+  /* border: 2px solid gold; */
 }
 
 
@@ -84,9 +84,9 @@ a:hover {
   text-underline-position: under;
 }
 
-.container {
+/* .container {
   border: 2px solid purple;
-}
+} */
 
 /* Parallax Effect */
 section.parallax {
