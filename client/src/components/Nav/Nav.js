@@ -45,7 +45,7 @@ class Nav extends Component {
                 <a href="/#team"><span className="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Team</a>
               </li>
               <li>
-                <a href="/contact"><span className="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact Us</a>
+                <a href="/#contact"><span className="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact Us</a>
               </li>
               <li>
                 <a href="/login"><span className="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Login/Register</a>

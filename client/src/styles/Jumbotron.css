@@ -1,7 +1,7 @@
 .jumbotron {
   width: 100%;
   margin-bottom: 20px;
-  color: rgb(1, 62, 141);
+  color: #013e8d;
   background-color: white;
   border-radius: 0;
 }
@@ -10,16 +10,19 @@
   color: white;
 }
 
-#about .jumbotron {
+#about .jumbotron, 
+#login-register .jumbotron,
+#contact .jumbotron {
   width: 100%;
   margin-top: 45px;
   padding: 10px;
   background: linear-gradient(to top,#18ABFB 0%, #0060DF 100% );
-  background-color: #013e8d;
   color: white;
   border-radius: 0;
 }
 
-#about .jumbotron .sub-heading {
+#about .jumbotron .sub-heading,
+#login-register .jumbotron .sub-heading,
+#contact .jumbotron .sub-heading {
   color: white !important;
 }

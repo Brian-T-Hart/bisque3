@@ -5,6 +5,7 @@ import "../../styles/Login.css";
 import API from "../../utils/API";
 import decode from "jwt-decode";
 import Nav from "../Nav";
+import Jumbotron from "../Jumbotron";
 
 var chartData1;
 
@@ -83,6 +84,9 @@ class Login extends Component {
     return (
       <section id="login-register">
         <Nav />
+        <Jumbotron className="wow fadeInUp">
+          <h1>Our Team</h1>
+        </Jumbotron>
         <Container>
           <Row>
             <Col size="md-6 md-offset-3 sm-6 sm-offset-3">

@@ -75,11 +75,11 @@ p {
 }
 
 a {
-  color: #00a1e0;
+  color: #ff6600;
 }
 
 a:hover {
-  color: #00a1e0;
+  color: #ff6600;
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -118,12 +118,11 @@ section.parallax:after {
 
 section.parallax-1 {  
   background: #0047a6;
-  z-index: 20;
 }
 
 section#why-content {
   /* Offset Hero Overlay Tint */
-  background-color:#004eb8; 
+  background-color:#004fb7;
 }
 
 section.parallax-2 {
@@ -135,9 +134,14 @@ section.parallax-3 {
   /* background-image: url("img/thumb-up.jpg"); */
 }
 
+.over {
+  position:relative;
+  z-index: 20;
+}
+
 section#team {
   background-image: url("img/team.jpg");
-  background-position-y: 50vh;
+  background-position-y: 5vh;
 }
 
 section#feature-content {
@@ -171,7 +175,7 @@ section#feature-content {
   padding-bottom: 50px;
 }
 
-.panel-login, .contact-form {
+.panel-login {
   margin-bottom: calc(90% - 50px) !important;
 }
 
@@ -292,7 +296,7 @@ i.fa-mobile {
   /* overflow: hidden; */
   min-height: 375px;
   position: relative;
-  background: #004eb8;
+  background: transparent;
 }
 
 #testimonial .carousel-inner{
@@ -489,6 +493,11 @@ i.fa-mobile {
   }
 }
 
+#contact {
+  background-color: #004fb7;
+  height: auto;
+  margin: 0;
+}
 
 /* Private Pages After Logging In */
 

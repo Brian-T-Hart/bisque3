@@ -11,7 +11,6 @@ import Products from "./components/Products";
 import Dashboard from "./components/Dashboard";
 import Schedule from "./components/Schedule";
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Login from "./components/Login";
 import PrivateContainer from "./components/PrivateContainer";
 import General from "./styles/General.css";
@@ -23,7 +22,6 @@ const App = () =>
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/private" component={PrivateContainer} />
           {/* <Route exact path="/dashboard" component={Dashboard} />
