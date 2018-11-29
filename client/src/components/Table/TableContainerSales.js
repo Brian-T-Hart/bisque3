@@ -6,7 +6,7 @@ export const TableContainerSales= ({ children }) => {
         <table>
             <thead>
                 <tr>
-                    <th className="col-md-1">#</th>
+                    <th className="col-md-1">Record ID</th>
                     <th className="col-md-2">Customer</th>
                     <th className="col-md-2">Product</th>
                     <th className="col-md-2">Quantity</th>

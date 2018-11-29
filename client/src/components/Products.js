@@ -93,7 +93,7 @@ return (
   {/* Row #1 */}
   <Jumbotron>
     <h1 className="heading">Products</h1>
-    <p className="sub-heading">Find Product and Inventory Details</p>
+    <p className="sub-heading">View Product and Inventory Details</p>
   </Jumbotron>
   <Row>
     {/* Product Form */}
