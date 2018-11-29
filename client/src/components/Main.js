@@ -27,7 +27,7 @@ class Main extends Component {
               <h2>
               Free CRM built for small business success
               </h2>
-              <h3>100% free. No credit card needed.</h3>
+              <h3>100% free. Immediate access. No credit card required.</h3>
             </div>
             <video
               width="100%"
