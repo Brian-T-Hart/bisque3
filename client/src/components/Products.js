@@ -10,7 +10,7 @@ import API from "../utils/API";
 import "./Form/DataForm.css";
 import PubSub from 'pubsub-js';
 import { TableContainerProduct, TableRow} from "./Table";
-import "./Table/Table.css";
+import "../styles/Table.css";
 
 class Products extends Component {
   state = {
@@ -91,16 +91,11 @@ render() {
 return (
 <div>
   {/* Row #1 */}
-  <Row fluid>
-    <Col size="md-12 sm-12">
-      <Jumbotron>
-        <h1><strong>Products</strong></h1>
-        <p>Find product photo and details here. </p>
-      </Jumbotron>
-    </Col>
-  </Row>
-
-  <Row fluid>
+  <Jumbotron>
+    <h1 className="heading">Products</h1>
+    <p className="sub-heading">View Product and Inventory Details</p>
+  </Jumbotron>
+  <Row>
     {/* Product Form */}
     <Col size="md-12 sm-12">
       <center>
@@ -123,7 +118,7 @@ return (
     </Row>
 
     {/* Product Table */}
-      <Row fluid>
+      <Row>
         <Col size="md-12 sm-12">
           <div className='private text-center sales-table'>
             {this.state.products.length ? (

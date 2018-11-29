@@ -3,8 +3,8 @@ import "../../styles/Footer.css";
 
 const Footer = () =>
     <footer>
-        <div className="footer" >
-            <h5>Goal Post Copyright © 2017 | All Rights Reserved</h5>
+        <div>
+            Goal Post Copyright © 2018 | All Rights Reserved
         </div>
     </footer>
 

@@ -6,7 +6,7 @@ import CustAPI from "../../utils/custAPI";
 import PubSub from 'pubsub-js';
 import DeleteBtn from "../../components/DeleteBtn";
 import { TableContainerCust, TableRow} from "../Table";
-import "../Table/Table.css";
+import "../../styles/Table.css";
 
 class CustTable extends Component {
     state = {

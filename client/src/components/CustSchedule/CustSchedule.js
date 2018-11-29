@@ -7,7 +7,7 @@ import PubSub from 'pubsub-js';
 import Checkbox from '../../components/Checkbox';
 import CustTable from '../../components/CustTable';
 import { TableContainerCust, TableRow} from "../Table";
-import "../Table/Table.css";
+import "../../styles/Table.css";
 
 
 class CustSchedule extends Component {

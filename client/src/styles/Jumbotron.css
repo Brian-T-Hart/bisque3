@@ -1,15 +1,26 @@
 .jumbotron {
-  min-height: 200px;
   width: 100%;
-  /* background: linear-gradient(to bottom right, #0060DF 0%, #18ABFB 50%, #0060DF 100% ); */
-  background: linear-gradient(to bottom right,  rgb(1, 62, 141) 0%, #18ABFB 100% );
-  /* background: black; */
-  color: white !important;
-  padding: 50px; 
+  margin-bottom: 20px;
+  color: #013e8d;
+  background-color: white;
+  border-radius: 0;
 }
 
-@media (min-width: 736px) {
-  .jumbotron {
-    margin-left: 2.5%;
-  }
+.jumbotron .sub-heading {
+  color: white;
 }
+
+#about .jumbotron, 
+#contact .jumbotron {
+  width: 100%;
+  margin-top: 45px;
+  padding: 10px;
+  background-image: linear-gradient(to top,#18ABFB 0%, #0060DF 100% );
+  color: white;
+  border-radius: 0;
+}
+
+#about .jumbotron .sub-heading {
+  color: white !important;
+}
+
