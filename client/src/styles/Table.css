@@ -1,8 +1,9 @@
 table {
     width: 105.2%;
     margin-left: -30px;
-    background-color:#004eb8 !important;
-    text-align: center;
+    background-color:#013e8d !important;
+	text-align: center;
+	color: white !important;
 }
 
 table, th, td {
@@ -10,13 +11,12 @@ table, th, td {
  }
 
 th {
-    background-color: #004eb8;
-    color: white;
+    background-color: #013e8d;
     text-align: center;
 }
 
 tr:hover {
-    border: 2px solid #0060DF;
+    border: 1px solid white;
 }
 
 /* tr:nth-of-type(even) {
@@ -26,6 +26,7 @@ tr:hover {
 table tbody {
 	height: 562px;
 	width: 100%;
+	text-align: left;
 }
 
 table thead tr{
@@ -38,7 +39,7 @@ table thead tr{
 
 
 table thead{
-	background: #004eb8;
+	background: #013e8d;
 	color: #fff;
 }
 
@@ -54,10 +55,10 @@ table>tbody>tr>td, table>tbody>tr>th, table>tfoot>tr>td, table>tfoot>tr>th, tabl
 	line-height: 32px;
 }
 
-.table_scrollbar{
+/* .table_scrollbar{
 	height: 612px;
 	overflow-y: scroll;
-}
+} */
 
 /* .table_scrollbar::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px #004eb8;
