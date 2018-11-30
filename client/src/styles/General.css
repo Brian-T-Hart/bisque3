@@ -554,6 +554,10 @@ i.fa-mobile {
   width: 100%;
 }
 
+#private-container h1, h2, h3, h4 {
+  color: white !important;
+}
+
 .private {
   /* border: 1px dashed #004eb8; */
   height: auto;

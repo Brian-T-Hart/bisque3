@@ -178,7 +178,7 @@ render(){
                   ))}
                 </TableContainerSales>
               ) : (
-                  <h3>No Results to Display</h3>
+                <h3>No Records Available</h3>
                 )}
             </div>
           </Col>

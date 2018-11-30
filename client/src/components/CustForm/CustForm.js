@@ -86,10 +86,10 @@ class CustForm extends Component {
   render () {
     return (
       <Row>
-        <Col size="md-12 sm-12">
+        <Col size="sm-12">
           <form className="form-form-horizontal DataForm" ref="form">
             <h2>Enter customer information below:</h2>
-            <Col size="md-4 sm-4">
+            <Col size="sm-4">
               <Input
                 value={this.state.customer_firstname}
                 onChange={this.handleInputChange}
@@ -98,7 +98,7 @@ class CustForm extends Component {
                 required
               />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="sm-4">
               <Input
                 value={this.state.customer_lastname}
                 onChange={this.handleInputChange}
@@ -107,7 +107,7 @@ class CustForm extends Component {
                 required
               />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="sm-4">
               <Input
                 value={this.state.customer_company}
                 onChange={this.handleInputChange}
@@ -116,7 +116,7 @@ class CustForm extends Component {
                 required
               />
             </Col>
-            <Col size="md-6 sm-6">
+            <Col size="sm-6">
               <Input
                 value={this.state.customer_email}
                 onChange={this.handleInputChange}
@@ -124,7 +124,7 @@ class CustForm extends Component {
                 placeholder="Email Address"
               />
             </Col>
-            <Col size="md-6 sm-6">
+            <Col size="sm-6">
               <Input
                 value={this.state.customer_phone}
                 onChange={this.handleInputChange}
@@ -132,7 +132,7 @@ class CustForm extends Component {
                 placeholder="Phone Number i.e. +1 123-456-7890"
               />
             </Col>
-            <Col size="md-12 sm-12">
+            <Col size="sm-12">
               <Input
                 value={this.state.customer_street}
                 onChange={this.handleInputChange}
@@ -140,7 +140,7 @@ class CustForm extends Component {
                 placeholder="Street"
               />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="sm-4">
               <Input
                 value={this.state.customer_city}
                 onChange={this.handleInputChange}
@@ -148,7 +148,7 @@ class CustForm extends Component {
                 placeholder="City"
               />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="sm-4">
               <Input
                 value={this.state.customer_state}
                 onChange={this.handleInputChange}
@@ -156,7 +156,7 @@ class CustForm extends Component {
                 placeholder="State (i.e. CA)"
               />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="sm-4">
               <Input
                 value={this.state.customer_zipcode}
                 onChange={this.handleInputChange}
@@ -164,7 +164,7 @@ class CustForm extends Component {
                 placeholder="Zip Code"
               />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="sm-4">
               <Input
                 value={this.state.customer_notes}
                 onChange={this.handleInputChange}

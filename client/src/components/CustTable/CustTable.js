@@ -48,7 +48,7 @@ class CustTable extends Component {
         return (
             <div>
             <Row>
-                <Col size="md-12 sm-12">
+                <Col size="sm-12">
                     <div className='private text-center customer-table'>
                         {this.state.customers.length ? (
                        <TableContainerCust>
@@ -69,7 +69,7 @@ class CustTable extends Component {
                                 ))}
                                 </TableContainerCust>
                                 ) : (
-                            <h3>No Results to Display</h3>
+                            <h3>No Records Available</h3>
                             )}
                     </div>
                 </Col>
