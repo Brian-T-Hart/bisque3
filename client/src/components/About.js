@@ -22,9 +22,8 @@ const About = () => (
           <center>
             <img
               className="col-xs-12 aboutImg img-circle img-responsive"
-              src={require(`../styles/img/jeannine.jpg`)}
+              src={require(`../styles/img/jeannine_2.jpg`)}
               alt="Jeanine"
-              style={{ width: "150px" }}
             />
           </center>
         </Col>
@@ -47,9 +46,8 @@ const About = () => (
           <center>
             <img
               className="col-xs-12 aboutImg img-circle img-responsive"
-              src={require(`../styles/img/Guiyu.jpg`)}
+              src={require(`../styles/img/Guiyu_3.jpg`)}
               alt="Guiyu"
-              style={{ width: "150px" }}
             />
           </center>
         </Col>
@@ -73,9 +71,8 @@ const About = () => (
           <center>
             <img
               className="col-xs-12 aboutImg img-circle img-responsive"
-              src={require(`../styles/img/Dennis.jpg`)}
+              src={require(`../styles/img/Dennis_2.jpg`)}
               alt="Dennis"
-              style={{ width: "150px" }}
             />
           </center>
         </Col>
@@ -101,9 +98,8 @@ const About = () => (
           <center>
             <img
               className="col-xs-12 aboutImg img-circle img-responsive"
-              src={require(`../styles/img/Brian.jpg`)}
+              src={require(`../styles/img/Brian_3.jpg`)}
               alt="Brian"
-              style={{ width: "150px" }}
             />
           </center>
         </Col>
@@ -126,9 +122,8 @@ const About = () => (
           <center>
             <img
               className="col-xs-12 aboutImg img-circle img-responsive"
-              src={require(`../styles/img/Tatianna.jpg`)}
+              src={require(`../styles/img/Tatianna_3.jpg`)}
               alt="Tatianna"
-              style={{ width: "150px" }}
             />
           </center>
         </Col>

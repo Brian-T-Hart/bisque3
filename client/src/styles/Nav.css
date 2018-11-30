@@ -1,6 +1,7 @@
 nav {
   background-color: #004fb7 !important;
-  border-bottom: 1px solid #01ffff !important;
+  border-bottom: 1px solid #0047a6 !important;
+  /* border-bottom: 1px solid #01ffff !important; */
   width: 100% !important;
 }
 
@@ -24,7 +25,7 @@ nav {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color:#01ffff;
+  color: #01ffff;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,

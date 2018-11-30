@@ -35,7 +35,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #e3f7ff;
+  background: white;
   /* background: linear-gradient(to bottom right, #004eb8 0%, #18ABFB 50%, #0BDD9C 100%); */
   /* background: linear-gradient(to bottom right, #56B2BA 0%, #1fc8db 51%, #0BDD9C 100%); */
   /* background-image: url("./img/FreeGreatPicture.com-685-background-color.jpg"); */
@@ -328,8 +328,9 @@ i.fa-mobile {
 }
 
 #about .aboutImg {
-  width: 100px;
-  padding: 10px;
+  width: 100%;
+  padding: 0;
+  border: 5px solid #01ffff;
 }
 
 /* Testimonial Section */
