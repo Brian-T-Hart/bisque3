@@ -1,21 +1,25 @@
 import React from "react";
 import { Col, Row, Container } from "../Grid";
-import Jumbotron from "../Jumbotron";
+import Nav from "../Nav";
 
 const NoMatch = () =>
-  <Container fluid>
-    <Row>
-      <Col size="md-12">
-        <Jumbotron>
-          <h1>404 Page Not Found</h1>
+<div>
+  <Nav />
+  <section id="no-match" className="short-page">
+    <Container>
+      <Row>
+        <Col size="xs-12">
+          <h1>Sorry, page not found.</h1>
           <h1>
             <span role="img" aria-label="Face With Rolling Eyes Emoji">
               🙄
             </span>
           </h1>
-        </Jumbotron>
-      </Col>
-    </Row>
-  </Container>;
+        </Col>
+      </Row>
+    </Container>
+
+  </section>
+</div>
 
 export default NoMatch;

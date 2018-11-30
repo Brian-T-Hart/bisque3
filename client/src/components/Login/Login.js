@@ -82,7 +82,7 @@ class Login extends Component {
 
   render() {
     return (
-      <section id="login-register">
+      <section id="login-register" className="short-page">
         <Nav />
         <Container>
           <Row>
@@ -92,13 +92,13 @@ class Login extends Component {
                 <div className="panel-heading">
                   <Row>
                     <Col size="xs-6">
-                      <a href="/login" className="active" id="login-form-link">
-                        LOGIN
+                      <a href="/register" className="active" id="register-form-link">
+                        REGISTER
                       </a>
                     </Col>
                     <Col size="xs-6">
-                      <a href="/register" id="register-form-link">
-                        REGISTER
+                      <a href="/login" id="login-form-link">
+                        LOGIN
                       </a>
                     </Col>
                   </Row>
@@ -110,56 +110,6 @@ class Login extends Component {
                 <div className="panel-body">
                   <Row>
                     <Col size="md-12 sm-12">
-                      {/* Login Form */}
-
-                      <form id="login-form" style={{ display: "block" }}>
-                        <h2 className="panel-heading"> Welcome Back! </h2>
-                        <Input
-                          type="text"
-                          name="username"
-                          id="username"
-                          tabIndex="1"
-                          placeholder="Username *"
-                          value={this.state.username}
-                          onChange={this.handleInputChange}
-                          required
-                        />
-                        <Input
-                          type="password"
-                          name="password"
-                          id="password"
-                          tabIndex="2"
-                          placeholder="Password *"
-                          value={this.state.password}
-                          onChange={this.handleInputChange}
-                          required
-                        />
-
-                        {/* <Input type="checkbox" tabIndex="3" className="" name="remember" id="remember"></Input>
-                          <label for="remember">Remember Me</label> */}
-                        <Row>
-                          <Col size="md-6 md-offset-3 sm-6 sm-offset-3">
-                            <FormBtn
-                              type="submit"
-                              name="login-submit"
-                              id="login-submit"
-                              tabIndex="4"
-                              className="form-control btn-login"
-                              value="Log In"
-                              onClick={this.handleLogin}
-                            >
-                              Log In
-                            </FormBtn>
-                          </Col>
-                        </Row>
-
-                        {/* <Row>
-                            <Col size="md-12 sm-12" className="text-center">
-                            <a href="" tabIndex="5" className="forgot-password">Forgot Password?</a>
-                            </Col>
-                          </Row> */}
-                      </form>
-
                       {/* Register Form */}
 
                       <form id="register-form" style={{ display: "none" }}>
@@ -205,7 +155,7 @@ class Login extends Component {
                           required
                         />
                         <Row>
-                          <Col size="md-6 md-offset-3 sm-6 sm-offset-3">
+                          <Col size="sm-6 sm-offset-3">
                             <FormBtn
                               type="submit"
                               name="register-submit"
@@ -220,6 +170,57 @@ class Login extends Component {
                           </Col>
                         </Row>
                       </form>
+
+                      {/* Login Form */}
+
+                      <form id="login-form" style={{ display: "block" }}>
+                        <h2 className="panel-heading"> Welcome Back! </h2>
+                        <Input
+                          type="text"
+                          name="username"
+                          id="username"
+                          tabIndex="1"
+                          placeholder="Username *"
+                          value={this.state.username}
+                          onChange={this.handleInputChange}
+                          required
+                        />
+                        <Input
+                          type="password"
+                          name="password"
+                          id="password"
+                          tabIndex="2"
+                          placeholder="Password *"
+                          value={this.state.password}
+                          onChange={this.handleInputChange}
+                          required
+                        />
+
+                        {/* <Input type="checkbox" tabIndex="3" className="" name="remember" id="remember"></Input>
+                          <label for="remember">Remember Me</label> */}
+                        <Row>
+                          <Col size="sm-6 sm-offset-3">
+                            <FormBtn
+                              type="submit"
+                              name="login-submit"
+                              id="login-submit"
+                              tabIndex="4"
+                              className="form-control btn-login"
+                              value="Log In"
+                              onClick={this.handleLogin}
+                            >
+                              Log In
+                            </FormBtn>
+                          </Col>
+                        </Row>
+
+                        {/* <Row>
+                            <Col size="md-12 sm-12" className="text-center">
+                            <a href="" tabIndex="5" className="forgot-password">Forgot Password?</a>
+                            </Col>
+                          </Row> */}
+                      </form>
+
                     </Col>
                   </Row>
                 </div>
