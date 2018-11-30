@@ -100,7 +100,7 @@ const About = () => (
 
       {/* Row #4 */}
       <Row>
-        <div className="about">
+        <div className="about about-4">
           <Col size="xs-3 md-2 md-offset-1">
             <center>
               <img

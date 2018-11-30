@@ -324,7 +324,11 @@ i.fa-mobile {
 }
 
 #about .row {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+#about .about-4 {
+  margin-bottom: 200px !important;
 }
 
 #about .aboutImg {
