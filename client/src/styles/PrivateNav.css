@@ -18,10 +18,10 @@
 #private-nav ul li a:visited,
 #private-nav a:hover,
 #private-nav a:active,
-#private-nav a:focus,
-#private-nav a:active:focus {
+#private-nav a:focus {
   background-color: #004fb7 !important;
   color: white;
+  cursor: pointer;
 }
 
 #username {
