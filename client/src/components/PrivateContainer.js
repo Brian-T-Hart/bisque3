@@ -39,15 +39,11 @@ class PrivateContainer extends Component {
   render() {
     return (
       <div id="private-container">
+        <VerticalMenu
+          currentPage={this.state.currentPage}
+          handlePageChange={this.handlePageChange}
+        />
         <Container>
-          <Row>
-            <Col size="xs-12">
-              <VerticalMenu
-                currentPage={this.state.currentPage}
-                handlePageChange={this.handlePageChange}
-              />
-            </Col>
-          </Row>
           <Row>
             <Col size="xs-12">
               {/* Based on `this.state.currentPage`, render the appropriate component here. */}

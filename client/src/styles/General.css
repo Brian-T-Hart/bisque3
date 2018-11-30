@@ -552,25 +552,16 @@ i.fa-mobile {
   margin-top: 0;
   background-image: linear-gradient(to top,#01d9ff 0%, #004fb7 100% );
   width: 100%;
-  background-color: white !important;
-  border: 2px solid red;
 }
 
 .private {
   /* border: 1px dashed #004eb8; */
   height: auto;
-  width: 95%;
-  color:black;
-  background-color: white;
+  width: 100%;
   margin-right: 0px;
-  margin-left: 30px;
+  margin-left: 5%;
   margin-top: 15px;
   margin-bottom: 70px;
-  /* border-radius: 5px;
-  border: 1px solid #004eb8;
-  padding: 20px;
-  margin-bottom: 20px;  */
-  opacity: .9;
 }
 
 @media (min-width: 736px) {
