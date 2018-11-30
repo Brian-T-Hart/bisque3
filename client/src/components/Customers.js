@@ -4,7 +4,6 @@ import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
 import { List, ListItem } from "./List";		
 import DeleteBtn from "./DeleteBtn";		
-import VerticalMenu from "./VerticalMenu";
 import CustTable from "./CustTable";
 import CustForm from "./CustForm";
 

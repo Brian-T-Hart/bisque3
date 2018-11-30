@@ -4,7 +4,7 @@ import { Input, FormBtn } from "./Form";
 import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
 import Nav from "./Nav";
-import VerticalMenu from "./VerticalMenu";
+import PrivateNav from "./PrivateNav";
 import Dashboard from "./Dashboard";
 import Customers from "./Customers";
 import Products from "./Products";
@@ -39,7 +39,7 @@ class PrivateContainer extends Component {
   render() {
     return (
       <div id="private-container">
-        <VerticalMenu
+        <PrivateNav
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
         />

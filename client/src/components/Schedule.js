@@ -4,7 +4,6 @@ import { Input, FormBtn } from "./Form";
 import { Col, Row, Container } from "./Grid";
 import Jumbotron from "./Jumbotron";
 import Nav from "./Nav";		
-import VerticalMenu from "./VerticalMenu";
 import CustSchedule from "./CustSchedule";
 import CustMap from "./CustMap";
 import CalTable from "./CalTable";
