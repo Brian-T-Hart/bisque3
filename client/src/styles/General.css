@@ -548,9 +548,10 @@ i.fa-mobile {
 /* Private Pages After Logging In */
 
 #private-container {
-  margin-top: 50px;
+  min-height: calc(100vh - 106px + 51px); /*Remove height of navbar*/
+  margin-top: 0;
+  background-image: linear-gradient(to top,#01d9ff 0%, #004fb7 100% );
   width: 100%;
-  min-height: 100%;
   background-color: white !important;
   border: 2px solid red;
 }
