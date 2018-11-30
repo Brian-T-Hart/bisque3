@@ -49,7 +49,7 @@ class CustTable extends Component {
             <div>
             <Row>
                 <Col size="sm-12">
-                    <div className='private text-center customer-table'>
+                    <div className='private text-center table-responsive table-hover customer-table'>
                         {this.state.customers.length ? (
                        <TableContainerCust>
                         {this.state.customers.map(customer => (

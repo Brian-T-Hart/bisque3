@@ -163,7 +163,7 @@ render(){
         {/* Sales Table */}
         <Row>
           <Col size="xs-12">
-            <div className='private text-center sales-table'>
+            <div className='private text-center table-responsive table-hover sales-table'>
               {this.state.sales.length ? (
                 <TableContainerSales>
                   {this.state.sales.map(sale => (

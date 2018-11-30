@@ -117,8 +117,8 @@ return (
 
     {/* Product Table */}
       <Row>
-        <Col size="md-12 sm-12">
-          <div className='private text-center sales-table'>
+        <Col size="xs-12">
+          <div className='private text-center table-responsive sales-table'>
             {this.state.products.length ? (
               <TableContainerProduct>
                 {this.state.products.map(product => (

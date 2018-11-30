@@ -17,14 +17,14 @@ const Schedule = () =>
     <p className="sub-heading">Plan Client Meetings and Product Deliveries</p>
   </Jumbotron>
 
-    {/* Dashboard Content */}
-    <Row>
-    <Col size="md-10 sm-10">
-      <CustSchedule />
-    </Col>
-  </Row>
+    {/* Schedule Content */}
+  //   <Row>
+  //   <Col size="md-10 sm-10">
+  //     <CustSchedule />
+  //   </Col>
+  // </Row>
   <Row>
-    <Col size="md-10 sm-10">
+    <Col size="sm-12">
       <CalForm />
       <CalTable/>
     </Col>
