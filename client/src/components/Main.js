@@ -20,14 +20,21 @@ class Main extends Component {
 
         <section className="parallax">
           <div className="hero">
-            <div className="hero-overlay wow fadeInUp">
-              <h1 style={{ "font-size": "80px" }}>
-                Goal Post
-              </h1>
-              <h2>
-              Free CRM built for small business success
-              </h2>
-              <h3>100% free. Immediate access. No credit card required.</h3>
+            <div className="hero-overlay wow fadeInUp container">
+              <Row>
+                <Col size="xs-12">
+                  <h1>
+                    Goal Post
+                  </h1>
+                  <h2>
+                  Free CRM built for small business success
+                  </h2>
+                  <h2 className="note">100% free. Immediate access. No credit card required.</h2>
+                  <center>
+                    <a href="/register" className="btn btn-primary">Sign Up for Free</a>
+                  </center>
+                </Col>
+              </Row>
             </div>
             <video
               width="100%"
@@ -54,7 +61,7 @@ class Main extends Component {
           >
             <Row>
               <Col size="xs-12">
-                <h1>Why Us?</h1>
+                <h1>Why Goal Post</h1>
                 <h2>Our Competitive Advantages</h2>
               </Col>
             </Row>

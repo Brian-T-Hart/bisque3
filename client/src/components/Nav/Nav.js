@@ -33,7 +33,7 @@ class Nav extends Component {
                 <a href="/"><span className="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a>
               </li>
               <li>
-                <a href="/#why"><span className="glyphicon glyphicon-question-sign"></span>&nbsp;&nbsp;Why Us</a>
+                <a href="/#why"><span className="glyphicon glyphicon-question-sign"></span>&nbsp;&nbsp;Why</a>
               </li>
               <li>
                 <a href="/#features"><span className="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Features</a>
