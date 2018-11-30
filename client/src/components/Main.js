@@ -31,7 +31,7 @@ class Main extends Component {
                   </h2>
                   <h2 className="note">100% free. Immediate access. No credit card required.</h2>
                   <center>
-                    <a href="/register" className="btn btn-primary">Sign Up for Free</a>
+                    <a href="/login" className="btn btn-primary">Sign Up for Free</a>
                   </center>
                 </Col>
               </Row>
