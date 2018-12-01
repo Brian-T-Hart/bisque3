@@ -554,7 +554,10 @@ i.fa-mobile {
   width: 100%;
 }
 
-#private-container h1, h2, h3, h4 {
+#private-container h1, 
+#private-container h2, 
+#private-container h3, 
+#private-container h4 {
   color: white !important;
 }
 
