@@ -18,11 +18,11 @@ const Schedule = () =>
   </Jumbotron>
 
     {/* Schedule Content */}
-  //   <Row>
-  //   <Col size="md-10 sm-10">
-  //     <CustSchedule />
-  //   </Col>
-  // </Row>
+    <Row>
+    <Col size="md-10 sm-10">
+      <CustSchedule />
+    </Col>
+  </Row>
   <Row>
     <Col size="sm-12">
       <CalForm />

@@ -75,18 +75,19 @@ class CustSchedule extends Component {
     
     render() {
         return (
-            <Container>
-                <Row>
-                    <Col size="sm-12">
-                        <h1>Customers</h1>
-                        <p>Select the Customers you would like to visit</p>
-                        <form onSubmit={this.handleFormSubmit}>
-                        {this.createCheckboxes()}
-                        <button className="btn btn-default" type="submit">Route</button>
-                        </form>
-                    </Col>
-                </Row>   
-            </Container>    
+            <div></div>
+            // <Container>
+            //     <Row>
+            //         <Col size="sm-12">
+            //             <h1>Customers</h1>
+            //             <p>Select the Customers you would like to visit</p>
+            //             <form onSubmit={this.handleFormSubmit}>
+            //             {this.createCheckboxes()}
+            //             <button className="btn btn-default" type="submit">Route</button>
+            //             </form>
+            //         </Col>
+            //     </Row>   
+            // </Container>    
         );
     }
 }
