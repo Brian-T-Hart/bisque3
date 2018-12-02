@@ -13,17 +13,19 @@ class Chart extends Component {
   getChartData() {
     this.setState({
       chartData: {
-        labels: ["0", "week 1", "week 2", "week 3", "week 4"],
+        labels: ["week 1", "week 2", "week 3", "week 4"],
         datasets: [
           {
-            label: "Sales",
-            data: [0, chartData1, chartData2, chartData3, chartData4],
+            label: "Sales ($)",
+            data: [chartData1, chartData2, chartData3, chartData4],
             backgroundColor: ["#0047a6"]
           }
         ]
       }
     });
   }
+
+
 
   componentWillMount() {
     console.log("Chart component mounting..Chart.js");
@@ -70,10 +72,10 @@ class Chart extends Component {
     super(props);
     this.state = {
       chartData: {
-        labels: ["0", "week 1", "week 2", "week 3", "week 4"],
+        labels: ["week 1", "week 2", "week 3", "week 4"],
         datasets: [
           {
-            label: "Sales",
+            label: "Sales ($)",
             data: [0, chartData1, 0, 0, 0],
             backgroundColor: ["#0047a6"]
           }
@@ -88,15 +90,16 @@ class Chart extends Component {
         <Row>
           <Col size="xs-10 xs-offset-1">
             <div className="chart">
-                <Line
+                <Bar
                     data={this.state.chartData}
                     width={100}
                     height={80}
                     options={{
                         title: {
-                        display: true,
-                        text: "Weekly Sales Progress"
-                        }
+                          display: true,
+                          text: "Weekly Sales Progress"
+                        },
+                        maintainAspectRatio: true
                     }}
                 />
             </div>
