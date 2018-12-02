@@ -105,63 +105,78 @@ render(){
       <Container>
         <Row>
           <Col size="xs-12">
+          <center>
             <form className="form-form-horizontal DataForm">  
-              <h2>Record Your Sales Below:</h2>
+              <h2>Record a Sales Transaction</h2>
 
-              <label htmlFor="sale_customer">Customer:</label>
-              <Input
-                value={this.state.sale_customer}
-                onChange={this.handleInputChange}
-                name="sale_customer"
-                placeholder="Customer Name"
-                required
-              />
-
-              <label htmlFor="sale_product">Products Sold:</label>
-              <Input
-                value={this.state.sale_product}
-                onChange={this.handleInputChange}
-                name="sale_product"
-                placeholder="Name of Product That Was Sold"
-                required
-              />
-
-              <label htmlFor="sale_quantity">Quantity Sold:</label>
-              <Input
-                value={this.state.sale_quantity}
-                onChange={this.handleInputChange}
-                name="sale_quantity"
-                placeholder="Quantity Sold"
-                required
-              />
-
-              <label htmlFor="sale_purchasePrice">Price:</label>
-              <div className="input-group">  
-                <span className="input-group-addon">$</span> 
+              <Col size="xs-12">
+                {/* <label htmlFor="sale_customer">Customer:</label> */}
                 <Input
-                  value={this.state.sale_purchasePrice}
+                  value={this.state.sale_customer}
                   onChange={this.handleInputChange}
-                  name="sale_purchasePrice"
-                  placeholder="Purchase Price"
+                  name="sale_customer"
+                  placeholder="Customer Name"
                   required
                 />
-              </div>
+              </Col>
 
-              <label htmlFor="sale_note">Sale Note:</label>
+              <Col size="xs-4">
+                {/* <label htmlFor="sale_product">Products Sold:</label> */}
                 <Input
-                  value={this.state.sale_note}
+                  value={this.state.sale_product}
                   onChange={this.handleInputChange}
-                  name="sale_note"
-                  placeholder="Notes on the Sale"
+                  name="sale_product"
+                  placeholder="Products Sold"
                   required
                 />
+              </Col>
 
-                <FormBtn onClick={this.handleFormSubmit}>Record Transaction</FormBtn>
-            </form>
+              <Col size="xs-4">
+                {/* <label htmlFor="sale_quantity">Quantity Sold:</label> */}
+                <Input
+                  value={this.state.sale_quantity}
+                  onChange={this.handleInputChange}
+                  name="sale_quantity"
+                  placeholder="Quantity Sold"
+                  required
+                />
+              </Col>
+              <Col size="xs-4">
+                {/* <label htmlFor="sale_purchasePrice">Price:</label> */}
+                <div className="input-group">  
+                  <span className="input-group-addon">$</span> 
+                  <Input
+                    value={this.state.sale_purchasePrice}
+                    onChange={this.handleInputChange}
+                    name="sale_purchasePrice"
+                    placeholder="Price"
+                    required
+                  />
+                </div>
+              </Col>
+
+              <Col size="xs-12">
+                {/* <label htmlFor="sale_note">Sale Note:</label> */}
+                  <Input
+                    value={this.state.sale_note}
+                    onChange={this.handleInputChange}
+                    name="sale_note"
+                    placeholder="Notes"
+                    required
+                  />
+              </Col>
+              <FormBtn 
+                type="submit"
+                onClick={this.handleFormSubmit}>Record Transaction
+              </FormBtn>
+            </form>         
+           </center>
           </Col>
         </Row>
+      </Container>
           
         {/* Sales Table */}
+      <Container>
         <Row>
           <Col size="xs-12">
             <div className='text-center table-responsive table-hover sales-table'>

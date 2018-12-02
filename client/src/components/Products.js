@@ -99,49 +99,52 @@ class Products extends Component {
             {/* Product Form */}
             <Col size="xs-12">
               <center>
-                <form
-                  className="form-form-horizontal DataForm"
-                  style={{ display: "block", "text-align": "left" }}
-                >
-                  <h2>Add A New Product</h2>
+                <form className="form-form-horizontal DataForm">
+                  <h2>Add Products to Inventory</h2>
+                  <Col size="xs-6">
+                    {/* <label htmlFor="product_name">Product Name:</label> */}
+                    <Input
+                      type="text"
+                      name="product_name"
+                      id="product_name"
+                      tabIndex="1"
+                      placeholder="Product Name"
+                      value={this.state.product_name}
+                      onChange={this.handleInputChange}
+                      required
+                    />
+                  </Col>
 
-                  <label htmlFor="product_name">Product Name:</label>
-                  <Input
-                    type="text"
-                    name="product_name"
-                    id="product_name"
-                    tabIndex="1"
-                    placeholder="Add Product Name"
-                    value={this.state.product_name}
-                    onChange={this.handleInputChange}
-                    required
-                  />
+                  <Col size="xs-6">
+                    {/* <label htmlFor="product_quantity">Product Quantity:</label> */}
+                    <Input
+                      type="number"
+                      name="product_quantity"
+                      id="product_quantity"
+                      tabIndex="2"
+                      placeholder="Product Quantity"
+                      value={this.state.product_quantity}
+                      onChange={this.handleInputChange}
+                      required
+                    />
+                  </Col>
 
-                  <label htmlFor="product_description">
-                    Product Description:
-                  </label>
-                  <Input
-                    type="text"
-                    name="product_description"
-                    id="product_description"
-                    tabIndex="2"
-                    placeholder="Add Description"
-                    value={this.state.product_description}
-                    onChange={this.handleInputChange}
-                    required
-                  />
+                  <Col size="xs-12">
+                    {/* <label htmlFor="product_description">
+                      Product Description:
+                    </label> */}
+                    <Input
+                      type="text"
+                      name="product_description"
+                      id="product_description"
+                      tabIndex="2"
+                      placeholder="Product Description"
+                      value={this.state.product_description}
+                      onChange={this.handleInputChange}
+                      required
+                    />
+                  </Col>
 
-                  <label htmlFor="product_quantity">Product Quantity:</label>
-                  <Input
-                    type="number"
-                    name="product_quantity"
-                    id="product_quantity"
-                    tabIndex="2"
-                    placeholder="Add Quantity"
-                    value={this.state.product_quantity}
-                    onChange={this.handleInputChange}
-                    required
-                  />
                   <FormBtn
                     type="submit"
                     name="product-submit"
@@ -151,7 +154,7 @@ class Products extends Component {
                     value="submit_product"
                     onClick={this.handleFormSubmit}
                   >
-                    Add Product
+                    Add To Inventory
                   </FormBtn>
                 </form>
               </center>

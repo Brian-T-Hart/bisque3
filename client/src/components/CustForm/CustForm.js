@@ -89,7 +89,7 @@ class CustForm extends Component {
         <Row>
           <Col size="xs-12">
             <form className="form-form-horizontal DataForm" ref="form">
-              <h2>Enter customer information below:</h2>
+              <h2>Add a New Customer</h2>
               <Col size="xs-4">
                 <Input
                   value={this.state.customer_firstname}
@@ -165,7 +165,7 @@ class CustForm extends Component {
                   placeholder="Zip Code"
                 />
               </Col>
-              <Col size="xs-4">
+              <Col size="xs-12">
                 <Input
                   value={this.state.customer_notes}
                   onChange={this.handleInputChange}

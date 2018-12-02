@@ -1,11 +1,13 @@
 .DataForm {
     border-color: rgba(255, 255, 255, 0.7);
     background-color:#013e8d;
+    border-radius: 20px;
+    padding: 15px;
 }
 
-.DataForm h2 {
+/* .DataForm h2 {
     margin: -10px 0 10px 0;
-}
+} */
 
 .DataForm label {
     color: white;
@@ -28,10 +30,11 @@
     border-color: white;
 }
 
-.panel-body h2 {
-    margin-top: 0px;
+.DataForm h2 {
     margin-bottom: 20px;
+    margin-top: -5px;
 }
+
 
 
   
