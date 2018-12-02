@@ -6,12 +6,28 @@
   -o-transition: margin 200ms ease-out;
   transition: margin 200ms ease-out;
   background-color: black !important;
-  border-bottom: 1px solid #004fb7;
+  border-bottom: none !important;
+}
+
+#private-nav ul {
+  padding-top: 8px;
+  width: 100%;
+}
+
+#private-nav .navbar-brand:hover {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  #private-nav .navbar-brand {
+    margin-bottom: 10px;
+  }
 }
 
 #private-nav ul li a,
 #private-nav ul li a:link {
   color: white !important;
+  margin: auto 2px;
 }
 
 #private-nav ul li.active a,
@@ -27,5 +43,11 @@
 #username {
   padding: 10px;
   color: white;
+}
+
+@media (max-width: 1200px) {
+  #private-nav ul li {
+    float: left !important;
+  }
 }
 

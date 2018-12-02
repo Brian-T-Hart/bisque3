@@ -4,7 +4,12 @@ import { Col, Row, Container } from "../Grid";
 
 const PrivateNav = props =>
 <div>
-	<nav id="private-nav">
+	<nav id="private-nav" className="nav navbar-default">
+		<div className="navbar-header">
+			<div className="navbar-brand"><span className="glyphicon glyphicon-briefcase"></span> Goal Post
+			</div>
+		</div>
+
 		<ul className="nav nav-tabs">
 			<li onClick={() => props.handlePageChange("Dashboard")}
 				className = {props.currentPage === "Dashboard" ? "active" : ""}>
@@ -40,7 +45,8 @@ const PrivateNav = props =>
 				<a><span className="fa fa-sign-out"></span> Log Out</a>
 			</li> 	
 
-			<li id='username' className="pull-right"><span>Signed in as { localStorage.getItem('username')}</span>
+			<li id='username' className="pull-right">
+				<span className="fa fa-user"></span> Signed in as { localStorage.getItem('username')}
 			</li>	
 
 		</ul>
