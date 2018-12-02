@@ -53,11 +53,11 @@ class CalTable extends Component {
                        <TableContainerCal>
                         {this.state.events.map(event => (
                             <TableRow key={event.calendar_id}>
-                                <td className="col-md-1">{event.event_title}</td>
-                                <td className="col-md-1">{event.date}</td>
+                                <td className="col-md-3">{event.event_title}</td>
+                                <td className="col-md-2">{event.date}</td>
                                 <td className="col-md-1">{event.start_time}</td>
-                                <td className="col-md-2">{event.end_time}</td>
-                                <td className="col-md-1">{event.note}</td>
+                                <td className="col-md-1">{event.end_time}</td>
+                                <td className="col-md-5">{event.note}</td>
                                 {/* <td className="col-md-1">{event.createdAt}</td> */}
 
                                 </TableRow>
