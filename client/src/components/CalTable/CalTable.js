@@ -48,7 +48,7 @@ class CalTable extends Component {
             <Container fluid>
                 <Row>
                     <Col size="xs-12">
-                        <div className='text-center table-responsive event-table'>
+                        <div className='table-responsive event-table'>
                             {this.state.events.length ? (
                         <TableContainerCal>
                             {this.state.events.map(event => (

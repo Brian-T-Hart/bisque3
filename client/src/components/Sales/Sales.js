@@ -176,7 +176,7 @@ render(){
       <Container fluid>
         <Row>
           <Col size="xs-12">
-            <div className='text-center table-responsive table-hover sales-table'>
+            <div className='table-responsive table-hover sales-table'>
               {this.state.sales.length ? (
                 <TableContainerSales>
                   {this.state.sales.map(sale => (

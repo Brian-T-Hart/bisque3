@@ -1,7 +1,7 @@
 table {
   width: 100%;
   background-color: #013e8d !important;
-  text-align: center;
+  text-align: left;
   color: white !important;
 }
 
@@ -13,7 +13,7 @@ td {
 
 th {
   background-color: #013e8d;
-  text-align: center;
+  text-align: left;
 }
 
 tr:hover {

@@ -166,7 +166,7 @@ class Products extends Component {
         <Container fluid>
           <Row>
             <Col size="xs-12">
-              <div className="text-center table-responsive sales-table">
+              <div className="table-responsive sales-table">
                   {this.state.products.length ? (
                     <TableContainerProduct>
                       {this.state.products.map(product => (

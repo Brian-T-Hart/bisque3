@@ -49,7 +49,7 @@ class CustTable extends Component {
         <Container fluid>
           <Row>
             <Col size="xs-12">
-              <div className="private text-center table-responsive customer-table">
+              <div className="table-responsive customer-table">
                 {this.state.customers.length ? (
                   <TableContainerCust>
                     {this.state.customers.map(customer => (
