@@ -108,7 +108,7 @@ class Products extends Component {
                       name="product_name"
                       id="product_name"
                       tabIndex="1"
-                      placeholder="Product Name"
+                      placeholder="Product Name *"
                       value={this.state.product_name}
                       onChange={this.handleInputChange}
                       required
@@ -122,7 +122,7 @@ class Products extends Component {
                       name="product_quantity"
                       id="product_quantity"
                       tabIndex="2"
-                      placeholder="Product Quantity"
+                      placeholder="Product Quantity *"
                       value={this.state.product_quantity}
                       onChange={this.handleInputChange}
                       required
@@ -138,7 +138,7 @@ class Products extends Component {
                       name="product_description"
                       id="product_description"
                       tabIndex="2"
-                      placeholder="Product Description"
+                      placeholder="Product Description *"
                       value={this.state.product_description}
                       onChange={this.handleInputChange}
                       required
@@ -152,6 +152,7 @@ class Products extends Component {
                     tabIndex="4"
                     className="form-control btn"
                     value="submit_product"
+                    disabled={!(this.state.product_name && this.state.product_quantity && this.state.product_description)}
                     onClick={this.handleFormSubmit}
                   >
                     Add To Inventory
