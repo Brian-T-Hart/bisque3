@@ -45,31 +45,31 @@ class CalTable extends Component {
    
     render() {
         return (
-            <div>
-            <Row>
-                <Col size="xs-12">
-                    <div className='private text-center table-responsive event-table'>
-                        {this.state.events.length ? (
-                       <TableContainerCal>
-                        {this.state.events.map(event => (
-                            <TableRow key={event.calendar_id}>
-                                <td className="col-md-3">{event.event_title}</td>
-                                <td className="col-md-2">{event.date}</td>
-                                <td className="col-md-1">{event.start_time}</td>
-                                <td className="col-md-1">{event.end_time}</td>
-                                <td className="col-md-5">{event.note}</td>
-                                {/* <td className="col-md-1">{event.createdAt}</td> */}
+            <Container fluid>
+                <Row>
+                    <Col size="xs-12">
+                        <div className='text-center table-responsive event-table'>
+                            {this.state.events.length ? (
+                        <TableContainerCal>
+                            {this.state.events.map(event => (
+                                <TableRow key={event.calendar_id}>
+                                    <td className="col-md-3">{event.event_title}</td>
+                                    <td className="col-md-2">{event.date}</td>
+                                    <td className="col-md-1">{event.start_time}</td>
+                                    <td className="col-md-1">{event.end_time}</td>
+                                    <td className="col-md-5">{event.note}</td>
+                                    {/* <td className="col-md-1">{event.createdAt}</td> */}
 
-                                </TableRow>
-                                ))}
-                                </TableContainerCal>
-                                ) : (
-                            <h3>No Records Available</h3>
-                            )}
-                    </div>
-                </Col>
-            </Row>
-            </div>
+                                    </TableRow>
+                                    ))}
+                                    </TableContainerCal>
+                                    ) : (
+                                <h3>No Records Available</h3>
+                                )}
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
 
         );
     }

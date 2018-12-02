@@ -54,59 +54,65 @@ class CalForm extends Component {
 
   render() {
     return (
-      <form className="form-form-horizontal DataForm" ref="form">
-        <h2>Add a New Event to Calendar</h2>
-        <Col size="xs-12">
-          <Input
-            value={this.state.event_title}
-            onChange={this.handleInputChange}
-            name="event_title"
-            placeholder="Event Title *"
-            required
-          />
-        </Col>
-        <Col size="xs-4">
-          <Input
-            value={this.state.date}
-            onChange={this.handleInputChange}
-            name="date"
-            placeholder="Date MM-DD-YYYY*"
-            required
-          />
-        </Col>
-        <Col size="xs-4">
-          <Input
-            value={this.state.start_time}
-            onChange={this.handleInputChange}
-            name="start_time"
-            placeholder="Start Time *"
-            required
-          />
-        </Col>
-        <Col size="xs-4">
-          <Input
-            value={this.state.end_time}
-            onChange={this.handleInputChange}
-            name="end_time"
-            placeholder="End Time *"
-            required
-          />
-        </Col>
-        <Col size="xs-12">
-          <Input
-            value={this.state.note}
-            onChange={this.handleInputChange}
-            name="note"
-            placeholder="Note"
-          />
-        </Col>
-        <FormBtn
-          disabled={!(this.state.event_title && this.state.start_time)}
-          onClick={this.handleFormSubmit}
-        >
-          Add to Calendar
-        </FormBtn>
-      </form>
+      <Container>
+        <Row>
+          <Col size="xs-12">
+            <form className="form-form-horizontal DataForm" ref="form">
+              <h2>Add a New Event to Calendar</h2>
+              <Col size="xs-12">
+                <Input
+                  value={this.state.event_title}
+                  onChange={this.handleInputChange}
+                  name="event_title"
+                  placeholder="Event Title *"
+                  required
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.date}
+                  onChange={this.handleInputChange}
+                  name="date"
+                  placeholder="Date MM-DD-YYYY*"
+                  required
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.start_time}
+                  onChange={this.handleInputChange}
+                  name="start_time"
+                  placeholder="Start Time *"
+                  required
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.end_time}
+                  onChange={this.handleInputChange}
+                  name="end_time"
+                  placeholder="End Time *"
+                  required
+                />
+              </Col>
+              <Col size="xs-12">
+                <Input
+                  value={this.state.note}
+                  onChange={this.handleInputChange}
+                  name="note"
+                  placeholder="Note"
+                />
+              </Col>
+              <FormBtn
+                disabled={!(this.state.event_title && this.state.start_time)}
+                onClick={this.handleFormSubmit}
+              >
+                Add to Calendar
+              </FormBtn>
+            </form>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
