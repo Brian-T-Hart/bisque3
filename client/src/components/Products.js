@@ -165,24 +165,24 @@ class Products extends Component {
         {/* Product Table */}
         <Container fluid>
           <Row>
-            <div className="text-center table-responsive sales-table">
-              <Col size="xs-12">
-                {this.state.products.length ? (
-                  <TableContainerProduct>
-                    {this.state.products.map(product => (
-                      <TableRow key={product.product_id}>
-                        <td>{product.product_id}</td>
-                        <td>{product.product_name}</td>
-                        <td>{product.product_quantity}</td>
-                        <td>{product.product_description}</td>
-                      </TableRow>
-                    ))}
-                  </TableContainerProduct>
-                ) : (
-                  <h3>No Records Available</h3>
-                )}
-              </Col>
-            </div>
+            <Col size="xs-12">
+              <div className="text-center table-responsive sales-table">
+                  {this.state.products.length ? (
+                    <TableContainerProduct>
+                      {this.state.products.map(product => (
+                        <TableRow key={product.product_id}>
+                          <td>{product.product_id}</td>
+                          <td>{product.product_name}</td>
+                          <td>{product.product_quantity}</td>
+                          <td>{product.product_description}</td>
+                        </TableRow>
+                      ))}
+                    </TableContainerProduct>
+                  ) : (
+                    <h3>No Records Available</h3>
+                  )}
+              </div>
+            </Col>
           </Row>
         </Container>
       </div>
