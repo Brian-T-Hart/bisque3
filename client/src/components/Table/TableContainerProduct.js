@@ -3,7 +3,7 @@ import "../../styles/Table.css";
 
 export const TableContainerProduct = ({ children }) => {
   return (
-    <table className="table table-hover table-bordered table-striped">
+    <table className="table table-bordered table-striped">
       <thead>
         <tr>
           <th>Product ID</th>

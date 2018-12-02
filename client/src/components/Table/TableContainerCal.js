@@ -3,7 +3,7 @@ import "../../styles/Table.css";
 
 export const TableContainerCal = ({ children }) => {
     return (
-        <table className="table table-hover table-bordered table-striped">
+        <table className="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th>Event Title</th>
