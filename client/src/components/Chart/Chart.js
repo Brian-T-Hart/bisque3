@@ -18,7 +18,7 @@ class Chart extends Component {
           {
             label: "Sales",
             data: [0, chartData1, chartData2, chartData3, chartData4],
-            backgroundColor: ["rgba(0, 0, 0, 1)"]
+            backgroundColor: ["#0047a6"]
           }
         ]
       }
@@ -77,7 +77,7 @@ class Chart extends Component {
             label: "Sales",
             //    this is my "x" axis data
             data: [0, chartData1, 0, 0, 0],
-            backgroundColor: ["rgba(0, 0, 0, 1)"]
+            backgroundColor: ["#0047a6"]
           }
         ]
       }
@@ -93,11 +93,11 @@ class Chart extends Component {
                 <Line
                     data={this.state.chartData}
                     width={100}
-                    height={70}
+                    height={80}
                     options={{
                         title: {
                         display: true,
-                        text: "Weekly Sprig Rep Sales"
+                        text: "Weekly Sales Progress"
                         }
                     }}
                 />
