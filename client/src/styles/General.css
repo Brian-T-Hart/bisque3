@@ -156,7 +156,7 @@ section.parallax-3 {
 /* Team */
 section#team {
   background-image: url("img/team.jpg");
-  background-position-y: 5vh;
+  /* background-position-y: -200px; */
 }
 
 /* Contact */
