@@ -32,13 +32,13 @@ const Schedule = () => (
     </Container>
 
     {/*MAP TESTING*/}
-    <Container>
+    {/* <Container>
       <Row>
         <Col size="xs-8 xs-offset-2">
             <CustMap />
         </Col>
       </Row>
-    </Container>
+    </Container> */}
   </div>
 );
 export default Schedule;
