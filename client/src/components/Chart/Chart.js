@@ -18,7 +18,7 @@ class Chart extends Component {
           {
             label: "Sales ($)",
             data: [chartData1, chartData2, chartData3, chartData4],
-            backgroundColor: ["#0047a6"]
+            backgroundColor: "#0047a6"
           }
         ]
       }
@@ -77,7 +77,7 @@ class Chart extends Component {
           {
             label: "Sales ($)",
             data: [0, chartData1, 0, 0, 0],
-            backgroundColor: ["#0047a6"]
+            backgroundColor: "#0047a6"
           }
         ]
       }
