@@ -1,6 +1,6 @@
 .chart {
   background-color: white;
-  /* background-color: rgb(255, 255, 255, .85); */
   border-radius: 5px;
   padding: 15px;
+  margin-bottom: 30px;
 }

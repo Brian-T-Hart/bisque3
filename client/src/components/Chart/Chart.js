@@ -93,7 +93,7 @@ class Chart extends Component {
                 <Bar
                     data={this.state.chartData}
                     width={100}
-                    height={90}
+                    height={65}
                     options={{
                         title: {
                           display: true,
