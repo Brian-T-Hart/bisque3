@@ -10,9 +10,9 @@ html, body {
 }
 
 /* remove outer padding */
-.main .row {
+.row {
   padding: 0px;
-  margin: 0px;
+  margin: 0 0 10px 0;
 }
 
 
@@ -234,14 +234,19 @@ section#why {
   margin-top: -6px;
 }
 
+#why-content, 
+#features-content {
+  margin-top: -15px;
+}
+
 #why-content .item,
 #features-content .item {
   background-color: white;
   padding: 15px;
-  margin: 20px auto;
   border-radius: 10px;
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 20px;
   height: auto;
   position: relative;
 }
