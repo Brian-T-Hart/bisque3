@@ -147,7 +147,7 @@ render(){
                   value={this.state.sale_purchasePrice}
                   onChange={this.handleInputChange}
                   name="sale_purchasePrice"
-                  placeholder="Sales Order ($)"
+                  placeholder="Total Sales ($)"
                   required
                 />
               </Col>

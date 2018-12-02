@@ -10,7 +10,7 @@ export const TableContainerSales= ({ children }) => {
                     <th>Customer</th>
                     <th>Product</th>
                     <th>Quantity</th>
-                    <th>Price</th>
+                    <th>Total Sales ($)</th>
                     <th>Notes</th>
 
                 </tr>
