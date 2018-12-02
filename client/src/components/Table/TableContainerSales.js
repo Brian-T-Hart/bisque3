@@ -3,7 +3,7 @@ import "../../styles/Table.css";
 
 export const TableContainerSales= ({ children }) => {
     return (
-        <table className="table table-bordered table-striped">
+        <table className="table table-bordered">
             <thead>
                 <tr>
                     <th>Record ID</th>

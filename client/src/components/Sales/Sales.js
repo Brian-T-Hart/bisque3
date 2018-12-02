@@ -143,16 +143,13 @@ render(){
               </Col>
               <Col size="xs-4">
                 {/* <label htmlFor="sale_purchasePrice">Price:</label> */}
-                <div className="input-group">  
-                  <span className="input-group-addon">$</span> 
-                  <Input
-                    value={this.state.sale_purchasePrice}
-                    onChange={this.handleInputChange}
-                    name="sale_purchasePrice"
-                    placeholder="Price"
-                    required
-                  />
-                </div>
+                <Input
+                  value={this.state.sale_purchasePrice}
+                  onChange={this.handleInputChange}
+                  name="sale_purchasePrice"
+                  placeholder="Price ($)"
+                  required
+                />
               </Col>
 
               <Col size="xs-12">
