@@ -17,7 +17,7 @@ const Dashboard = () =>
     </Jumbotron>
 
       {/* Dashboard Content */}
-    <Container className='private text-center'>
+    <Container>
        <Row>
         <Col size="xs-12">
           <Chart />

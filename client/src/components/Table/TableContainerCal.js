@@ -3,18 +3,18 @@ import "../../styles/Table.css";
 
 export const TableContainerCal = ({ children }) => {
     return (
-        <table>
+        <table className="table table-hover table-bordered table-striped">
             <thead>
                 <tr>
-                    <th className="col-md-1">Event Title</th>
-                    <th className="col-md-1">Date</th>
-                    <th className="col-md-1">Start Time</th>
-                    <th className="col-md-2">End Time</th>
-                    <th className="col-md-1">Note</th>
-                    <th className="col-md-1">createdAt</th>
+                    <th>Event Title</th>
+                    <th>Date</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Note</th>
+                    <th>createdAt</th>
                 </tr>
             </thead>
-            <tbody className="table">
+            <tbody>
                 {children}
             </tbody>
         </table>

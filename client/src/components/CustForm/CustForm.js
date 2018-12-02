@@ -85,102 +85,104 @@ class CustForm extends Component {
 
   render () {
     return (
-      <Row>
-        <Col size="sm-12">
-          <form className="form-form-horizontal DataForm" ref="form">
-            <h2>Enter customer information below:</h2>
-            <Col size="sm-4">
-              <Input
-                value={this.state.customer_firstname}
-                onChange={this.handleInputChange}
-                name="customer_firstname"
-                placeholder="First Name *"
-                required
-              />
-            </Col>
-            <Col size="sm-4">
-              <Input
-                value={this.state.customer_lastname}
-                onChange={this.handleInputChange}
-                name="customer_lastname"
-                placeholder="Last Name *"
-                required
-              />
-            </Col>
-            <Col size="sm-4">
-              <Input
-                value={this.state.customer_company}
-                onChange={this.handleInputChange}
-                name="customer_company"
-                placeholder="Company Name *"
-                required
-              />
-            </Col>
-            <Col size="sm-6">
-              <Input
-                value={this.state.customer_email}
-                onChange={this.handleInputChange}
-                name="customer_email"
-                placeholder="Email Address"
-              />
-            </Col>
-            <Col size="sm-6">
-              <Input
-                value={this.state.customer_phone}
-                onChange={this.handleInputChange}
-                name="customer_phone"
-                placeholder="Phone Number i.e. +1 123-456-7890"
-              />
-            </Col>
-            <Col size="sm-12">
-              <Input
-                value={this.state.customer_street}
-                onChange={this.handleInputChange}
-                name="customer_street"
-                placeholder="Street"
-              />
-            </Col>
-            <Col size="sm-4">
-              <Input
-                value={this.state.customer_city}
-                onChange={this.handleInputChange}
-                name="customer_city"
-                placeholder="City"
-              />
-            </Col>
-            <Col size="sm-4">
-              <Input
-                value={this.state.customer_state}
-                onChange={this.handleInputChange}
-                name="customer_state"
-                placeholder="State (i.e. CA)"
-              />
-            </Col>
-            <Col size="sm-4">
-              <Input
-                value={this.state.customer_zipcode}
-                onChange={this.handleInputChange}
-                name="customer_zipcode"
-                placeholder="Zip Code"
-              />
-            </Col>
-            <Col size="sm-4">
-              <Input
-                value={this.state.customer_notes}
-                onChange={this.handleInputChange}
-                name="customer_notes"
-                placeholder="Customer Notes *"
-              />
-            </Col>
-            <FormBtn
-              disabled={!(this.state.customer_firstname && this.state.customer_lastname && this.state.customer_lastname)}
-              onClick={this.handleFormSubmit}
-            >
-              Add to Database
-            </FormBtn>
-          </form>
-        </Col>
-      </Row>
+      <Container>
+        <Row>
+          <Col size="xs-12">
+            <form className="form-form-horizontal DataForm" ref="form">
+              <h2>Enter customer information below:</h2>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.customer_firstname}
+                  onChange={this.handleInputChange}
+                  name="customer_firstname"
+                  placeholder="First Name *"
+                  required
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.customer_lastname}
+                  onChange={this.handleInputChange}
+                  name="customer_lastname"
+                  placeholder="Last Name *"
+                  required
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.customer_company}
+                  onChange={this.handleInputChange}
+                  name="customer_company"
+                  placeholder="Company Name *"
+                  required
+                />
+              </Col>
+              <Col size="xs-6">
+                <Input
+                  value={this.state.customer_email}
+                  onChange={this.handleInputChange}
+                  name="customer_email"
+                  placeholder="Email Address"
+                />
+              </Col>
+              <Col size="xs-6">
+                <Input
+                  value={this.state.customer_phone}
+                  onChange={this.handleInputChange}
+                  name="customer_phone"
+                  placeholder="Phone Number i.e. +1 123-456-7890"
+                />
+              </Col>
+              <Col size="xs-12">
+                <Input
+                  value={this.state.customer_street}
+                  onChange={this.handleInputChange}
+                  name="customer_street"
+                  placeholder="Street"
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.customer_city}
+                  onChange={this.handleInputChange}
+                  name="customer_city"
+                  placeholder="City"
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.customer_state}
+                  onChange={this.handleInputChange}
+                  name="customer_state"
+                  placeholder="State (i.e. CA)"
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.customer_zipcode}
+                  onChange={this.handleInputChange}
+                  name="customer_zipcode"
+                  placeholder="Zip Code"
+                />
+              </Col>
+              <Col size="xs-4">
+                <Input
+                  value={this.state.customer_notes}
+                  onChange={this.handleInputChange}
+                  name="customer_notes"
+                  placeholder="Customer Notes *"
+                />
+              </Col>
+              <FormBtn
+                disabled={!(this.state.customer_firstname && this.state.customer_lastname && this.state.customer_lastname)}
+                onClick={this.handleFormSubmit}
+              >
+                Add to Database
+              </FormBtn>
+            </form>
+          </Col>
+        </Row>
+      </Container>
   );
 }
 }

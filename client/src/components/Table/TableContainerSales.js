@@ -3,19 +3,19 @@ import "../../styles/Table.css";
 
 export const TableContainerSales= ({ children }) => {
     return (
-        <table>
+        <table className="table table-hover table-bordered table-striped">
             <thead>
                 <tr>
-                    <th className="col-md-1">Record ID</th>
-                    <th className="col-md-2">Customer</th>
-                    <th className="col-md-2">Product</th>
-                    <th className="col-md-2">Quantity</th>
-                    <th className="col-md-2">Price</th>
-                    <th className="col-md-3">Notes</th>
+                    <th>Record ID</th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Notes</th>
 
                 </tr>
             </thead>
-            <tbody className="table table_scrollbar">
+            <tbody>
                 {children}
             </tbody>
         </table>

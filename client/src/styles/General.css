@@ -561,17 +561,7 @@ i.fa-mobile {
   color: white !important;
 }
 
-.private {
-  /* border: 1px dashed #004eb8; */
-  height: auto;
-  width: 100%;
-  margin-right: 0px;
-  margin-left: 5%;
-  margin-top: 15px;
-  margin-bottom: 70px;
-}
-
-.product-table {
+/* .product-table {
   border: 2px solid #004eb8;
   margin: auto;
   width: 100%;
@@ -581,4 +571,4 @@ i.fa-mobile {
 
 .product-table, th, td {
   padding: 10px;
-}
+} */

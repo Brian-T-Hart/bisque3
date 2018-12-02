@@ -43,14 +43,8 @@ class PrivateContainer extends Component {
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
         />
-        <Container>
-          <Row>
-            <Col size="xs-12">
-              {/* Based on `this.state.currentPage`, render the appropriate component here. */}
-              {this.renderPage()}
-            </Col>
-          </Row>
-        </Container>
+        {/* Based on `this.state.currentPage`, render the appropriate component here. */}
+        {this.renderPage()}
       </div>
     );
   }

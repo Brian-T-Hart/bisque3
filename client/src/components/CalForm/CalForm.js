@@ -55,11 +55,9 @@ class CalForm extends Component {
 
   render () {
     return (
-      <Row>
-        <Col size="md-12 sm-12">
           <form className="form-form-horizontal DataForm" ref="form">
             <h2>Enter event information below:</h2>
-            <Col size="md-4 sm-4">
+            <Col size="xs-4">
               <Input
               value={this.state.event_title}
               onChange={this.handleInputChange}
@@ -68,7 +66,7 @@ class CalForm extends Component {
               required
             />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="xs-4">
               <Input
               value={this.state.date}
               onChange={this.handleInputChange}
@@ -77,7 +75,7 @@ class CalForm extends Component {
               required
             />
             </Col>
-            <Col size="md-4 sm-4">
+            <Col size="xs-4">
             <Input
             value={this.state.start_time}
             onChange={this.handleInputChange}
@@ -86,7 +84,7 @@ class CalForm extends Component {
             required
           />
           </Col>            
-          <Col size="md-4 sm-4">
+          <Col size="xs-4">
               <Input
               value={this.state.end_time}
               onChange={this.handleInputChange}
@@ -110,8 +108,6 @@ class CalForm extends Component {
               Add to Calendar
             </FormBtn>
           </form>
-        </Col>
-      </Row>
   );
 }
 }

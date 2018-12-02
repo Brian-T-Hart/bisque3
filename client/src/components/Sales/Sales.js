@@ -98,82 +98,83 @@ render(){
     <div>
       {/* Sales Form */}
       <Jumbotron>
-        <h1 className="heading">Sales Records</h1>
+        <h1 className="heading">Sales History</h1>
         <p className="sub-heading">Record and View Sales Details</p>
       </Jumbotron>
 
-      <Row>
-        <Col size="xs-12">
-          <form className="form-form-horizontal DataForm">  
-            <h2>Record Your Sales Below:</h2>
+      <Container>
+        <Row>
+          <Col size="xs-12">
+            <form className="form-form-horizontal DataForm">  
+              <h2>Record Your Sales Below:</h2>
 
-            <label htmlFor="sale_customer">Customer:</label>
-            <Input
-              value={this.state.sale_customer}
-              onChange={this.handleInputChange}
-              name="sale_customer"
-              placeholder="Customer Name"
-              required
-            />
-
-            <label htmlFor="sale_product">Product Sold:</label>
-            <Input
-              value={this.state.sale_product}
-              onChange={this.handleInputChange}
-              name="sale_product"
-              placeholder="Name of Product That Was Sold"
-              required
-            />
-
-            <label htmlFor="sale_quantity">Quantity Sold:</label>
-            <Input
-              value={this.state.sale_quantity}
-              onChange={this.handleInputChange}
-              name="sale_quantity"
-              placeholder="Quantity Sold"
-              required
-            />
-
-            <label htmlFor="sale_purchasePrice">Purchase Price:</label>
-            <div className="input-group">  
-              <span className="input-group-addon">$</span> 
+              <label htmlFor="sale_customer">Customer:</label>
               <Input
-                value={this.state.sale_purchasePrice}
+                value={this.state.sale_customer}
                 onChange={this.handleInputChange}
-                name="sale_purchasePrice"
-                placeholder="Purchase Price"
+                name="sale_customer"
+                placeholder="Customer Name"
                 required
               />
-           </div>
 
-           <label htmlFor="sale_note">Sale Note:</label>
-            <Input
-              value={this.state.sale_note}
-              onChange={this.handleInputChange}
-              name="sale_note"
-              placeholder="Notes on the Sale"
-              required
-            />
+              <label htmlFor="sale_product">Products Sold:</label>
+              <Input
+                value={this.state.sale_product}
+                onChange={this.handleInputChange}
+                name="sale_product"
+                placeholder="Name of Product That Was Sold"
+                required
+              />
 
-            <FormBtn onClick={this.handleFormSubmit}>Chart sale</FormBtn>
-        </form>
-      </Col>
-      </Row>
-      
+              <label htmlFor="sale_quantity">Quantity Sold:</label>
+              <Input
+                value={this.state.sale_quantity}
+                onChange={this.handleInputChange}
+                name="sale_quantity"
+                placeholder="Quantity Sold"
+                required
+              />
+
+              <label htmlFor="sale_purchasePrice">Price:</label>
+              <div className="input-group">  
+                <span className="input-group-addon">$</span> 
+                <Input
+                  value={this.state.sale_purchasePrice}
+                  onChange={this.handleInputChange}
+                  name="sale_purchasePrice"
+                  placeholder="Purchase Price"
+                  required
+                />
+              </div>
+
+              <label htmlFor="sale_note">Sale Note:</label>
+                <Input
+                  value={this.state.sale_note}
+                  onChange={this.handleInputChange}
+                  name="sale_note"
+                  placeholder="Notes on the Sale"
+                  required
+                />
+
+                <FormBtn onClick={this.handleFormSubmit}>Record Transaction</FormBtn>
+            </form>
+          </Col>
+        </Row>
+          
         {/* Sales Table */}
         <Row>
           <Col size="xs-12">
-            <div className='private text-center table-responsive table-hover sales-table'>
+            <div className='text-center table-responsive table-hover sales-table'>
               {this.state.sales.length ? (
                 <TableContainerSales>
                   {this.state.sales.map(sale => (
                     <TableRow key={sale.sale_id}>
-                        <td className="col-md-1">{sale.sale_id}</td>
-                        <td className="col-md-2">{sale.sale_customer}</td>
-                        <td className="col-md-2">{sale.sale_product}</td>
-                        <td className="col-md-2">{sale.sale_quantity}</td>
-                        <td className="col-md-2">{sale.sale_purchasePrice}</td>
-                        <td className="col-md-3">{sale.sale_note}</td>
+                        <td>{sale.sale_id}</td>
+                        <td>{sale.sale_customer}</td>
+                        <td>{sale.sale_product}</td>
+                        <td>{sale.sale_quantity}</td>
+                        <td>{sale.sale_purchasePrice}</td>
+                        <td>{sale.sale_note}</td>
                     </TableRow>
                   ))}
                 </TableContainerSales>
@@ -183,7 +184,8 @@ render(){
             </div>
           </Col>
         </Row>
-    </div>
+    </Container>
+  </div>
 
 )
 // {this.addClassToEvenRow()}; 

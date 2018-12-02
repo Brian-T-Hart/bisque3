@@ -94,90 +94,92 @@ class Products extends Component {
           <h1 className="heading">Products</h1>
           <p className="sub-heading">View Product and Inventory Details</p>
         </Jumbotron>
-        <Row>
-          {/* Product Form */}
-          <Col size="xs-12">
-            <center>
-              <form
-                className="form-form-horizontal DataForm"
-                style={{ display: "block", "text-align": "left" }}
-              >
-                <h2>Add A New Product</h2>
-
-                <label htmlFor="product_name">Product Name:</label>
-                <Input
-                  type="text"
-                  name="product_name"
-                  id="product_name"
-                  tabIndex="1"
-                  placeholder="Add Product Name"
-                  value={this.state.product_name}
-                  onChange={this.handleInputChange}
-                  required
-                />
-
-                <label htmlFor="product_description">
-                  Product Description:
-                </label>
-                <Input
-                  type="text"
-                  name="product_description"
-                  id="product_description"
-                  tabIndex="2"
-                  placeholder="Add Description"
-                  value={this.state.product_description}
-                  onChange={this.handleInputChange}
-                  required
-                />
-
-                <label htmlFor="product_quantity">Product Quantity:</label>
-                <Input
-                  type="number"
-                  name="product_quantity"
-                  id="product_quantity"
-                  tabIndex="2"
-                  placeholder="Add Quantity"
-                  value={this.state.product_quantity}
-                  onChange={this.handleInputChange}
-                  required
-                />
-                <FormBtn
-                  type="submit"
-                  name="product-submit"
-                  id="product-submit"
-                  tabIndex="4"
-                  className="form-control btn"
-                  value="submit_product"
-                  onClick={this.handleFormSubmit}
-                >
-                  Add Product
-                </FormBtn>
-              </form>
-            </center>
-          </Col>
-        </Row>
-
-        {/* Product Table */}
-        <Row>
-          <div className="private text-center table-responsive sales-table">
+        <Container>
+          <Row>
+            {/* Product Form */}
             <Col size="xs-12">
-              {this.state.products.length ? (
-                <TableContainerProduct>
-                  {this.state.products.map(product => (
-                    <TableRow key={product.product_id}>
-                      <td>{product.product_id}</td>
-                      <td>{product.product_name}</td>
-                      <td>{product.product_quantity}</td>
-                      <td>{product.product_description}</td>
-                    </TableRow>
-                  ))}
-                </TableContainerProduct>
-              ) : (
-                <h3>No Records Available</h3>
-              )}
+              <center>
+                <form
+                  className="form-form-horizontal DataForm"
+                  style={{ display: "block", "text-align": "left" }}
+                >
+                  <h2>Add A New Product</h2>
+
+                  <label htmlFor="product_name">Product Name:</label>
+                  <Input
+                    type="text"
+                    name="product_name"
+                    id="product_name"
+                    tabIndex="1"
+                    placeholder="Add Product Name"
+                    value={this.state.product_name}
+                    onChange={this.handleInputChange}
+                    required
+                  />
+
+                  <label htmlFor="product_description">
+                    Product Description:
+                  </label>
+                  <Input
+                    type="text"
+                    name="product_description"
+                    id="product_description"
+                    tabIndex="2"
+                    placeholder="Add Description"
+                    value={this.state.product_description}
+                    onChange={this.handleInputChange}
+                    required
+                  />
+
+                  <label htmlFor="product_quantity">Product Quantity:</label>
+                  <Input
+                    type="number"
+                    name="product_quantity"
+                    id="product_quantity"
+                    tabIndex="2"
+                    placeholder="Add Quantity"
+                    value={this.state.product_quantity}
+                    onChange={this.handleInputChange}
+                    required
+                  />
+                  <FormBtn
+                    type="submit"
+                    name="product-submit"
+                    id="product-submit"
+                    tabIndex="4"
+                    className="form-control btn"
+                    value="submit_product"
+                    onClick={this.handleFormSubmit}
+                  >
+                    Add Product
+                  </FormBtn>
+                </form>
+              </center>
             </Col>
-          </div>
-        </Row>
+          </Row>
+
+          {/* Product Table */}
+          <Row>
+            <div className="text-center table-responsive sales-table">
+              <Col size="xs-12">
+                {this.state.products.length ? (
+                  <TableContainerProduct>
+                    {this.state.products.map(product => (
+                      <TableRow key={product.product_id}>
+                        <td>{product.product_id}</td>
+                        <td>{product.product_name}</td>
+                        <td>{product.product_quantity}</td>
+                        <td>{product.product_description}</td>
+                      </TableRow>
+                    ))}
+                  </TableContainerProduct>
+                ) : (
+                  <h3>No Records Available</h3>
+                )}
+              </Col>
+            </div>
+          </Row>
+        </Container>
       </div>
     );
   }

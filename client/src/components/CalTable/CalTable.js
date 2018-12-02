@@ -47,8 +47,8 @@ class CalTable extends Component {
         return (
             <div>
             <Row>
-                <Col size="md-12 sm-12">
-                    <div className='private text-center event-table'>
+                <Col size="xs-12">
+                    <div className='private text-center table-responsive event-table'>
                         {this.state.events.length ? (
                        <TableContainerCal>
                         {this.state.events.map(event => (
@@ -58,7 +58,7 @@ class CalTable extends Component {
                                 <td className="col-md-1">{event.start_time}</td>
                                 <td className="col-md-2">{event.end_time}</td>
                                 <td className="col-md-1">{event.note}</td>
-                                <td className="col-md-1">{event.createdAt}</td>
+                                {/* <td className="col-md-1">{event.createdAt}</td> */}
 
                                 </TableRow>
                                 ))}

@@ -25,7 +25,6 @@ tr:hover {
 } */
 
 table tbody {
-  min-height: 562px;
   height: auto;
   width: 100%;
 }
@@ -43,44 +42,4 @@ table td {
   text-align: left !important;
 }
 
-/* table tbody td, table thead > tr> th{
-	float: left;
-	border-bottom-width: 0;
-}
 
-table>tbody>tr>td, table>tbody>tr>th, table>tfoot>tr>td, table>tfoot>tr>th, table>thead>tr>td, table>thead>tr>th{
-	padding: 8px;
-	height: 50px;
-	text-align: center;
-	line-height: 32px;
-} */
-
-/* .table_scrollbar{
-	height: 612px;
-	overflow-y: scroll;
-} */
-
-/* .table_scrollbar::-webkit-scrollbar-track{
-	-webkit-box-shadow: inset 0 0 6px #004eb8;
-	border-radius: 10px;
-	background-color: #444444;
-}
-
-.table_scrollbar::-webkit-scrollbar{
-	width: 1%;
-	min-width: 5px;
-	background-color: #F5F5F5;
-}
-
-.table_scrollbar::-webkit-scrollbar-thumb{
-	border-radius: 10px;
-	background-color: #004eb8;
-	background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
-} */
-
-/* @media (max-width: 736px) {
-	.table {
-	  width: 100%;
-	  -webkit-overflow-scrolling: auto;
-	}
-  } */
