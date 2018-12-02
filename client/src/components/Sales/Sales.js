@@ -173,7 +173,7 @@ render(){
       </Container>
           
         {/* Sales Table */}
-      <Container>
+      <Container fluid>
         <Row>
           <Col size="xs-12">
             <div className='text-center table-responsive table-hover sales-table'>

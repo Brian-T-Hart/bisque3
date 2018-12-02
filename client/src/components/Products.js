@@ -160,8 +160,10 @@ class Products extends Component {
               </center>
             </Col>
           </Row>
+        </Container>
 
-          {/* Product Table */}
+        {/* Product Table */}
+        <Container fluid>
           <Row>
             <div className="text-center table-responsive sales-table">
               <Col size="xs-12">

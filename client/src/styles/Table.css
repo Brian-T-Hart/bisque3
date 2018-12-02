@@ -17,7 +17,7 @@ th {
 }
 
 tr:hover {
-  background-color: #555;
+  background-color: #222;
 }
 
 /* tr:nth-of-type(even) {
