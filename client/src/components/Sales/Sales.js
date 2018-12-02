@@ -115,7 +115,7 @@ render(){
                   value={this.state.sale_customer}
                   onChange={this.handleInputChange}
                   name="sale_customer"
-                  placeholder="Customer Name"
+                  placeholder="Customer Name *"
                   required
                 />
               </Col>
@@ -126,7 +126,7 @@ render(){
                   value={this.state.sale_product}
                   onChange={this.handleInputChange}
                   name="sale_product"
-                  placeholder="Products Sold"
+                  placeholder="Products Sold *"
                   required
                 />
               </Col>
@@ -137,7 +137,7 @@ render(){
                   value={this.state.sale_quantity}
                   onChange={this.handleInputChange}
                   name="sale_quantity"
-                  placeholder="Quantity Sold"
+                  placeholder="Quantity Sold *"
                   required
                 />
               </Col>
@@ -147,7 +147,7 @@ render(){
                   value={this.state.sale_purchasePrice}
                   onChange={this.handleInputChange}
                   name="sale_purchasePrice"
-                  placeholder="Total Sales ($)"
+                  placeholder="Total Sales ($) *"
                   required
                 />
               </Col>
@@ -164,6 +164,7 @@ render(){
               </Col>
               <FormBtn 
                 type="submit"
+                disabled={!(this.state.sale_sale_customer && this.state.sale_product && this.state.sale_quantity && this.state.sale_purchasePrice)}
                 onClick={this.handleFormSubmit}>Record Transaction
               </FormBtn>
             </form>         
