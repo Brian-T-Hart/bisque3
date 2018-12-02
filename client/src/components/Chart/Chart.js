@@ -70,12 +70,10 @@ class Chart extends Component {
     super(props);
     this.state = {
       chartData: {
-        //  this is my "y" axis data
         labels: ["0", "week 1", "week 2", "week 3", "week 4"],
         datasets: [
           {
             label: "Sales",
-            //    this is my "x" axis data
             data: [0, chartData1, 0, 0, 0],
             backgroundColor: ["#0047a6"]
           }
@@ -88,7 +86,7 @@ class Chart extends Component {
     return (
       <Container>
         <Row>
-          <Col size="sm-10 sm-offset-1">
+          <Col size="xs-10 xs-offset-1">
             <div className="chart">
                 <Line
                     data={this.state.chartData}
