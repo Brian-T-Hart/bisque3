@@ -88,12 +88,12 @@ class Chart extends Component {
     return (
       <Container>
         <Row>
-          <Col size="xs-10 xs-offset-1">
+          <Col size="xs-12 sm-10 sm-offset-1">
             <div className="chart">
                 <Bar
                     data={this.state.chartData}
                     width={100}
-                    height={80}
+                    height={90}
                     options={{
                         title: {
                           display: true,

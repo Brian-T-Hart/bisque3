@@ -16,14 +16,8 @@ const Dashboard = () =>
       <p className="sub-heading">Quickly See Weekly Sales Progress</p>
     </Jumbotron>
 
-      {/* Dashboard Content */}
-    <Container>
-       <Row>
-        <Col size="xs-12">
-          <Chart />
-        </Col>
-      </Row>
-    </Container>
+    {/* Dashboard Content */}
+    <Chart />
 </div>
 
 export default Dashboard;
