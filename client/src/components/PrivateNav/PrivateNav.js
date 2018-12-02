@@ -11,10 +11,6 @@ const PrivateNav = props =>
 		</div>
 
 		<ul className="nav nav-tabs">
-			<li onClick={() => props.handlePageChange("Dashboard")}
-				className = {props.currentPage === "Dashboard" ? "active" : ""}>
-				<a><span className="fa fa-line-chart"></span> Dashboard</a>
-			</li>
 			
 			<li onClick={() => props.handlePageChange("Customers")}
 				className = {props.currentPage === "Customers" ? "active" : ""}>
@@ -24,16 +20,21 @@ const PrivateNav = props =>
 			<li onClick={() => props.handlePageChange("Products")}
 				className = {props.currentPage === "Products" ? "active" : ""}>
 				<a><span  className="fa fa-database"></span> Products</a>
+			</li>			
+			
+			<li onClick={() => props.handlePageChange("Schedule")}
+				className = {props.currentPage === "Schedule" ? "active" : ""} >
+				<a><span className="fa fa-calendar"></span> Schedule</a>
 			</li>
 			
 			<li onClick={() => props.handlePageChange("Sales")}
 				className = {props.currentPage === "Sales" ? "active" : ""} >
 				<a><span className="fa fa-money"></span> Sales</a>
 			</li>
-			
-			<li onClick={() => props.handlePageChange("Schedule")}
-				className = {props.currentPage === "Schedule" ? "active" : ""} >
-				<a><span className="fa fa-calendar"></span> Schedule</a>
+
+			<li onClick={() => props.handlePageChange("Dashboard")}
+				className = {props.currentPage === "Dashboard" ? "active" : ""}>
+				<a><span className="fa fa-line-chart"></span> Dashboard</a>
 			</li>
 			
 			<li className="pull-right" 
