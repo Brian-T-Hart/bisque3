@@ -34,7 +34,7 @@ class Login extends Component {
     })
       // .then(res => console.log("you have registered!"))
       .then(res => {
-        window.location = "/Login"
+        window.location = "/Login";
         document.getElementsByClassName(".hidden").removeClass("hidden");
       })
       .catch(err => console.log(err));
@@ -81,7 +81,7 @@ class Login extends Component {
       })
       .then(
         res => {
-          window.location = "/private"
+          window.location = "/private";
           document.getElementsByClassName(".hidden").addClass("hidden");
         })
       .catch(err => console.log(err));
