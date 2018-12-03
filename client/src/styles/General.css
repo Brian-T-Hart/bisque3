@@ -566,14 +566,6 @@ i.fa-mobile {
   color: white !important;
 }
 
-/* .product-table {
-  border: 2px solid #004eb8;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  
+.hidden {
+  display: none;
 }
-
-.product-table, th, td {
-  padding: 10px;
-} */

@@ -33,7 +33,10 @@ class Login extends Component {
       email: this.state.email
     })
       // .then(res => console.log("you have registered!"))
-      .then(res => (window.location = "/Login"))
+      .then(res => {
+        window.location = "/Login"
+        document.getElementsByClassName(".hidden").removeClass("hidden");
+      })
       .catch(err => console.log(err));
 
     //Clear form data after submit
@@ -76,7 +79,11 @@ class Login extends Component {
         // get dashboard component
         // this.props.history.replace('/private');
       })
-      .then(res => (window.location = "/private"))
+      .then(
+        res => {
+          window.location = "/private"
+          document.getElementsByClassName(".hidden").addClass("hidden");
+        })
       .catch(err => console.log(err));
   };
 
@@ -85,6 +92,12 @@ class Login extends Component {
       <section id="login-register" className="short-page">
         <Nav />
         <Container>
+
+          <Row>
+            <Col size="xs-10 xs-offset-1 sm-8 sm-offset-2 lg-6 lg-offset-3">
+              <h2 className="hidden">Your account has been successfully registered. You can now log into your account.</h2>
+            </Col>
+          </Row>
           <Row>
             <Col size="xs-10 xs-offset-1 sm-8 sm-offset-2 lg-6 lg-offset-3">
               <div className="panel panel-login">
