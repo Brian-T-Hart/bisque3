@@ -13,19 +13,17 @@ class Chart extends Component {
   getChartData() {
     this.setState({
       chartData: {
-        labels: ["week 1", "week 2", "week 3", "week 4"],
+        labels: ["0", "week 1", "week 2", "week 3", "week 4"],
         datasets: [
           {
             label: "Sales ($)",
-            data: [chartData1, chartData2, chartData3, chartData4],
+            data: [0, chartData1, chartData2, chartData3, chartData4],
             backgroundColor: "#0047a6"
           }
         ]
       }
     });
   }
-
-
 
   componentWillMount() {
     console.log("Chart component mounting..Chart.js");
@@ -76,7 +74,7 @@ class Chart extends Component {
         datasets: [
           {
             label: "Sales ($)",
-            data: [0, chartData1, 0, 0, 0],
+            data: [0, 0, 0, 0, 0],
             backgroundColor: "#0047a6"
           }
         ]
