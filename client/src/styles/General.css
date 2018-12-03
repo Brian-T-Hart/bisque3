@@ -16,10 +16,10 @@ html, body {
 }
 
 
-/* html {
-  border: 2px solid red;
+html {
+  /* border: 2px solid red; */
   overflow-x: hidden;
-} */
+}
 
 body {
   font-family: 'Roboto', sans-serif;
